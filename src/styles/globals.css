@@ -42,3 +42,13 @@ a {
   color: inherit;
   text-decoration: none;
 }
+
+main {
+  height: 200vh;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
