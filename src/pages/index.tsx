@@ -1,4 +1,5 @@
 import Head from "next/head"
+import ProjectSection from "@/components/ProjectSection"
 
 const Home = () => {
   return (
@@ -11,7 +12,7 @@ const Home = () => {
         <section id="about">
           <h1>Hunter Long</h1>
         </section>
-        <section id="projects"></section>
+        <ProjectSection />
         <section id="skills"></section>
         <section id="contact"></section>
       </main>
