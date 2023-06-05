@@ -8,7 +8,7 @@ const ProjectSection = () => {
   return (
     <section id="projects">
       <h2>Recent Projects</h2>
-      <p>Lorem</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
       {projects.map((project: Project) => (
         <ProjectCard key={project.id} project={project} />
       ))}

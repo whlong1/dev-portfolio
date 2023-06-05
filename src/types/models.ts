@@ -1,3 +1,8 @@
+interface Image {
+  src: string,
+  alt: string
+}
+
 export interface Project {
   id: number,
   title: string,
@@ -5,5 +10,5 @@ export interface Project {
   technologies: string[],
   deployment: string,
   github: string,
-  images: string[]
+  images: Image[],
 }
