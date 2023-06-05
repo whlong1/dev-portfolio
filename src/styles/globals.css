@@ -1,4 +1,6 @@
 :root {
+  overflow-x: hidden;
+
   font-weight: 200;
   font-style: normal;
   font-family: "canada-type-gibson", sans-serif;

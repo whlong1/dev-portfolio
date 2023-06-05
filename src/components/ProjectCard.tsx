@@ -6,7 +6,7 @@ const ProjectCard = ({ project }: { project: Project }) => {
       <section>
         <header>
           <h3>{project.title}</h3>
-          <a href={project.github}>
+          <a href={project.github} target="_blank" rel="noopener noreferrer">
             <img src="/vercel.svg" alt="GitHub Logo" />
           </a>
         </header>

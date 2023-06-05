@@ -1,5 +1,8 @@
 import Head from "next/head"
+import AboutSection from "@/components/AboutSection"
 import ProjectSection from "@/components/ProjectSection"
+import SkillsSection from "@/components/SkillsSection"
+import ContactSection from "@/components/ContactSection"
 
 const Home = () => {
   return (
@@ -9,12 +12,10 @@ const Home = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <main>
-        <section id="about">
-          <h1>Hunter Long</h1>
-        </section>
+        <AboutSection />
         <ProjectSection />
-        <section id="skills"></section>
-        <section id="contact"></section>
+        <SkillsSection />
+        <ContactSection />
       </main>
     </>
   )
