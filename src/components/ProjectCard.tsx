@@ -2,12 +2,12 @@ import { Project } from "@/types/models"
 
 const ProjectCard = ({ project }: { project: Project }) => {
   return (
-    <article>
+    <article className="card split-layout">
       <section>
         <header>
           <h3>{project.title}</h3>
           <a href={project.github} target="_blank" rel="noopener noreferrer">
-            <img src="/vercel.svg" alt="GitHub Logo" />
+            <img className="card-header-icon" src="/vercel.svg" alt="GitHub Logo" />
           </a>
         </header>
         <p>{project.description}</p>
