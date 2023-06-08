@@ -12,3 +12,10 @@ export interface Project {
   github: string,
   images: Image[],
 }
+
+
+export interface Skill {
+  id: number,
+  name: string,
+  image: Image
+}

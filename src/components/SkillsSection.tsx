@@ -1,4 +1,9 @@
+import skillsData from "@/data/skills.json"
+import { Skill } from "@/types/models"
+
 const SkillsSection = () => {
+  const skills: Skill[] = skillsData
+
 
   return (
     <section id="skills">
@@ -9,7 +14,12 @@ const SkillsSection = () => {
         </p>
       </header>
       <ul>
-        <li>X</li>
+        {skills.map((s) => (
+          <li>
+            <img src={s.image.src} alt={s.image.alt} />
+            {s.name}
+          </li>
+        ))}
       </ul>
     </section>
   )
