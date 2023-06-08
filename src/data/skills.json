@@ -1,145 +1,170 @@
 [
   {
     "id": 1,
-    "name": "SKILL",
+    "name": "After Effects",
     "image": {
-      "src": "next.svg",
+      "src": "assets/tech/after-effects.svg", 
       "alt": "Description of the image content"
     }
   },
   {
     "id": 1,
-    "name": "SKILL",
+    "name": "Auth0",
     "image": {
-      "src": "next.svg",
+      "src": "assets/tech/auth0.svg",
       "alt": "Description of the image content"
     }
   },
   {
     "id": 1,
-    "name": "SKILL",
+    "name": "CSS3",
     "image": {
-      "src": "next.svg",
+      "src": "assets/tech/css.svg",
       "alt": "Description of the image content"
     }
   },
   {
     "id": 1,
-    "name": "SKILL",
+    "name": "Express",
     "image": {
-      "src": "next.svg",
+      "src": "assets/tech/express.svg",
       "alt": "Description of the image content"
     }
   },
   {
     "id": 1,
-    "name": "SKILL",
+    "name": "Git",
     "image": {
-      "src": "next.svg",
+      "src": "assets/tech/git.svg",
       "alt": "Description of the image content"
     }
   },
   {
     "id": 1,
-    "name": "SKILL",
+    "name": "Github",
     "image": {
-      "src": "next.svg",
+      "src": "assets/tech/github.svg",
       "alt": "Description of the image content"
     }
   },
   {
     "id": 1,
-    "name": "SKILL",
+    "name": "HTML5",
     "image": {
-      "src": "next.svg",
+      "src": "assets/tech/html.svg",
       "alt": "Description of the image content"
     }
   },
   {
     "id": 1,
-    "name": "SKILL",
+    "name": "Illustrator",
     "image": {
-      "src": "next.svg",
-      "alt": "Description of the image content"
-    }
-  },
-  {
-    "id": 1,
-    "name": "SKILL",
-    "image": {
-      "src": "next.svg",
+      "src": "assets/tech/illustrator.svg",
       "alt": "Description of the image content"
     }
   },
    {
     "id": 1,
-    "name": "SKILL",
+    "name": "JavaScript",
     "image": {
-      "src": "next.svg",
+      "src": "assets/tech/javascript.svg",
       "alt": "Description of the image content"
     }
   },
   {
     "id": 1,
-    "name": "SKILL",
+    "name": "MongoDB",
     "image": {
-      "src": "next.svg",
+      "src": "assets/tech/mongodb.svg",
       "alt": "Description of the image content"
     }
   },
   {
     "id": 1,
-    "name": "SKILL",
+    "name": "Mongoose",
     "image": {
-      "src": "next.svg",
+      "src": "assets/tech/mongoose.svg",
       "alt": "Description of the image content"
     }
   },
   {
     "id": 1,
-    "name": "SKILL",
+    "name": "Next",
     "image": {
-      "src": "next.svg",
+      "src": "assets/tech/next.svg",
       "alt": "Description of the image content"
     }
   },
   {
     "id": 1,
-    "name": "SKILL",
+    "name": "Node.js",
     "image": {
-      "src": "next.svg",
+      "src": "assets/tech/node.svg",
       "alt": "Description of the image content"
     }
   },
   {
     "id": 1,
-    "name": "SKILL",
+    "name": "Photoshop",
     "image": {
-      "src": "next.svg",
+      "src": "assets/tech/photoshop.svg",
       "alt": "Description of the image content"
     }
   },
   {
     "id": 1,
-    "name": "SKILL",
+    "name": "PostgreSQL",
     "image": {
-      "src": "next.svg",
+      "src": "assets/tech/postgresql.svg",
       "alt": "Description of the image content"
     }
   },
   {
     "id": 1,
-    "name": "SKILL",
+    "name": "Python",
     "image": {
-      "src": "next.svg",
+      "src": "assets/tech/python.svg",
       "alt": "Description of the image content"
     }
   },
   {
     "id": 1,
-    "name": "SKILL",
+    "name": "React Query",
     "image": {
-      "src": "next.svg",
+      "src": "assets/tech/react-query.svg",
+      "alt": "Description of the image content"
+    }
+  },
+
+  {
+    "id": 1,
+    "name": "React",
+    "image": {
+      "src": "assets/tech/react.svg",
+      "alt": "Description of the image content"
+    }
+  },
+  {
+    "id": 1,
+    "name": "Redux",
+    "image": {
+      "src": "assets/tech/redux.svg",
+      "alt": "Description of the image content"
+    }
+  },
+  {
+    "id": 1,
+    "name": "Sequelize",
+    "image": {
+      "src": "assets/tech/sequelize.svg",
+      "alt": "Description of the image content"
+    }
+  },
+  {
+    "id": 1,
+    "name": "TypeScript",
+    "image": {
+      "src": "assets/tech/typescript.svg",
       "alt": "Description of the image content"
     }
   }

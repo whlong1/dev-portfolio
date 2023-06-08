@@ -17,7 +17,7 @@ const SkillsSection = () => {
         {skills.map((s) => (
           <li>
             <img src={s.image.src} alt={s.image.alt} />
-            {s.name}
+            <p>{s.name}</p>
           </li>
         ))}
       </ul>

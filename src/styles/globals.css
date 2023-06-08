@@ -249,7 +249,6 @@ input {
 }
 
 .card p {
-  /* margin-bottom: 36px; */
   letter-spacing: -.5px;
   margin-bottom: var(--spacing-regular);
 }
@@ -291,7 +290,6 @@ footer {
 
 #contact {
   height: 696px;
-  /* padding-top: 0; */
   background-color: var(--quaternary-color);
 }
 
@@ -306,13 +304,9 @@ footer {
 
 #about {
   padding-top: 160px;
-  /* necessary? */
   padding-bottom: 96px;
+  /* necessary? */
   border: 2px solid rgb(255, 0, 170);
-
-  /* align-items: stretch; */
-  /* display: flex; */
-  /* align-items: stretch; */
 }
 
 #about button {
@@ -340,17 +334,14 @@ footer {
 }
 
 #about>:nth-child(2) {
-  /* height: 100%; */
   display: flex;
   border: 1px solid blue;
 }
 
 #about>:nth-child(2) img {
-  border: 1px solid orange;
-
   width: 100%;
   object-fit: cover;
-  /* height: 100%; */
+  border: 1px solid orange;
 }
 
 h1 {
@@ -386,7 +377,6 @@ input {
 form>:last-child {
   /* added to vertically align btn w/ bullet pt */
   margin-top: 4px;
-  /* border: 1px solid red; */
 }
 
 #contact p,
@@ -413,36 +403,52 @@ form>:last-child {
   margin-left: 16px;
 }
 
-
 #skills {
   padding-bottom: 160px;
 }
 
 #skills ul {
+  /* gap: 8px; */
+  /* row-gap: 8px; */
+  
   width: 100%;
-  /* border: 1px solid green; */
-
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-
-  gap: 8px;
-  row-gap: 16px;
   display: grid;
-  grid-template-columns: repeat(9, 1fr);
+
+
+  gap: 48px;
+  row-gap: 24px;
+  
+  /* grid-template-columns: repeat(9, 1fr); */
+  grid-template-columns: repeat(auto-fit, minmax(64px, 1fr));
+  /* border: 1px solid orange; */
+
 }
 
 #skills li {
   display: flex;
   align-items: center;
   flex-direction: column;
+  justify-content: flex-start;
+  justify-content: space-between;
+  height: 112px;
+  border: 1px solid blue;
+}
+
+#skills li p {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: var(--line-height-reg);
+
+  text-align: center;
+  white-space: nowrap;
   font-weight: var(--font-weight-medium);
-  /* border: 1px solid blue; */
 }
 
 #skills li img {
-  width: 60px;
-  height: 60px;
-  margin-bottom: 24px;
-  /* border: 1px solid red; */
+  width: 100%;
+  height: auto;
+
+  /* width: 56px;
+  height: 56px; */
+  /* margin-bottom: 24px; */
 }
