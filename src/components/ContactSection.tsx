@@ -9,13 +9,22 @@ const ContactSection = () => {
         </p>
         <ul>
           <li>
-            <a href="">X LinkedIn</a>
+            <a href="">
+              <img src="" alt="" />
+              LinkedIn
+            </a>
           </li>
           <li>
-            <a href="">X GitHub</a>
+            <a href="">
+              <img src="" alt="" />
+              GitHub
+            </a>
           </li>
           <li>
-            <a href="">X Email</a>
+            <a href="">
+              <img src="" alt="" />
+              Email
+            </a>
           </li>
         </ul>
       </div>
@@ -23,25 +32,25 @@ const ContactSection = () => {
       <form action="">
         <div className="form-row">
           <div className="form-column">
-            <label htmlFor="firstName">First Name:</label>
+            <label htmlFor="firstName">FIRST NAME</label>
             <input type="text" id="firstName" name="firstName" />
           </div>
           <div className="form-column">
-            <label htmlFor="lastName">Last Name:</label>
+            <label htmlFor="lastName">LAST NAME</label>
             <input type="text" id="lastName" name="lastName" />
           </div>
         </div>
 
         <div className="form-row">
           <div className="form-column">
-            <label htmlFor="email">Email:</label>
+            <label htmlFor="email">EMAIL</label>
             <input type="text" id="email" name="email" />
           </div>
         </div>
 
         <div className="form-row">
           <div className="form-column">
-            <label htmlFor="message">Message:</label>
+            <label htmlFor="message">MESSAGE</label>
             <input type="text" id="message" name="message" />
           </div>
         </div>

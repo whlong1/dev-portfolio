@@ -76,6 +76,9 @@ body {
   font-size: var(--font-size-reg);
   font-weight: var(--font-weight-book);
   font-family: "canada-type-gibson", sans-serif;
+
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
 }
 
 /* 112 padding at top of section */
@@ -131,9 +134,10 @@ h2 {
 }
 
 p {
-  line-height: 30px;
   text-align: justify;
   text-align-last: left;
+  line-height: 1.5;
+  /* Approximately 30px */
   margin-top: calc(var(--font-size-reg) / 2 * -1);
 }
 
@@ -359,3 +363,49 @@ h6 {
 }
 
 /* 160margin + 96 (nav height) at bottom of splash content block */
+
+#contact {
+  align-items: flex-start;
+}
+
+#contact> :first-child {
+  padding-right: 64px;
+}
+
+#contact> :nth-child(2) {
+  padding-left: 64px;
+}
+
+label {
+  color: #707070;
+  font-weight: 500;
+  margin-bottom: 16px;
+  margin-top: calc(var(--font-size-reg) / 4 * -1);
+}
+
+input {
+  margin-bottom: 24px;
+}
+
+#contact p, #contact li {
+  margin-bottom: 40px;
+}
+
+#contact li a{
+  display: flex;
+  align-items: center;
+}
+
+#contact li img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  margin-right: 24px;
+  background-color: white;
+  border: 1px solid var(--tertiary-color);
+}
+
+#contact .form-column +.form-column {
+  margin-left: 16px;
+}
+
