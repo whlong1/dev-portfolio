@@ -3,7 +3,7 @@ import { Project } from "@/types/models"
 const ProjectCard = ({ project }: { project: Project }) => {
   return (
     <article className="card split-layout">
-      <section>
+      <section className="detail-container">
         <header>
           <h3>{project.title}</h3>
           <a href={project.github} target="_blank" rel="noopener noreferrer">
@@ -17,7 +17,7 @@ const ProjectCard = ({ project }: { project: Project }) => {
           ))}
         </ul>
       </section>
-      <section>
+      <section className="preview-container">
         {project.images.map((image, idx) => (
           <img key={idx} src={image.src} alt={image.alt} />
         ))}
