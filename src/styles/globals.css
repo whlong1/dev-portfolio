@@ -414,16 +414,22 @@ form>:last-child {
 }
 
 
-
+#skills {
+  padding-bottom: 160px;
+}
 
 #skills ul {
   width: 100%;
-  border: 1px solid green;
+  /* border: 1px solid green; */
 
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-bottom: 160px;
+
+  gap: 8px;
+  row-gap: 16px;
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
 }
 
 #skills li {
@@ -431,12 +437,12 @@ form>:last-child {
   align-items: center;
   flex-direction: column;
   font-weight: var(--font-weight-medium);
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
 }
 
 #skills li img {
   width: 60px;
   height: 60px;
   margin-bottom: 24px;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
