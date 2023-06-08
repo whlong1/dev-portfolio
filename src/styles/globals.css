@@ -368,10 +368,6 @@ h6 {
   align-items: flex-start;
 }
 
-#contact> :first-child {
-  padding-right: 64px;
-}
-
 #contact> :nth-child(2) {
   padding-left: 64px;
 }
@@ -387,25 +383,60 @@ input {
   margin-bottom: 24px;
 }
 
-#contact p, #contact li {
-  margin-bottom: 40px;
+form>:last-child {
+  /* added to vertically align btn w/ bullet pt */
+  margin-top: 4px;
+  /* border: 1px solid red; */
 }
 
-#contact li a{
+#contact p,
+#contact li {
+  margin-bottom: 32px;
+}
+
+#contact li a {
   display: flex;
   align-items: center;
 }
 
 #contact li img {
-  width: 48px;
-  height: 48px;
+  /* image size should be 48px according to mockup */
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   margin-right: 24px;
   background-color: white;
   border: 1px solid var(--tertiary-color);
 }
 
-#contact .form-column +.form-column {
+#contact .form-column+.form-column {
   margin-left: 16px;
 }
 
+
+
+
+#skills ul {
+  width: 100%;
+  border: 1px solid green;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 160px;
+}
+
+#skills li {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-weight: var(--font-weight-medium);
+  border: 1px solid blue;
+}
+
+#skills li img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 24px;
+  border: 1px solid red;
+}
