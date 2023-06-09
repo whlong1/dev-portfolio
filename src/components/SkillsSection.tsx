@@ -4,7 +4,6 @@ import { Skill } from "@/types/models"
 const SkillsSection = () => {
   const skills: Skill[] = skillsData
 
-
   return (
     <section id="skills">
       <header>
@@ -15,7 +14,7 @@ const SkillsSection = () => {
       </header>
       <ul>
         {skills.map((s) => (
-          <li>
+          <li key={s.id}>
             <img src={s.image.src} alt={s.image.alt} />
             <p>{s.name}</p>
           </li>

@@ -1,14 +1,6 @@
 [
   {
     "id": 1,
-    "name": "After Effects",
-    "image": {
-      "src": "assets/tech/after-effects.svg", 
-      "alt": "Description of the image content"
-    }
-  },
-  {
-    "id": 1,
     "name": "Auth0",
     "image": {
       "src": "assets/tech/auth0.svg",
@@ -16,23 +8,7 @@
     }
   },
   {
-    "id": 1,
-    "name": "CSS3",
-    "image": {
-      "src": "assets/tech/css.svg",
-      "alt": "Description of the image content"
-    }
-  },
-  {
-    "id": 1,
-    "name": "Express",
-    "image": {
-      "src": "assets/tech/express.svg",
-      "alt": "Description of the image content"
-    }
-  },
-  {
-    "id": 1,
+    "id": 2,
     "name": "Git",
     "image": {
       "src": "assets/tech/git.svg",
@@ -40,7 +16,7 @@
     }
   },
   {
-    "id": 1,
+    "id": 3,
     "name": "Github",
     "image": {
       "src": "assets/tech/github.svg",
@@ -48,7 +24,7 @@
     }
   },
   {
-    "id": 1,
+    "id": 4,
     "name": "HTML5",
     "image": {
       "src": "assets/tech/html.svg",
@@ -56,55 +32,15 @@
     }
   },
   {
-    "id": 1,
-    "name": "Illustrator",
+    "id": 5,
+    "name": "CSS3",
     "image": {
-      "src": "assets/tech/illustrator.svg",
-      "alt": "Description of the image content"
-    }
-  },
-   {
-    "id": 1,
-    "name": "JavaScript",
-    "image": {
-      "src": "assets/tech/javascript.svg",
+      "src": "assets/tech/css.svg",
       "alt": "Description of the image content"
     }
   },
   {
-    "id": 1,
-    "name": "MongoDB",
-    "image": {
-      "src": "assets/tech/mongodb.svg",
-      "alt": "Description of the image content"
-    }
-  },
-  {
-    "id": 1,
-    "name": "Mongoose",
-    "image": {
-      "src": "assets/tech/mongoose.svg",
-      "alt": "Description of the image content"
-    }
-  },
-  {
-    "id": 1,
-    "name": "Next",
-    "image": {
-      "src": "assets/tech/next.svg",
-      "alt": "Description of the image content"
-    }
-  },
-  {
-    "id": 1,
-    "name": "Node.js",
-    "image": {
-      "src": "assets/tech/node.svg",
-      "alt": "Description of the image content"
-    }
-  },
-  {
-    "id": 1,
+    "id": 6,
     "name": "Photoshop",
     "image": {
       "src": "assets/tech/photoshop.svg",
@@ -112,15 +48,39 @@
     }
   },
   {
-    "id": 1,
-    "name": "PostgreSQL",
+    "id": 7,
+    "name": "Illustrator",
     "image": {
-      "src": "assets/tech/postgresql.svg",
+      "src": "assets/tech/illustrator.svg",
       "alt": "Description of the image content"
     }
   },
   {
-    "id": 1,
+    "id": 8,
+    "name": "After Effects",
+    "image": {
+      "src": "assets/tech/after-effects.svg",
+      "alt": "Description of the image content"
+    }
+  },
+  {
+    "id": 9,
+    "name": "JavaScript",
+    "image": {
+      "src": "assets/tech/javascript.svg",
+      "alt": "Description of the image content"
+    }
+  },
+  {
+    "id": 10,
+    "name": "TypeScript",
+    "image": {
+      "src": "assets/tech/typescript.svg",
+      "alt": "Description of the image content"
+    }
+  },
+  {
+    "id": 11,
     "name": "Python",
     "image": {
       "src": "assets/tech/python.svg",
@@ -128,32 +88,31 @@
     }
   },
   {
-    "id": 1,
-    "name": "React Query",
+    "id": 12,
+    "name": "MongoDB",
     "image": {
-      "src": "assets/tech/react-query.svg",
-      "alt": "Description of the image content"
-    }
-  },
-
-  {
-    "id": 1,
-    "name": "React",
-    "image": {
-      "src": "assets/tech/react.svg",
+      "src": "assets/tech/mongodb.svg",
       "alt": "Description of the image content"
     }
   },
   {
-    "id": 1,
-    "name": "Redux",
+    "id": 13,
+    "name": "Mongoose",
     "image": {
-      "src": "assets/tech/redux.svg",
+      "src": "assets/tech/mongoose.svg",
       "alt": "Description of the image content"
     }
   },
   {
-    "id": 1,
+    "id": 14,
+    "name": "PostgreSQL",
+    "image": {
+      "src": "assets/tech/postgresql.svg",
+      "alt": "Description of the image content"
+    }
+  },
+  {
+    "id": 15,
     "name": "Sequelize",
     "image": {
       "src": "assets/tech/sequelize.svg",
@@ -161,10 +120,50 @@
     }
   },
   {
-    "id": 1,
-    "name": "TypeScript",
+    "id": 16,
+    "name": "Node.js",
     "image": {
-      "src": "assets/tech/typescript.svg",
+      "src": "assets/tech/node.svg",
+      "alt": "Description of the image content"
+    }
+  },
+  {
+    "id": 17,
+    "name": "Express",
+    "image": {
+      "src": "assets/tech/express.svg",
+      "alt": "Description of the image content"
+    }
+  },
+  {
+    "id": 18,
+    "name": "React",
+    "image": {
+      "src": "assets/tech/react.svg",
+      "alt": "Description of the image content"
+    }
+  },
+  {
+    "id": 19,
+    "name": "Next",
+    "image": {
+      "src": "assets/tech/next.svg",
+      "alt": "Description of the image content"
+    }
+  },
+  {
+    "id": 20,
+    "name": "React Query",
+    "image": {
+      "src": "assets/tech/react-query.svg",
+      "alt": "Description of the image content"
+    }
+  },
+  {
+    "id": 21,
+    "name": "Redux",
+    "image": {
+      "src": "assets/tech/redux.svg",
       "alt": "Description of the image content"
     }
   }

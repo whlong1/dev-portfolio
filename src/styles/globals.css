@@ -230,6 +230,7 @@ input {
 .card {
   display: flex;
   margin-bottom: var(--spacing-12);
+  /* max-width: 1200px; */
 }
 
 .card header {
@@ -254,15 +255,8 @@ input {
 
 .card-header-icon {
   border-radius: 50%;
-
   width: var(--spacing-6);
   height: var(--spacing-6);
-
-  width: var(--spacing-7);
-  height: var(--spacing-7);
-
-  width: 38px;
-  height: 38px;
 }
 
 .card-header-icon:hover {
@@ -273,6 +267,7 @@ input {
 .card ul {
   width: 100%;
   display: flex;
+  margin-top: auto;
 }
 
 .card ul li {
@@ -289,11 +284,10 @@ input {
 
 .card .detail-container {
   width: 60%;
+  min-height: 320px;
 }
 
 .snapshot-container {
-  border: 1px solid rgb(227, 227, 227);
-
   display: flex;
   position: relative;
   align-items: flex-end;
@@ -314,9 +308,6 @@ input {
   border-top: .5px solid white;
   border-radius: var(--border-radius);
 }
-
-
-
 
 
 

@@ -28,13 +28,9 @@ const ProjectCard = ({ project, cardIdx }: ProjectCardProps) => {
 
   const getSnapshotStyle = (imgIdx: number): SnapshotStyle => {
     const offset = imgIdx * 36
-    return {
-      zIndex: imgIdx + 1,
-      position: "absolute",
-      ...isCardEven
-        ? { marginTop: `${offset}px`, marginLeft: `${offset}px` }
-        : { marginRight: `${offset}px`, marginBottom: `${offset}px` }
-    }
+    return isCardEven
+      ? { marginTop: `${offset}px`, marginLeft: `${offset}px`, zIndex: imgIdx + 1, position: "absolute" }
+      : { marginRight: `${offset}px`, marginBottom: `${offset}px`, zIndex: Math.abs(imgIdx - 3), position: "absolute" }
   }
 
   return (
@@ -63,6 +59,7 @@ const ProjectCard = ({ project, cardIdx }: ProjectCardProps) => {
             key={imgIdx}
             src={image.src}
             alt={image.alt}
+            id={imgIdx.toString()}
             style={getSnapshotStyle(imgIdx)}
           />
         ))}
