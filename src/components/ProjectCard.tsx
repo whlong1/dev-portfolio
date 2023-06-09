@@ -1,4 +1,4 @@
-import { CSSProperties } from "react"
+import { CSSProperties, useState } from "react"
 import { Project } from "@/types/models"
 
 interface SnapshotStyle {
@@ -16,6 +16,7 @@ interface ProjectCardProps {
 }
 
 const ProjectCard = ({ project, cardIdx }: ProjectCardProps) => {
+  const [selected, setSelected] = useState<string>("")
   const isCardEven: boolean = cardIdx % 2 === 0
 
   const projectStyle: CSSProperties = isCardEven ? {
@@ -32,6 +33,8 @@ const ProjectCard = ({ project, cardIdx }: ProjectCardProps) => {
       ? { marginTop: `${offset}px`, marginLeft: `${offset}px`, zIndex: imgIdx + 1, position: "absolute" }
       : { marginRight: `${offset}px`, marginBottom: `${offset}px`, zIndex: Math.abs(imgIdx - 3), position: "absolute" }
   }
+
+  console.log('-------', selected)
 
   return (
     <article className={"card split-layout"} style={projectStyle}>
@@ -56,11 +59,12 @@ const ProjectCard = ({ project, cardIdx }: ProjectCardProps) => {
       <section className="snapshot-container" style={snapshotContainerStyle}>
         {project.images.map((image, imgIdx) => (
           <img
-            key={imgIdx}
+            key={image.id}
             src={image.src}
             alt={image.alt}
-            id={imgIdx.toString()}
-            style={getSnapshotStyle(imgIdx)}
+            onMouseLeave={() => setSelected("")}
+            onMouseOver={() => { if (image.id) setSelected(image.id) }}
+            style={{ ...getSnapshotStyle(imgIdx), zIndex: image.id === selected ? 10 : 0 }}
           />
         ))}
       </section>

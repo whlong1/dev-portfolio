@@ -1,6 +1,7 @@
 interface Image {
   src: string,
-  alt: string
+  alt: string,
+  id: string | undefined,
 }
 
 export interface Project {
