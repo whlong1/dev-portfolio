@@ -2,7 +2,7 @@
   {
     "id": 1,
     "title": "PROJECT TITLE",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisi risus commod.",
     "technologies": [
       "React",
       "React Query",
@@ -13,7 +13,15 @@
     "github": "https://github.com/whlong1/reactville",
     "images": [
       {
-        "src": "next.svg",
+        "src": "assets/screenshots/sample.png",
+        "alt": "Description of the image content"
+      },
+      {
+        "src": "assets/screenshots/sample.png",
+        "alt": "Description of the image content"
+      },
+      {
+        "src": "assets/screenshots/sample.png",
         "alt": "Description of the image content"
       }
     ]
@@ -21,7 +29,7 @@
   {
     "id": 2,
     "title": "PROJECT TITLE",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisi risus commod.",
     "technologies": [
       "React",
       "React Query",
@@ -32,7 +40,15 @@
     "github": "https://github.com/whlong1/reactville",
     "images": [
       {
-        "src": "next.svg",
+        "src": "assets/screenshots/sample.png",
+        "alt": "Description of the image content"
+      },
+      {
+        "src": "assets/screenshots/sample.png",
+        "alt": "Description of the image content"
+      },
+      {
+        "src": "assets/screenshots/sample.png",
         "alt": "Description of the image content"
       }
     ]
@@ -40,7 +56,7 @@
   {
     "id": 3,
     "title": "PROJECT TITLE",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisi risus commod.",
     "technologies": [
       "React",
       "React Query",
@@ -51,7 +67,15 @@
     "github": "https://github.com/whlong1/reactville",
     "images": [
       {
-        "src": "next.svg",
+        "src": "assets/screenshots/sample.png",
+        "alt": "Description of the image content"
+      },
+      {
+        "src": "assets/screenshots/sample.png",
+        "alt": "Description of the image content"
+      },
+      {
+        "src": "assets/screenshots/sample.png",
         "alt": "Description of the image content"
       }
     ]

@@ -13,8 +13,8 @@ const ProjectSection = () => {
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.
         </p>
       </header>
-      {projects.map((project: Project) => (
-        <ProjectCard key={project.id} project={project} />
+      {projects.map((project: Project, cardIdx: number) => (
+        <ProjectCard key={project.id} project={project} cardIdx={cardIdx} />
       ))}
     </section>
   )
