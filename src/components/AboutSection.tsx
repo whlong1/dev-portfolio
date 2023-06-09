@@ -14,7 +14,11 @@ const AboutSection = () => {
         </div>
       </div>
       <div>
-        <img src="vercel.svg" alt="A logo depiction of Hunter Long" />
+        <img
+          className="logo"
+          src="assets/branding/logo.svg"
+          alt="A logo depiction of Hunter Long"
+        />
       </div>
     </section>
   )

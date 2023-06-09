@@ -83,7 +83,7 @@ body {
 
 /* 112 padding at top of section */
 main>section {
-  border: 1px solid red;
+  border: 1px solid rgb(199, 199, 199);
   padding: var(--layout-padding);
   padding-top: var(--spacing-xlarge);
 }
@@ -179,7 +179,7 @@ main>section>header {
   align-items: center;
   flex-direction: column;
   margin-bottom: var(--spacing-xlarge);
-  border: 1px solid red;
+  border: 1px solid rgb(218, 218, 218);
 }
 
 main>section>header p {
@@ -305,8 +305,6 @@ footer {
 #about {
   padding-top: 160px;
   padding-bottom: 96px;
-  /* necessary? */
-  border: 2px solid rgb(255, 0, 170);
 }
 
 #about button {
@@ -330,19 +328,25 @@ footer {
 
 #about>:first-child {
   width: 60%;
-  border: 2px solid rgb(30, 255, 0);
+  /* border: 2px solid rgb(30, 255, 0); */
 }
 
 #about>:nth-child(2) {
   display: flex;
-  border: 1px solid blue;
+  /* justify-content: flex-end; */
+  justify-content: center;
+  /* border: 2px solid blue; */
 }
 
-#about>:nth-child(2) img {
-  width: 100%;
-  object-fit: cover;
-  border: 1px solid orange;
+.logo {
+  width: auto;
+  /* margin-left: 40px; */
+  height: 360px;
+  /* margin-right: 40px; */
 }
+
+
+
 
 h1 {
   margin-left: -4px;
