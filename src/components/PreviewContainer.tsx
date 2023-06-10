@@ -17,7 +17,12 @@ interface PreviewContainerProps {
 }
 
 const PreviewContainer = (props: PreviewContainerProps) => {
-  const { images, isCardEven, previewContainerStyle } = props
+  const {
+    images,
+    isCardEven,
+    previewContainerStyle
+  } = props
+
   const [selectedId, setSelectedId] = useState<string>("")
 
   const getPreviewStyle = (imgIdx: number): PreviewStyle => {
@@ -42,7 +47,7 @@ const PreviewContainer = (props: PreviewContainerProps) => {
           key={image.id}
           src={image.src}
           alt={image.alt}
-          onMouseLeave={() => setSelectedId("")}
+          onMouseLeave={() => console.log('Exit')}
           onMouseOver={() => { if (image.id) setSelectedId(image.id) }}
           style={{ ...getPreviewStyle(imgIdx), ...calcZIndex(imgIdx), position: "absolute" }}
         />

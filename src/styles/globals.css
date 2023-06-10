@@ -469,3 +469,19 @@ form>:last-child {
   height: 56px; */
   /* margin-bottom: 24px; */
 }
+
+
+
+
+
+
+
+
+.preview-container img {
+  transition: transform 1s, opacity 1s;
+}
+
+.preview-container img:hover {
+  transform: scale(1.05);
+  transition: transform 1s, opacity 1s;
+}
