@@ -14,17 +14,17 @@
     "images": [
       {
         "id": "c5c7",
-        "src": "assets/tech/flask.svg",
+        "src": "assets/screenshots/sample.png",
         "alt": "Description of the image content"
       },
       {
         "id": "da00",
-        "src": "assets/tech/auth0.svg",
+        "src": "assets/screenshots/sample.png",
         "alt": "Description of the image content"
       },
       {
         "id": "de8b",
-        "src": "assets/tech/photoshop.svg",
+        "src": "assets/screenshots/sample.png",
         "alt": "Description of the image content"
       }
     ]
@@ -44,17 +44,17 @@
     "images": [
       {
         "id": "e2ff",
-        "src": "assets/tech/flask.svg",
+        "src": "assets/screenshots/sample.png",
         "alt": "Description of the image content"
       },
       {
         "id": "e742",
-        "src": "assets/tech/auth0.svg",
+        "src": "assets/screenshots/sample.png",
         "alt": "Description of the image content"
       },
       {
         "id": "eaf1",
-        "src": "assets/tech/photoshop.svg",
+        "src": "assets/screenshots/sample.png",
         "alt": "Description of the image content"
       }
     ]

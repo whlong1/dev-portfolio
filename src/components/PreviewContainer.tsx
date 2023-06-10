@@ -24,7 +24,9 @@ const PreviewContainer = (props: PreviewContainerProps) => {
   } = props
 
   const [selectedId, setSelectedId] = useState<string>("")
+  const [timeoutId, setTimeoutId] = useState<number | undefined>(undefined)
 
+  // Initial Style
   const getPreviewStyle = (imgIdx: number): PreviewStyle => {
     const offset = imgIdx * 36
     return isCardEven
@@ -32,12 +34,19 @@ const PreviewContainer = (props: PreviewContainerProps) => {
       : { marginRight: `${offset}px`, marginBottom: `${offset}px`, zIndex: Math.abs(imgIdx - 2) }
   }
 
+  // Calc zIndex of cards on selection
   const calcZIndex = (imgIdx: number): PreviewStyle => {
     const isSelected = images[imgIdx].id === selectedId
     const inactiveZIndex = selectedId && !isSelected && imgIdx !== 1 ? 0 : imgIdx
     return isSelected
       ? { zIndex: 10 } // Selected style
       : { zIndex: inactiveZIndex } // Inactive Style
+  }
+
+  const handleMouseOver = (id: string) => {
+    if (timeoutId) clearTimeout(timeoutId)
+    const newTimeoutId: number = window.setTimeout(() => setSelectedId(id), 250)
+    setTimeoutId(newTimeoutId)
   }
 
   return (
@@ -47,8 +56,8 @@ const PreviewContainer = (props: PreviewContainerProps) => {
           key={image.id}
           src={image.src}
           alt={image.alt}
-          onMouseLeave={() => console.log('Exit')}
-          onMouseOver={() => { if (image.id) setSelectedId(image.id) }}
+          onMouseLeave={() => clearTimeout(timeoutId)}
+          onMouseOver={() => { if (image.id) handleMouseOver(image.id) }}
           style={{ ...getPreviewStyle(imgIdx), ...calcZIndex(imgIdx), position: "absolute" }}
         />
       ))}
