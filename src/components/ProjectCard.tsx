@@ -2,12 +2,12 @@ import { CSSProperties, useState } from "react"
 import { Project } from "@/types/models"
 
 interface SnapshotStyle {
-  zIndex: number,
+  zIndex?: number,
   marginTop?: string,
   marginRight?: string,
   marginBottom?: string,
   marginLeft?: string,
-  position: "absolute",
+  position?: "absolute",
 }
 
 interface ProjectCardProps {
@@ -16,7 +16,7 @@ interface ProjectCardProps {
 }
 
 const ProjectCard = ({ project, cardIdx }: ProjectCardProps) => {
-  const [selected, setSelected] = useState<string>("")
+  const [selectedId, setSelectedId] = useState<string>("")
   const isCardEven: boolean = cardIdx % 2 === 0
 
   const projectStyle: CSSProperties = isCardEven ? {
@@ -30,11 +30,17 @@ const ProjectCard = ({ project, cardIdx }: ProjectCardProps) => {
   const getSnapshotStyle = (imgIdx: number): SnapshotStyle => {
     const offset = imgIdx * 36
     return isCardEven
-      ? { marginTop: `${offset}px`, marginLeft: `${offset}px`, zIndex: imgIdx + 1, position: "absolute" }
-      : { marginRight: `${offset}px`, marginBottom: `${offset}px`, zIndex: Math.abs(imgIdx - 3), position: "absolute" }
+      ? { marginTop: `${offset}px`, marginLeft: `${offset}px`, zIndex: imgIdx, position: "absolute" }
+      : { marginRight: `${offset}px`, marginBottom: `${offset}px`, zIndex: Math.abs(imgIdx - 2), position: "absolute" }
   }
 
-  console.log('-------', selected)
+  const calcZIndex = (imgIdx: number): SnapshotStyle => {
+    const isSelected = project.images[imgIdx].id === selectedId
+    const inactiveZIndex = selectedId && !isSelected && imgIdx !== 1 ? 0 : imgIdx
+    return isSelected
+      ? { zIndex: 10 } // Selected style
+      : { zIndex: inactiveZIndex } // Inactive Style
+  }
 
   return (
     <article className={"card split-layout"} style={projectStyle}>
@@ -62,9 +68,9 @@ const ProjectCard = ({ project, cardIdx }: ProjectCardProps) => {
             key={image.id}
             src={image.src}
             alt={image.alt}
-            onMouseLeave={() => setSelected("")}
-            onMouseOver={() => { if (image.id) setSelected(image.id) }}
-            style={{ ...getSnapshotStyle(imgIdx), zIndex: image.id === selected ? 10 : 0 }}
+            onMouseLeave={() => setSelectedId("")}
+            onMouseOver={() => { if (image.id) setSelectedId(image.id) }}
+            style={{ ...getSnapshotStyle(imgIdx), ...calcZIndex(imgIdx) }}
           />
         ))}
       </section>
