@@ -14,7 +14,6 @@ export interface Project {
   images: Image[],
 }
 
-
 export interface Skill {
   id: number,
   name: string,

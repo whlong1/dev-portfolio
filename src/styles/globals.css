@@ -286,7 +286,7 @@ input {
   min-height: 320px;
 }
 
-.snapshot-container {
+.preview-container {
   display: flex;
   position: relative;
   align-items: flex-end;
