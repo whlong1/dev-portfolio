@@ -226,7 +226,7 @@ input {
 
 
 .card {
-  display: flex;
+  display: inherit;
   margin-bottom: var(--spacing-12);
   /* max-width: 1200px; */
 }
@@ -378,7 +378,9 @@ h6 {
   background-color: var(--quaternary-color);
 }
 
-#contact> :nth-child(2) {
+/* doublecheck */
+/* #contact> :nth-child(2) { */ 
+#contact form {
   padding-left: 64px;
 }
 
