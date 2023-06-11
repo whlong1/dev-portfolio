@@ -80,7 +80,6 @@ body {
 
 /* 112 padding at top of section */
 main>section {
-  border: 1px solid rgb(199, 199, 199);
   padding: var(--layout-padding);
   padding-top: var(--spacing-10);
 }
@@ -176,7 +175,6 @@ main>section>header {
   align-items: center;
   flex-direction: column;
   margin-bottom: var(--spacing-10);
-  border: 1px solid rgb(218, 218, 218);
 }
 
 main>section>header p {
@@ -312,15 +310,15 @@ input {
 
 
 footer {
+  display: flex;
+  height: 240px;
   color: white;
   text-align: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-end;
   font-size: var(--font-size-small);
   background-color: var(--primary-color);
-}
-
-#contact {
-  height: 696px;
-  background-color: var(--quaternary-color);
 }
 
 #about {
@@ -370,10 +368,14 @@ h6 {
   margin-left: -1px;
 }
 
+
+
 /* 160margin + 96 (nav height) at bottom of splash content block */
 
 #contact {
+  height: 696px;
   align-items: flex-start;
+  background-color: var(--quaternary-color);
 }
 
 #contact> :nth-child(2) {
@@ -410,15 +412,14 @@ form>:last-child {
   /* image size should be 48px according to mockup */
   width: 40px;
   height: 40px;
-  border-radius: 50%;
   margin-right: 24px;
-  background-color: white;
-  border: 1px solid var(--tertiary-color);
 }
 
 #contact .form-column+.form-column {
   margin-left: 16px;
 }
+
+
 
 #skills {
   padding-bottom: 160px;
@@ -442,13 +443,12 @@ form>:last-child {
 }
 
 #skills li {
+  height: 112px;
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: flex-start;
   justify-content: space-between;
-  height: 112px;
-  border: 1px solid blue;
 }
 
 #skills li p {

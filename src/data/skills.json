@@ -166,5 +166,13 @@
       "src": "assets/tech/redux.svg",
       "alt": "Description of the image content"
     }
+  },
+  {
+    "id": 22,
+    "name": "Flask",
+    "image": {
+      "src": "assets/tech/flask.svg",
+      "alt": "Description of the image content"
+    }
   }
 ]
