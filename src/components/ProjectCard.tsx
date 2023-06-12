@@ -17,7 +17,15 @@ const ProjectCard = ({ project, cardIdx }: ProjectCardProps) => {
     ? { flexDirection: "row-reverse" } : {}
 
   const previewContainerStyle: CSSProperties = isCardEven
-    ? { alignItems: "flex-start", justifyContent: "flex-start" } : {}
+    ? { 
+      alignItems: "flex-start", 
+      justifyContent: "flex-start"
+     } : {
+      alignItems: "flex-end", 
+      justifyContent: "flex-end",
+      paddingBottom: "12px" //offset odd preview group
+     }
+
 
   return (
     <article className={"card split-layout"} style={projectStyle}>

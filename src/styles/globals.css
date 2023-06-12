@@ -287,8 +287,7 @@ input {
 .preview-container {
   display: flex;
   position: relative;
-  align-items: flex-end;
-  justify-content: flex-end;
+  min-height: 332px;
 }
 
 .card p {
@@ -379,7 +378,7 @@ h6 {
 }
 
 /* doublecheck */
-/* #contact> :nth-child(2) { */ 
+/* #contact> :nth-child(2) { */
 #contact form {
   padding-left: 64px;
 }
@@ -483,7 +482,7 @@ form>:last-child {
 
 .preview-container img:hover {
   transform: scale(1.05);
-  box-shadow:  0px 25px 40px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 25px 40px 0px rgba(0, 0, 0, 0.15);
   transition: transform 1s, box-shadow 1s;
 
   /* horizontalLength verticalLength blurRadius spreadRadius */
