@@ -2,7 +2,6 @@ import SocialLinks from "./SocialLinks"
 import ContactForm from "./ContactForm"
 
 const ContactSection = () => {
-
   return (
     <section className="split-layout" id="contact">
       <div>

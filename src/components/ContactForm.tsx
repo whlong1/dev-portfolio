@@ -25,6 +25,14 @@ const ContactForm = () => {
     evt.preventDefault()
     try {
       console.log('Data', formData)
+
+      const res = await fetch('/api/email', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData),
+      })
+
+      console.log('Res', await res.json())
       setFormData(initialState)
     } catch (err) {
       console.log(err)
