@@ -24,34 +24,46 @@ const transporter = nodemailer.createTransport({
   },
 })
 
+const formatName = (name: string): string => {
+  return name.charAt(0).toUpperCase() + name.slice(1).toLowerCase()
+}
+
 const sendEmail = async (
   req: NextApiRequest,
   res: NextApiResponse<Res>
 ): Promise<void> => {
 
-  const formattedContent = `
-    <h1>Confirmation</h1>
-    <p>Thanks for reaching out. I'll get back to you as soon as possible!</p>
+  const lastName: string = formatName(req.body.lastName)
+  const firstName: string = formatName(req.body.firstName)
+
+  const confirmationMsg = `
+    <h1>Message Confirmation</h1>
+    <p>Hello ${firstName},</p>
 
     <p>
-      <b>Below is a copy of your message for reference:</b>
+      Thank you for reaching out. 
+      I've received your message and will get back to you as soon as possible. 
+      For reference, I've included a copy of your original message below.
     </p>
 
-    <blockquote style="margin-left: 0; padding: 10px 20px; border-radius: 5px; background-color: #e8e8e8;">
+    <blockquote 
+      title="Original message"
+      style="margin-left: 0; padding: 10px 20px; border-radius: 3px; background-color: #F2F4F8; font-style: italic"
+    >
       ${req.body.message}
     </blockquote>
 
-    <p style="margin-bottom: 8px">Best regards,</p>
-    <p style="margin-top: 8px">Hunter Long</p>
+    <p style="margin-bottom: 4px">Best regards,</p>
+    <p style="margin-top: 4px">Hunter Long</p>
   `
 
   const message: Message = {
     cc: req.body.email,
-    html: formattedContent,
+    html: confirmationMsg,
     text: req.body.message,
     to: process.env.EMAIL_ADDRESS!,
     from: process.env.EMAIL_ADDRESS!,
-    subject: `Message from ${req.body.firstName} ${req.body.lastName}`,
+    subject: `Your Message to Hunter Long Has Been Received, ${firstName} ${lastName}`,
   }
 
   if (req.method === "POST") {
