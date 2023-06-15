@@ -15,6 +15,7 @@ const initialState = {
 }
 
 const ContactForm = () => {
+  const [pending, setPending] = useState(false)
   const [formData, setFormData] = useState<FormData>(initialState)
 
   const handleChange = (
@@ -28,18 +29,29 @@ const ContactForm = () => {
     try {
       console.log('Data', formData)
 
+      setPending(true)
+
       const res = await fetch('/api/email', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData),
       })
 
+      setPending(false)
+
       console.log('Res', await res.json())
       setFormData(initialState)
     } catch (err) {
+      setPending(false)
       console.log(err)
     }
   }
+
+  if (pending) return (
+    <div className="pending">
+      <h6>Pending</h6>
+    </div>
+  )
 
   return (
     <form onSubmit={handleSubmit}>

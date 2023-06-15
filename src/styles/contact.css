@@ -20,7 +20,8 @@ label {
   font-weight: var(--font-weight-medium);
 }
 
-input, textarea {
+input,
+textarea {
   max-width: 100%;
   font-size: 16px;
   resize: vertical;
@@ -41,7 +42,8 @@ textarea {
 
 /* OVERRIDE CHROME STYLING */
 /* Source: https://medium.com/@landonschropp/styling-autocompleted-inputs-in-chrome-and-safari-de83d7bd1d8a */
-input:-webkit-autofill, input:-webkit-autofill:focus {
+input:-webkit-autofill,
+input:-webkit-autofill:focus {
   -webkit-text-fill-color: #8f8f8f;
   box-shadow: 0 0 0 1000px white inset;
 }
@@ -53,7 +55,12 @@ input:-webkit-autofill, input:-webkit-autofill:focus {
   padding-bottom: var(--spacing-12);
 }
 
-#contact form {
+#contact>* {
+  min-height: 420px;
+}
+
+#contact form,
+#contact .pending {
   padding-left: 64px;
 }
 
@@ -79,10 +86,12 @@ label {
 
 #contact li a {
   display: flex;
+  width: fit-content;
   align-items: center;
 }
 
 #contact li img {
+  cursor: pointer;
   width: var(--spacing-7);
   height: var(--spacing-7);
   margin-right: var(--spacing-4)
@@ -90,4 +99,10 @@ label {
 
 #contact .form-column+.form-column {
   margin-left: 16px;
+}
+
+.pending {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
