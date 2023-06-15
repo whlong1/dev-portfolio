@@ -1,0 +1,93 @@
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form * {
+  width: 100%;
+}
+
+.form-row {
+  display: flex;
+}
+
+.form-column {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: var(--font-weight-medium);
+}
+
+input, textarea {
+  max-width: 100%;
+  font-size: 16px;
+  resize: vertical;
+  color: #a0a0a0;
+  margin-bottom: 24px;
+  height: var(--spacing-8);
+  padding: var(--spacing-1);
+  border-radius: var(--border-radius);
+  border: 1px solid var(--tertiary-color);
+  font-family: "canada-type-gibson", sans-serif;
+}
+
+textarea {
+  padding-top: 8px;
+  line-height: 24px;
+  min-height: var(--spacing-10);
+}
+
+/* OVERRIDE CHROME STYLING */
+/* Source: https://medium.com/@landonschropp/styling-autocompleted-inputs-in-chrome-and-safari-de83d7bd1d8a */
+input:-webkit-autofill, input:-webkit-autofill:focus {
+  -webkit-text-fill-color: #8f8f8f;
+  box-shadow: 0 0 0 1000px white inset;
+}
+
+#contact {
+  align-items: flex-start;
+  align-items: stretch;
+  background-color: var(--quaternary-color);
+  padding-bottom: var(--spacing-12);
+}
+
+#contact form {
+  padding-left: 64px;
+}
+
+label {
+  color: #707070;
+  font-weight: 500;
+  margin-bottom: var(--spacing-1);
+  margin-top: calc(var(--font-size-reg) / 4 * -1);
+}
+
+#contact p {
+  min-height: 80px;
+  margin-bottom: var(--spacing-7);
+}
+
+#contact li {
+  margin-bottom: var(--spacing-8);
+}
+
+#contact li:last-child {
+  margin-bottom: 0;
+}
+
+#contact li a {
+  display: flex;
+  align-items: center;
+}
+
+#contact li img {
+  width: var(--spacing-7);
+  height: var(--spacing-7);
+  margin-right: var(--spacing-4)
+}
+
+#contact .form-column+.form-column {
+  margin-left: 16px;
+}
