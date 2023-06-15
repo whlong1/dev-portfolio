@@ -17,7 +17,9 @@ const initialState = {
 const ContactForm = () => {
   const [formData, setFormData] = useState<FormData>(initialState)
 
-  const handleChange = ({ target }: React.ChangeEvent<HTMLInputElement>) => {
+  const handleChange = (
+    { target }: React.ChangeEvent<HTMLInputElement> | React.ChangeEvent<HTMLTextAreaElement>
+  ) => {
     setFormData({ ...formData, [target.name]: target.value })
   }
 
@@ -47,6 +49,7 @@ const ContactForm = () => {
             FIRST NAME
           </label>
           <input
+            required
             type="text"
             id="firstName"
             name="firstName"
@@ -59,6 +62,7 @@ const ContactForm = () => {
             LAST NAME
           </label>
           <input
+            required
             type="text"
             id="lastName"
             name="lastName"
@@ -73,7 +77,8 @@ const ContactForm = () => {
             EMAIL
           </label>
           <input
-            type="text"
+            required
+            type="email"
             id="email"
             name="email"
             onChange={handleChange}
@@ -86,8 +91,8 @@ const ContactForm = () => {
           <label htmlFor="message">
             MESSAGE
           </label>
-          <input
-            type="text"
+          <textarea
+            required
             id="message"
             name="message"
             onChange={handleChange}

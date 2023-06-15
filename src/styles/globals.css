@@ -216,13 +216,24 @@ label {
   font-weight: var(--font-weight-medium);
 }
 
-input {
+input, textarea {
+  max-width: 100%;
+  font-size: 16px;
+  resize: vertical;
+  color: #a0a0a0;
+  margin-bottom: 24px;
   height: var(--spacing-8);
+  padding: var(--spacing-1);
   border-radius: var(--border-radius);
   border: 1px solid var(--tertiary-color);
+  font-family: "canada-type-gibson", sans-serif;
 }
 
-
+/* OVERRIDE CHROME STYLING */
+input:-webkit-autofill, input:-webkit-autofill:focus {
+  box-shadow: 0 0 0 1000px white inset;
+  -webkit-text-fill-color: #8f8f8f;
+}
 
 .card {
   display: inherit;
@@ -416,10 +427,6 @@ label {
   font-weight: 500;
   margin-bottom: 16px;
   margin-top: calc(var(--font-size-reg) / 4 * -1);
-}
-
-input {
-  margin-bottom: 24px;
 }
 
 form>:last-child {
