@@ -29,7 +29,7 @@ const ContactForm = () => {
     try {
       console.log('Data', formData)
 
-      setPending(true)
+      // setPending(true)
 
       const res = await fetch('/api/email', {
         method: 'POST',
@@ -37,7 +37,7 @@ const ContactForm = () => {
         body: JSON.stringify(formData),
       })
 
-      setPending(false)
+      // setPending(false)
 
       console.log('Res', await res.json())
       setFormData(initialState)
@@ -47,21 +47,21 @@ const ContactForm = () => {
     }
   }
 
-  if (pending) return (
-    <div className="pending">
-      <h6>Pending</h6>
-    </div>
-  )
+  // if (pending) return (
+  //   <div className="pending">
+  //     <h6>Pending</h6>
+  //   </div>
+  // )
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} className={pending ? "pending" : ""}>
       <div className="form-row">
         <div className="form-column">
           <label htmlFor="firstName">
             FIRST NAME
           </label>
           <input
-            required
+            // required
             type="text"
             id="firstName"
             name="firstName"
@@ -74,7 +74,7 @@ const ContactForm = () => {
             LAST NAME
           </label>
           <input
-            required
+            // required
             type="text"
             id="lastName"
             name="lastName"
@@ -89,7 +89,7 @@ const ContactForm = () => {
             EMAIL
           </label>
           <input
-            required
+            // required
             type="email"
             id="email"
             name="email"
@@ -104,7 +104,7 @@ const ContactForm = () => {
             MESSAGE
           </label>
           <textarea
-            required
+            // required
             id="message"
             name="message"
             onChange={handleChange}
@@ -112,7 +112,10 @@ const ContactForm = () => {
           />
         </div>
       </div>
-      <button type="submit">SEND</button>
+      <button type="submit" onClick={() => setPending(!pending)}>
+        {/* <p>SEND</p> */}
+        SEND
+      </button>
     </form>
   )
 }

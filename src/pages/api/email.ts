@@ -68,7 +68,7 @@ const sendEmail = async (
 
   if (req.method === "POST") {
     try {
-      await transporter.sendMail(message)
+      // await transporter.sendMail(message)
       res.status(200).json({
         sender: req.body.email,
         msg: "Your message has been sent. Please check the email below for confirmation.",
