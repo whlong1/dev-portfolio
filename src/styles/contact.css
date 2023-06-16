@@ -101,43 +101,50 @@ label {
   margin-left: 16px;
 }
 
-button[type="submit"] {
-  transition: border-radius 1s, width 1s, opacity 1s;
-}
 
-form {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
+
+/* ======================================================= */
+
+button[type="submit"] {
+  margin: 0 auto;
+  transition: border-radius 1s, width 1s, opacity 1s, color 1s;
 }
 
 .pending button[type="submit"] {
   opacity: .5;
   width: 48px;
+  color: black;
   border-radius: 24px;
   padding: 0 !important;
-  animation: blink 3s linear 1.25s infinite;
+
+  animation: pulse 2s ease-in-out infinite;
+
+  transition: border-radius 1s, width 1s, opacity 1s, color .75s;
 }
 
-@keyframes blink {
+@keyframes pulse {
   0% {
     opacity: 0.5;
+    transform: scale(1);
   }
 
   50% {
     opacity: 1;
+    transform: scale(1.1);
   }
 
   100% {
     opacity: 0.5;
+    transform: scale(1);
   }
 }
 
+
 .pending label {
-  /* height: 0; */
   margin: 0;
   opacity: 0;
-  transition: opacity .5s, height 10s, margin 1s;
+  height: 16px !important;
+  transition: opacity .5s, height 4s, margin 1s;
 }
 
 .pending input,
@@ -146,5 +153,26 @@ form {
   margin: 0;
   padding: 0;
   opacity: 0;
+  transition: height .25s, padding 1s, margin 1s, opacity 1s;
+}
+
+/* add min height on contact section
+experiment with 0 heights and justify content */
+
+
+/* OG */
+form {
+  border: 1px solid red;
+}
+form h6 {
+  text-align: center;
+  border: 1px solid red;
+}
+label {
+  transition: opacity .5s, height 10s, margin 1s;
+}
+
+input,
+textarea {
   transition: height .25s, padding 1s, margin 1s, opacity 1s;
 }

@@ -113,9 +113,9 @@ const ContactForm = () => {
         </div>
       </div>
       <button type="submit" onClick={() => setPending(!pending)}>
-        {/* <p>SEND</p> */}
         SEND
       </button>
+      <h6>PENDING</h6>
     </form>
   )
 }
