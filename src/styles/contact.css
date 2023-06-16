@@ -1,4 +1,5 @@
 form {
+  height: 100%;
   display: flex;
   flex-direction: column;
 }
@@ -49,14 +50,18 @@ input:-webkit-autofill:focus {
 }
 
 #contact {
-  align-items: flex-start;
+  /* max-height: 714px !important; */
+
+  height: 720px;
   align-items: stretch;
-  background-color: var(--quaternary-color);
+  align-items: flex-start;
   padding-bottom: var(--spacing-12);
+  background-color: var(--quaternary-color);
 }
 
 #contact>* {
   min-height: 420px;
+  /* border: 1px solid green; */
 }
 
 #contact form,
@@ -118,7 +123,6 @@ button[type="submit"] {
   padding: 0 !important;
 
   animation: pulse 2s ease-in-out infinite;
-
   transition: border-radius 1s, width 1s, opacity 1s, color .75s;
 }
 
@@ -139,12 +143,20 @@ button[type="submit"] {
   }
 }
 
+label {
+  transition: opacity .5s, height 10s, margin 1s;
+}
 
 .pending label {
   margin: 0;
+  height: 0;
   opacity: 0;
-  height: 16px !important;
-  transition: opacity .5s, height 4s, margin 1s;
+  transition: opacity .35s, height 10s, margin 1s;
+}
+
+input,
+textarea {
+  transition: height .25s, padding 1s, margin 1s, opacity 1s;
 }
 
 .pending input,
@@ -153,26 +165,24 @@ button[type="submit"] {
   margin: 0;
   padding: 0;
   opacity: 0;
-  transition: height .25s, padding 1s, margin 1s, opacity 1s;
+  min-height: 0;
+  transition: height .25s, padding 1s, margin 1s, opacity 1.5s, min-height 1.5s ease-in-out;
 }
 
-/* add min height on contact section
-experiment with 0 heights and justify content */
-
-
-/* OG */
-form {
-  border: 1px solid red;
-}
-form h6 {
+/* form h6 { } */
+.pending h6 {
+  margin-top: 8px;
+  color: #a8a8a8;
   text-align: center;
-  border: 1px solid red;
-}
-label {
-  transition: opacity .5s, height 10s, margin 1s;
 }
 
-input,
-textarea {
-  transition: height .25s, padding 1s, margin 1s, opacity 1s;
+#special {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+form.pending #special {
+  height: 100%;
 }
