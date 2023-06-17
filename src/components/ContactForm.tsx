@@ -112,12 +112,14 @@ const ContactForm = () => {
           />
         </div>
       </div>
-      <div id="special">
+
+      <div className="submit--status-container">
         <button type="submit" onClick={() => setPending(!pending)}>
           SEND
         </button>
-        {/* <h6>PENDING</h6> */}
+        <h6>PENDING</h6>
       </div>
+
     </form>
   )
 }

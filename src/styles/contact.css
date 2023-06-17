@@ -169,20 +169,29 @@ textarea {
   transition: height .25s, padding 1s, margin 1s, opacity 1.5s, min-height 1.5s ease-in-out;
 }
 
-/* form h6 { } */
-.pending h6 {
-  margin-top: 8px;
+form h6 { 
+  height: 0;
+  opacity: 0;
+  margin-top: 0;
   color: #a8a8a8;
   text-align: center;
+  transition: height .25s, margin-top 1s, opacity 1s;
 }
 
-#special {
+form.pending h6 {
+  opacity: 1;
+  height: auto;
+  margin-top: 16px;
+  transition: height .25s, margin-top 1s, opacity 1s;
+}
+
+.submit--status-container {
   height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-form.pending #special {
+form.pending .submit--status-container {
   height: 100%;
 }
