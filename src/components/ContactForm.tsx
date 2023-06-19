@@ -1,5 +1,10 @@
 import { useState } from 'react'
 
+import {
+  ErrorResponse,
+  SuccessResponse,
+} from "@/types/email"
+
 interface FormData {
   firstName: string,
   lastName: string,
@@ -14,7 +19,21 @@ const initialState = {
   message: '',
 }
 
+const sendEmailService = async (formData: FormData) => {
+  try {
+    return await fetch('/api/email', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(formData),
+    })
+  } catch (error) {
+    console.error('Error in sendEmailService:', error)
+    throw error
+  }
+}
+
 const ContactForm = () => {
+  const [msg, setMsg] = useState('')
   const [pending, setPending] = useState(false)
   const [formData, setFormData] = useState<FormData>(initialState)
 
@@ -27,31 +46,26 @@ const ContactForm = () => {
   const handleSubmit = async (evt: React.FormEvent): Promise<void> => {
     evt.preventDefault()
     try {
-      console.log('Data', formData)
+      setPending(true)
+      const res = await sendEmailService(formData)
 
-      // setPending(true)
+      if (!res.ok) {
+        const data: ErrorResponse = await res.json()
+        throw new Error(data.error)
+      }
 
-      const res = await fetch('/api/email', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(formData),
-      })
+      const data: SuccessResponse = await res.json()
 
-      // setPending(false)
-
-      console.log('Res', await res.json())
+      setMsg(data.msg)
       setFormData(initialState)
-    } catch (err) {
+
+    } catch (error) {
+      console.log(error)
+      setMsg("An error occurred while sending your message.")
+    } finally {
       setPending(false)
-      console.log(err)
     }
   }
-
-  // if (pending) return (
-  //   <div className="pending">
-  //     <h6>Pending</h6>
-  //   </div>
-  // )
 
   return (
     <form onSubmit={handleSubmit} className={pending ? "pending" : ""}>
@@ -61,7 +75,7 @@ const ContactForm = () => {
             FIRST NAME
           </label>
           <input
-            // required
+            required
             type="text"
             id="firstName"
             name="firstName"
@@ -74,7 +88,7 @@ const ContactForm = () => {
             LAST NAME
           </label>
           <input
-            // required
+            required
             type="text"
             id="lastName"
             name="lastName"
@@ -89,7 +103,7 @@ const ContactForm = () => {
             EMAIL
           </label>
           <input
-            // required
+            required
             type="email"
             id="email"
             name="email"
@@ -104,7 +118,7 @@ const ContactForm = () => {
             MESSAGE
           </label>
           <textarea
-            // required
+            required
             id="message"
             name="message"
             onChange={handleChange}
@@ -113,8 +127,10 @@ const ContactForm = () => {
         </div>
       </div>
 
+      {msg && msg}
+
       <div className="submit--status-container">
-        <button type="submit" onClick={() => setPending(!pending)}>
+        <button type="submit">
           SEND
         </button>
         <h6>PENDING</h6>

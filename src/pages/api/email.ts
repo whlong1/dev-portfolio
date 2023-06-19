@@ -1,18 +1,12 @@
 import type { NextApiRequest, NextApiResponse } from "next"
 import nodemailer from "nodemailer"
 
-interface Message {
-  cc: string;
-  to: string;
-  html: string;
-  text: string;
-  from: string;
-  subject: string;
-}
-
-interface ErrorResponse { error: string; }
-interface SuccessResponse { msg: string; sender: string }
-type Res = ErrorResponse | SuccessResponse
+import {
+  // Res,
+  Message,
+  ErrorResponse,
+  SuccessResponse,
+} from "@/types/email"
 
 const transporter = nodemailer.createTransport({
   port: 465,
@@ -30,7 +24,7 @@ const formatName = (name: string): string => {
 
 const sendEmail = async (
   req: NextApiRequest,
-  res: NextApiResponse<Res>
+  res: NextApiResponse<SuccessResponse | ErrorResponse>
 ): Promise<void> => {
 
   const lastName: string = formatName(req.body.lastName)
@@ -68,8 +62,9 @@ const sendEmail = async (
 
   if (req.method === "POST") {
     try {
-      // await transporter.sendMail(message)
+      await transporter.sendMail(message)
       res.status(200).json({
+        ok: true,
         sender: req.body.email,
         msg: "Your message has been sent. Please check the email below for confirmation.",
       })
