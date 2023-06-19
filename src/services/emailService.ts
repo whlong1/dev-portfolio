@@ -5,11 +5,13 @@ export const sendEmailService = async (formData: EmailFormData): Promise<SendEma
   try {
     const res = await fetch('/api/email', {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(formData),
+      headers: { 'Content-Type': 'application/json' },
     })
-    return await res.json() as SendEmailResponse
+    const data: SendEmailResponse = await res.json()
+    if (data.type === "error") throw new Error(data.message)
+    return data
   } catch (error) {
-    return { type: 'error', message: 'An unexpected error occurred' }
+    throw error
   }
 }

@@ -7,11 +7,8 @@ interface Mail {
   subject: string;
 }
 
-// Discriminated Unions:
+// Discriminated Unions (useful for error handling):
 // https://medium.com/@ahsan.ayaz/understanding-discriminated-unions-in-typescript-1ccc0e053cf5
-
-type ErrorResponse = { type: "error", message: string; }
-type SuccessResponse = { type: "success", message: string, sender: string }
-type SendEmailResponse = ErrorResponse | SuccessResponse
+type SendEmailResponse = { type: string, message: string }
 
 export type { Mail, SendEmailResponse }

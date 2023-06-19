@@ -25,9 +25,8 @@ const ContactForm = () => {
     evt.preventDefault()
     try {
       setPending(true)
-      const data = await sendEmailService(formData)
-      if (data.type === "error") throw new Error(data.message)
-      if (data.type === "success") setMessage(data.message + data.sender)
+      const emailData = await sendEmailService(formData)
+      setMessage(emailData.message)
       setFormData(initialState)
     } catch (error) {
       handleErrorMsg(error, setMessage)

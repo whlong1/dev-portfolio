@@ -64,11 +64,10 @@ const sendEmail = async (
     await transporter.sendMail(mail)
     res.status(200).json({
       type: "success",
-      sender: req.body.email,
-      message: "Your message has been sent. Please check the email below for confirmation.",
+      message: `Success! A confirmation email has been sent to ${req.body.email}`,
     })
   } catch (error) {
-    console.error(error)
+    console.error('err',error)
     res.status(500).json({
       type: "error",
       message: "An error occurred while sending your message"
