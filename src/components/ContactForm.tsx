@@ -26,12 +26,17 @@ const ContactForm = () => {
     try {
       setPending(true)
       const emailData = await sendEmailService(formData)
-      setMessage(emailData.message)
+      setTimeout(() => {
+        setMessage(emailData.message)
+      }, 7000)
       setFormData(initialState)
     } catch (error) {
       handleErrorMsg(error, setMessage)
     } finally {
-      setPending(false)
+      setTimeout(() => {
+        setMessage("")
+        setPending(false)
+      }, 10000)
     }
   }
 
@@ -43,7 +48,7 @@ const ContactForm = () => {
             FIRST NAME
           </label>
           <input
-            required
+            // required
             type="text"
             id="firstName"
             name="firstName"
@@ -56,7 +61,7 @@ const ContactForm = () => {
             LAST NAME
           </label>
           <input
-            required
+            // required
             type="text"
             id="lastName"
             name="lastName"
@@ -71,7 +76,7 @@ const ContactForm = () => {
             EMAIL
           </label>
           <input
-            required
+            // required
             type="email"
             id="email"
             name="email"
@@ -86,7 +91,7 @@ const ContactForm = () => {
             MESSAGE
           </label>
           <textarea
-            required
+            // required
             id="message"
             name="message"
             onChange={handleChange}
@@ -95,13 +100,20 @@ const ContactForm = () => {
         </div>
       </div>
 
-      {message && message}
 
-      <div className="submit--status-container">
+      <div className={`submit--status-container`}>
         <button type="submit">
           SEND
         </button>
-        <h6>PENDING</h6>
+
+        <h6 id="status-msg-pending" className={message ? "hide-pending" : ""}>
+          PENDING
+        </h6>
+
+        <h6 id="status-msg-sent" className={message ? "show-message" : ""}>
+          {message}
+        </h6>
+
       </div>
 
     </form>

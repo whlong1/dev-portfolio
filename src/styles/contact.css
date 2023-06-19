@@ -178,7 +178,7 @@ form h6 {
   transition: height .25s, margin-top 1s, opacity 1s;
 }
 
-form.pending h6 {
+form.pending #status-msg-pending {
   opacity: 1;
   height: auto;
   margin-top: 16px;
@@ -194,4 +194,21 @@ form.pending h6 {
 
 form.pending .submit--status-container {
   height: 100%;
+}
+
+
+
+
+#status-msg-sent {
+  opacity: 0;
+  transition: opacity 2s;
+}
+
+.show-message {
+  opacity: 1 !important;
+}
+
+.hide-pending {
+  opacity: 0 !important;
+  transition: opacity 2s;
 }
