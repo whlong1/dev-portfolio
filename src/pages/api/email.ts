@@ -2,10 +2,8 @@ import type { NextApiRequest, NextApiResponse } from "next"
 import nodemailer from "nodemailer"
 
 import {
-  // Res,
-  Message,
-  ErrorResponse,
-  SuccessResponse,
+  Mail,
+  SendEmailResponse,
 } from "@/types/email"
 
 const transporter = nodemailer.createTransport({
@@ -24,7 +22,7 @@ const formatName = (name: string): string => {
 
 const sendEmail = async (
   req: NextApiRequest,
-  res: NextApiResponse<SuccessResponse | ErrorResponse>
+  res: NextApiResponse<SendEmailResponse>
 ): Promise<void> => {
 
   const lastName: string = formatName(req.body.lastName)
@@ -51,7 +49,7 @@ const sendEmail = async (
     <p style="margin-top: 4px">Hunter Long</p>
   `
 
-  const message: Message = {
+  const mail: Mail = {
     cc: req.body.email,
     html: confirmationMsg,
     text: req.body.message,
@@ -60,21 +58,23 @@ const sendEmail = async (
     subject: `Your Message to Hunter Long Has Been Received, ${firstName} ${lastName}`,
   }
 
-  if (req.method === "POST") {
-    try {
-      await transporter.sendMail(message)
-      res.status(200).json({
-        ok: true,
-        sender: req.body.email,
-        msg: "Your message has been sent. Please check the email below for confirmation.",
-      })
-    } catch (err) {
-      console.error("Send Mail Error:", err)
-      res.status(500).json({ error: "An error occurred while sending your message." })
-    }
-  } else {
-    res.status(405).json({ error: "Invalid Method" })
+  if (req.method !== "POST") res.status(405).json({ type: "error", message: "Invalid Method" })
+
+  try {
+    await transporter.sendMail(mail)
+    res.status(200).json({
+      type: "success",
+      sender: req.body.email,
+      message: "Your message has been sent. Please check the email below for confirmation.",
+    })
+  } catch (error) {
+    console.error(error)
+    res.status(500).json({
+      type: "error",
+      message: "An error occurred while sending your message"
+    })
   }
+
 }
 
 export default sendEmail

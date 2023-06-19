@@ -1,16 +1,7 @@
 import { useState } from 'react'
-
-import {
-  ErrorResponse,
-  SuccessResponse,
-} from "@/types/email"
-
-interface FormData {
-  firstName: string,
-  lastName: string,
-  email: string,
-  message: string,
-}
+import { EmailFormData } from "@/types/forms"
+import { handleErrorMsg } from '@/types/validators'
+import { sendEmailService } from '@/services/emailService'
 
 const initialState = {
   firstName: '',
@@ -19,23 +10,10 @@ const initialState = {
   message: '',
 }
 
-const sendEmailService = async (formData: FormData) => {
-  try {
-    return await fetch('/api/email', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(formData),
-    })
-  } catch (error) {
-    console.error('Error in sendEmailService:', error)
-    throw error
-  }
-}
-
 const ContactForm = () => {
-  const [msg, setMsg] = useState('')
+  const [message, setMessage] = useState('')
   const [pending, setPending] = useState(false)
-  const [formData, setFormData] = useState<FormData>(initialState)
+  const [formData, setFormData] = useState<EmailFormData>(initialState)
 
   const handleChange = (
     { target }: React.ChangeEvent<HTMLInputElement> | React.ChangeEvent<HTMLTextAreaElement>
@@ -47,21 +25,12 @@ const ContactForm = () => {
     evt.preventDefault()
     try {
       setPending(true)
-      const res = await sendEmailService(formData)
-
-      if (!res.ok) {
-        const data: ErrorResponse = await res.json()
-        throw new Error(data.error)
-      }
-
-      const data: SuccessResponse = await res.json()
-
-      setMsg(data.msg)
+      const data = await sendEmailService(formData)
+      if (data.type === "error") throw new Error(data.message)
+      if (data.type === "success") setMessage(data.message + data.sender)
       setFormData(initialState)
-
     } catch (error) {
-      console.log(error)
-      setMsg("An error occurred while sending your message.")
+      handleErrorMsg(error, setMessage)
     } finally {
       setPending(false)
     }
@@ -127,7 +96,7 @@ const ContactForm = () => {
         </div>
       </div>
 
-      {msg && msg}
+      {message && message}
 
       <div className="submit--status-container">
         <button type="submit">

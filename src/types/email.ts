@@ -1,4 +1,4 @@
-interface Message {
+interface Mail {
   cc: string;
   to: string;
   html: string;
@@ -7,9 +7,11 @@ interface Message {
   subject: string;
 }
 
-interface ErrorResponse { error: string; }
-interface SuccessResponse { msg: string; sender: string; ok: boolean }
+// Discriminated Unions:
+// https://medium.com/@ahsan.ayaz/understanding-discriminated-unions-in-typescript-1ccc0e053cf5
 
-// type Res = ErrorResponse | SuccessResponse
+type ErrorResponse = { type: "error", message: string; }
+type SuccessResponse = { type: "success", message: string, sender: string }
+type SendEmailResponse = ErrorResponse | SuccessResponse
 
-export type { Message, ErrorResponse, SuccessResponse }
+export type { Mail, SendEmailResponse }
