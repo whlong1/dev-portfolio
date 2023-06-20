@@ -1,47 +1,46 @@
 
-button[type="submit"] {
-  transition: border-radius 1s, width 1s, opacity 1s;
-}
 
-form {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
 
-.pending button[type="submit"] {
-  opacity: .5;
-  width: 48px;
-  border-radius: 24px;
-  padding: 0 !important;
-  animation: blink 3s linear 1.25s infinite;
-}
-
-@keyframes blink {
-  0% {
-    opacity: 0.5;
-  }
-
-  50% {
-    opacity: 1;
-  }
-
-  100% {
-    opacity: 0.5;
-  }
-}
-
-.pending label {
-  margin: 0;
-  opacity: 0;
-  transition: opacity .5s, height 10s, margin 1s;
-}
-
-.pending input,
-.pending textarea {
+form h6 { 
   height: 0;
-  margin: 0;
-  padding: 0;
   opacity: 0;
-  transition: height .25s, padding 1s, margin 1s, opacity 1s;
+  margin-top: 0;
+  color: #a8a8a8;
+  text-align: center;
+  transition: height .25s, margin-top 1s, opacity 1s;
+}
+
+form.pending #status-msg-pending {
+  opacity: 1;
+  height: auto;
+  margin-top: 16px;
+  transition: height .25s, margin-top 1s, opacity 1s;
+}
+
+.submit--status-container {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+form.pending .submit--status-container {
+  height: 100%;
+}
+
+
+
+
+#status-msg-sent {
+  opacity: 0;
+  transition: opacity 2s;
+}
+
+.show-message {
+  opacity: 1 !important;
+}
+
+.hide-pending {
+  opacity: 0 !important;
+  transition: opacity 2s;
 }

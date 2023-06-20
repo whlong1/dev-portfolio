@@ -28,7 +28,7 @@ const ContactForm = () => {
       const emailData = await sendEmailService(formData)
       setTimeout(() => {
         setMessage(emailData.message)
-      }, 7000)
+      }, 2000)
       setFormData(initialState)
     } catch (error) {
       handleErrorMsg(error, setMessage)
@@ -36,7 +36,7 @@ const ContactForm = () => {
       setTimeout(() => {
         setMessage("")
         setPending(false)
-      }, 10000)
+      }, 8000)
     }
   }
 
@@ -101,16 +101,18 @@ const ContactForm = () => {
       </div>
 
 
-      <div className={`submit--status-container`}>
+      <div className={`status-container ${message ? "show-message" : ""}`}>
         <button type="submit">
-          SEND
+          <p>SEND</p>
+          <img id="pending-icon" src="assets/tech/react.svg" alt="" />
+          <img id="sent-icon" src="assets/tech/node.svg" alt="" />
         </button>
 
-        <h6 id="status-msg-pending" className={message ? "hide-pending" : ""}>
+        <h6 id="status-pending">
           PENDING
         </h6>
 
-        <h6 id="status-msg-sent" className={message ? "show-message" : ""}>
+        <h6 id="status-sent">
           {message}
         </h6>
 
