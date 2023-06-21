@@ -34,8 +34,8 @@ const ContactForm = () => {
       handleErrorMsg(error, setMessage)
     } finally {
       setTimeout(() => {
-        // setMessage("")
-        // setPending(false)
+        setMessage("")
+        setPending(false)
       }, 8000)
     }
   }

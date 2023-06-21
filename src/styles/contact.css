@@ -194,7 +194,9 @@ button[type="submit"] {
   min-height: unset !important;
   margin-bottom: unset !important;
   transition: opacity 2s;
+  pointer-events: none;
 }
+
 .pending #btn-inner-text {
   width: 0;
   opacity: 0;
