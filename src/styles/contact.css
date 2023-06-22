@@ -62,7 +62,7 @@ input:-webkit-autofill:focus {
 }
 
 #contact>* {
-  min-height: 420px;
+  /* min-height: 420px; */
   /* new  */
   height: 420px;
 }
