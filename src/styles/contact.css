@@ -235,6 +235,10 @@ button[type="submit"] {
   flex-direction: column;
 }
 
+#status-sent * {
+  pointer-events: none;
+}
+
 #status-sent h3 {
   opacity: 0;
   margin-top: 0;
