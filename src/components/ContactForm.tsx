@@ -28,7 +28,7 @@ const ContactForm = () => {
       const emailData = await sendEmailService(formData)
       setTimeout(() => {
         setMessage(emailData.message)
-      }, 2000)
+      }, 3000)
       setFormData(initialState)
     } catch (error) {
       handleErrorMsg(error, setMessage)
@@ -101,22 +101,20 @@ const ContactForm = () => {
       </div>
 
 
-      <div className={`status-container ${message ? "show-message" : ""}`}>
+      <section className={`status-container ${message ? "show-message" : ""}`}>
+
         <button type="submit">
-          <p>SEND</p>
+          <p id="btn-inner-text">SEND</p>
           <img id="pending-icon" src="assets/tech/react.svg" alt="" />
-          <img id="sent-icon" src="assets/tech/node.svg" alt="" />
         </button>
 
-        <h6 id="status-pending">
-          PENDING
-        </h6>
+        <div id="status-sent">
+          <img src="assets/tech/github.svg" alt="" />
+          <h3>SUCCESS</h3>
+          <p>A confirmation email has been sent to whunterlong@gmail.com</p>
+        </div>
 
-        <h6 id="status-sent">
-          {message}
-        </h6>
-
-      </div>
+      </section>
 
     </form>
   )

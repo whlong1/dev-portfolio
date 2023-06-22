@@ -1,5 +1,8 @@
 form {
-  height: 100%;
+  /* height 100% causes form container to have extra space at bottom
+  however, animation container does not scale without a height to inherit */
+  /* height: 100%; */
+
   display: flex;
   flex-direction: column;
 }
@@ -51,7 +54,6 @@ input:-webkit-autofill:focus {
 
 #contact {
   /* max-height: 714px !important; */
-
   height: 720px;
   align-items: stretch;
   align-items: flex-start;
@@ -61,7 +63,8 @@ input:-webkit-autofill:focus {
 
 #contact>* {
   min-height: 420px;
-  /* border: 1px solid green; */
+  /* new  */
+  height: 420px;
 }
 
 #contact form,
@@ -106,42 +109,7 @@ label {
   margin-left: 16px;
 }
 
-
-
-/* ======================================================= */
-
-button[type="submit"] {
-  margin: 0 auto;
-  transition: border-radius 1s, width 1s, opacity 1s, color 1s;
-}
-
-.pending button[type="submit"] {
-  opacity: .5;
-  width: 48px;
-  color: black;
-  border-radius: 24px;
-  padding: 0 !important;
-
-  animation: pulse 2s ease-in-out infinite;
-  transition: border-radius 1s, width 1s, opacity 1s, color .75s;
-}
-
-@keyframes pulse {
-  0% {
-    opacity: 0.5;
-    transform: scale(1);
-  }
-
-  50% {
-    opacity: 1;
-    transform: scale(1.1);
-  }
-
-  100% {
-    opacity: 0.5;
-    transform: scale(1);
-  }
-}
+/* ANIMATION */
 
 label {
   transition: opacity .5s, height 10s, margin 1s;
@@ -169,75 +137,17 @@ textarea {
   transition: height .25s, padding 1s, margin 1s, opacity 1.5s, min-height 1.5s ease-in-out;
 }
 
-
-
-
-
-form h6 {
-  height: 0;
-  opacity: 0;
-  margin-top: 0;
-  color: #a8a8a8;
-  text-align: center;
-  transition: height .25s, margin-top 1s, opacity 1s;
-}
-
-
 .status-container {
   height: auto;
   display: flex;
+  align-items: center;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  /* push elements up: */
-  /* padding-bottom: 80px; */
 }
 
 .pending .status-container {
   height: 100%;
-  border: 1px solid green;
-}
-
-.pending #status-pending {
-  opacity: 1;
-  margin-top: 16px;
-  transition: height .25s, margin-top 1s, opacity 1s;
-}
-
-
-
-#status-sent {
-  width: 0;
-  height: 0;
-  opacity: 0;
-  color: rgba(168, 168, 168, 0);
-}
-
-.show-message #status-sent {
-  opacity: 1;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  color: rgba(168, 168, 168, 1);
-  transition: opacity 1.5s, width 1.5s, height 1.5s, color 1.5s 1.5s;
-}
-
-
-
-#status-sent img {
-  width: inherit;
-  height: inherit;
-  opacity: inherit;
-  border-radius: 50%;
-  transition: opacity 1s, width 1s, height 1s;
-}
-
-.show-message #status-sent img {
-  opacity: 1;
-  width: 24px;
-  height: 24px;
-  border: 1px solid red;
-  transition: opacity 2s 1s, width .5s 1s, height .5s 1s;
+  padding-bottom: 8px;
 }
 
 .show-message #status-pending {
@@ -259,52 +169,113 @@ form h6 {
   transition: opacity 1s, width 1s, height 1s;
 }
 
-
-
 button[type="submit"] {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: border-radius 1s, width 1s, opacity 1s, color 1s;
 }
 
-button[type="submit"] p {
-  width: 100%;
-  opacity: 1;
+.pending button[type="submit"] {
+  opacity: .5;
+  width: 48px;
+  border-radius: 24px;
+  padding: 0 !important;
+  animation: pulse 2s ease-in-out infinite;
+  transition: border-radius 1s, width 1s, opacity 1s;
+}
 
-  text-align: center;
+#btn-inner-text {
+  opacity: 1;
+  width: 100%;
   margin-top: unset;
+  text-align: center;
   text-align-last: center;
   min-height: unset !important;
   margin-bottom: unset !important;
+  transition: opacity 2s;
+  pointer-events: none;
 }
 
-/* no transitions on button p allows button to shrink to size of img on lead in */
-.pending button[type="submit"] p {
+.pending #btn-inner-text {
   width: 0;
   opacity: 0;
   font-size: 0;
+  transition: opacity 2s;
 }
 
+.status-container {
+  position: relative;
+}
 
-
-#sent-icon {
+.show-message button[type="submit"] {
   width: 0;
   height: 0;
   opacity: 0;
+  transition: opacity 1s, animation 1s, width 1s, height 1s;
+}
+
+.show-message #status-sent {
+  opacity: 1;
+  width: 100%;
+  height: 100%;
+  transition: opacity 1s, width 1s, height 1s;
+  background-color: var(--quaternary-color);
+  border-radius: var(--border-radius);
+}
+
+#status-sent {
+  width: 0;
+  height: 0;
+  opacity: 0;
+  display: flex;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#status-sent * {
+  pointer-events: none;
+}
+
+#status-sent h3 {
+  opacity: 0;
+  margin-top: 0;
+  color: black;
+  text-align: center;
+}
+
+.show-message #status-sent h3 {
+  opacity: 1;
+  margin-top: 36px;
+  margin-bottom: 24px;
+  transition: opacity 1s 1s;
+ }
+
+ #status-sent img {
+  width: inherit;
+  height: inherit;
+  opacity: inherit;
   border-radius: 50%;
 }
 
-.show-message #sent-icon {
-  opacity: 1;
-  width: 24px;
-  height: 24px;
-  transition: opacity 1s, width 1s, height 1s;
+#status-sent p {
+  opacity: 0;
+  width: 100%;
+  text-align: center;
+  text-align-last: center;
 }
 
+.show-message #status-sent p {
+  opacity: 1;
+  margin-bottom: 0;
+  transition: opacity 1s 1s;
+}
 
-.show-message #pending-icon {
-  opacity: 0;
-  width: 0px;
-  height: 0px;
-  transition: opacity 1s;
+.show-message #status-sent img {
+  opacity: 1;
+  width: 96px;
+  height: 96px;
+  transition: opacity 1s 1s, width .5s, height .5s;
 }
