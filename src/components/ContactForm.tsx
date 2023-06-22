@@ -27,15 +27,16 @@ const ContactForm = () => {
       setPending(true)
       const emailData = await sendEmailService(formData)
       setTimeout(() => {
-        setMessage(emailData.message)
+        // setMessage(emailData.message)
+        setPending(false)
       }, 3000)
       setFormData(initialState)
     } catch (error) {
       handleErrorMsg(error, setMessage)
     } finally {
       setTimeout(() => {
-        setMessage("")
-        setPending(false)
+        // setMessage("")
+        // setPending(false)
       }, 8000)
     }
   }
@@ -105,7 +106,7 @@ const ContactForm = () => {
 
         <button type="submit">
           <p id="btn-inner-text">SEND</p>
-          <img id="pending-icon" src="assets/tech/react.svg" alt="" />
+          <img id="pending-icon" src="assets/tech/loading.svg" alt="" />
         </button>
 
         <div id="status-sent">

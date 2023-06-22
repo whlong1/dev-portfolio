@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="74.982mm" height="74.982mm" viewBox="0 0 212.5474 212.5474">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #1a171b;
+      }
+
+      .cls-2 {
+        fill: #39383a;
+      }
+
+      .cls-3 {
+        fill: #4f4f51;
+      }
+
+      .cls-4 {
+        fill: #636466;
+      }
+
+      .cls-5 {
+        fill: #77787a;
+      }
+
+      .cls-6 {
+        fill: #929395;
+      }
+
+      .cls-7 {
+        fill: #9a9b9d;
+      }
+
+      .cls-8 {
+        fill: #b8b9ba;
+      }
+
+      .cls-9 {
+        fill: #bdbec0;
+      }
+
+      .cls-10 {
+        fill: #cecfd0;
+      }
+
+      .cls-11 {
+        fill: #dededf;
+      }
+
+      .cls-12 {
+        fill: #edeeee;
+      }
+    </style>
+  </defs>
+  <g id="loading_3" data-name="loading 3">
+    <g>
+      <circle class="cls-1" cx="106.2737" cy="16.2737" r="16.2737"/>
+      <circle class="cls-2" cx="61.2737" cy="28.3314" r="16.2737"/>
+      <circle class="cls-3" cx="28.3315" cy="61.2737" r="16.2737" transform="translate(-21.4811 15.7123) rotate(-22.7375)"/>
+      <circle class="cls-4" cx="16.2737" cy="106.2737" r="16.2737"/>
+      <circle class="cls-5" cx="28.3315" cy="151.2737" r="16.2737" transform="translate(-56.267 22.7066) rotate(-22.7375)"/>
+      <circle class="cls-6" cx="61.2737" cy="184.216" r="16.2737"/>
+      <circle class="cls-7" cx="106.2737" cy="196.2737" r="16.2737"/>
+      <circle class="cls-8" cx="151.2737" cy="184.216" r="16.2737"/>
+      <circle class="cls-9" cx="184.216" cy="151.2737" r="16.2737"/>
+      <circle class="cls-10" cx="196.2737" cy="106.2737" r="16.2737"/>
+      <circle class="cls-11" cx="184.216" cy="61.2737" r="16.2737"/>
+      <circle class="cls-12" cx="151.2737" cy="28.3314" r="16.2737"/>
+    </g>
+  </g>
+</svg>

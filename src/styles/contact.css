@@ -155,34 +155,37 @@ textarea {
   transition: opacity .35s;
 }
 
-#pending-icon {
-  width: 0;
-  height: 0;
-  opacity: 0;
-  border-radius: 50%;
-}
-
-.pending #pending-icon {
-  opacity: 1;
-  width: 24px;
-  height: 24px;
-  transition: opacity 1s, width 1s, height 1s;
-}
 
 button[type="submit"] {
+  border: none;
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: border-radius 1s, width 1s, opacity 1s, color 1s;
+  transition: border-radius 1s, width 1s, opacity 1s, color 1s, background-color 1s;
 }
-
 .pending button[type="submit"] {
   opacity: .5;
   width: 48px;
   border-radius: 24px;
   padding: 0 !important;
   animation: pulse 2s ease-in-out infinite;
-  transition: border-radius 1s, width 1s, opacity 1s;
+
+  transition: border-radius 1s, width 1s, opacity 1s, background-color 1s .5s, border 1s .5s;
+  border: 10px solid var(--quaternary-color);
+  background-color: var(--quaternary-color);
+}
+
+#pending-icon {
+  width: 0;
+  height: 0;
+  opacity: 0;
+  border-radius: 50%;
+}
+.pending #pending-icon {
+  opacity: 1;
+  width: 72px;
+  height: 72px;
+  transition: opacity 1s .5s, width 1s .5s, height 1s .5s;
 }
 
 #btn-inner-text {
