@@ -170,7 +170,7 @@ button[type="submit"] {
   padding: 0 !important;
   animation: pulse 2s ease-in-out infinite;
 
-  transition: border-radius 1s, width 1s, opacity 1s, background-color 1s .5s, border 1s .5s;
+  transition: border-radius 1s, width 1s, opacity 1s, background-color .75s .5s, border 1s .5s;
   border: 10px solid var(--quaternary-color);
   background-color: var(--quaternary-color);
 }
@@ -180,13 +180,21 @@ button[type="submit"] {
   height: 0;
   opacity: 0;
   border-radius: 50%;
+  background-color: black;
 }
 .pending #pending-icon {
+  background-color: var(--quaternary-color);
   opacity: 1;
   width: 72px;
   height: 72px;
-  transition: opacity 1s .5s, width 1s .5s, height 1s .5s;
+  transition: opacity 1s .5s, width 1s .5s, height 1s .5s, background-color .75s .5s;
+  animation: spin 3s linear infinite;
 }
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
 
 #btn-inner-text {
   opacity: 1;
