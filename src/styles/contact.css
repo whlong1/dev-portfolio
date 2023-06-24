@@ -157,22 +157,34 @@ textarea {
 
 
 button[type="submit"] {
-  border: none;
+  border: 0px solid var(--quaternary-color);
   display: flex;
   align-items: center;
   justify-content: center;
   transition: border-radius 1s, width 1s, opacity 1s, color 1s, background-color 1s;
 }
+
 .pending button[type="submit"] {
-  opacity: .5;
+  /* opacity: .25; */
   width: 48px;
   border-radius: 24px;
   padding: 0 !important;
   animation: pulse 2s ease-in-out infinite;
 
-  transition: border-radius 1s, width 1s, opacity 1s, background-color .75s .5s, border 1s .5s;
-  border: 10px solid var(--quaternary-color);
+  transition: border-radius 1s, width 1s,
+    /* background-color .5s .5s,  */
+    background-color .5s .75s, 
+    /* border 1s .65s */
+    border 1s .5s
+    ;
+
+  border: 24px solid var(--quaternary-color);
   background-color: var(--quaternary-color);
+
+  /* box-shadow: inset 0px 0px 16px 8px rgba(0,0,0,0.25); */
+
+  /* border: 16px solid rgb(255, 0, 0);
+  background-color: green; */
 }
 
 #pending-icon {
@@ -180,19 +192,26 @@ button[type="submit"] {
   height: 0;
   opacity: 0;
   border-radius: 50%;
-  background-color: black;
+  background-color: none;
 }
+
 .pending #pending-icon {
-  background-color: var(--quaternary-color);
   opacity: 1;
   width: 72px;
   height: 72px;
-  transition: opacity 1s .5s, width 1s .5s, height 1s .5s, background-color .75s .5s;
+  /* transition: opacity 1s .5s, width 1s .5s, height 1s .5s; */
+  transition: opacity 1s .85s, width 1s .75s, height 1s .75s;
   animation: spin 3s linear infinite;
 }
+
 @keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 
@@ -262,9 +281,9 @@ button[type="submit"] {
   margin-top: 36px;
   margin-bottom: 24px;
   transition: opacity 1s 1s;
- }
+}
 
- #status-sent img {
+#status-sent img {
   width: inherit;
   height: inherit;
   opacity: inherit;
