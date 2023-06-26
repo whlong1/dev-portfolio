@@ -156,35 +156,36 @@ textarea {
 }
 
 
+
+button[type="submit"]:focus {
+  outline: none;
+}
+
 button[type="submit"] {
-  border: 0px solid var(--quaternary-color);
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: border-radius 1s, width 1s, opacity 1s, color 1s, background-color 1s;
+  border: 0px solid var(--quaternary-color);
+  transition:
+    width 1s,
+    color 1s,
+    opacity 1s,
+    border-radius 1s,
+    background-color 1s;
 }
 
+
 .pending button[type="submit"] {
-  /* opacity: .25; */
   width: 48px;
   border-radius: 24px;
-  padding: 0 !important;
   animation: pulse 2s ease-in-out infinite;
-
-  transition: border-radius 1s, width 1s,
-    /* background-color .5s .5s,  */
-    background-color .5s .75s, 
-    /* border 1s .65s */
-    border 1s .5s
-    ;
-
-  border: 24px solid var(--quaternary-color);
   background-color: var(--quaternary-color);
-
-  /* box-shadow: inset 0px 0px 16px 8px rgba(0,0,0,0.25); */
-
-  /* border: 16px solid rgb(255, 0, 0);
-  background-color: green; */
+  border: 18px solid var(--quaternary-color);
+  transition:
+    border-radius 1s,
+    width 1s ease-in-out,
+    background-color 1s .5s,
+    border .5s .75s ease-in-out;
 }
 
 #pending-icon {
@@ -199,9 +200,8 @@ button[type="submit"] {
   opacity: 1;
   width: 72px;
   height: 72px;
-  /* transition: opacity 1s .5s, width 1s .5s, height 1s .5s; */
-  transition: opacity 1s .85s, width 1s .75s, height 1s .75s;
   animation: spin 3s linear infinite;
+  transition: opacity 1s 1s, width 1s .75s, height 1s .75s;
 }
 
 @keyframes spin {
@@ -214,17 +214,16 @@ button[type="submit"] {
   }
 }
 
-
 #btn-inner-text {
   opacity: 1;
   width: 100%;
   margin-top: unset;
   text-align: center;
+  pointer-events: none;
+  transition: opacity 2s;
   text-align-last: center;
   min-height: unset !important;
   margin-bottom: unset !important;
-  transition: opacity 2s;
-  pointer-events: none;
 }
 
 .pending #btn-inner-text {
