@@ -1,0 +1,25 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="212.5474" height="212.5474" viewBox="0 0 212.5474 212.5474">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #DCDCDC;
+      }
+    </style>
+  </defs>
+  <g id="loading_3" data-name="loading 3">
+    <g>
+      <circle class="cls-1" cx="106.2737" cy="16.2737" r="16.2737"/>
+      <circle class="cls-1" cx="61.2737" cy="28.3314" r="16.2737"/>
+      <circle class="cls-1" cx="28.3315" cy="61.2737" r="16.2737"/>
+      <circle class="cls-1" cx="16.2737" cy="106.2737" r="16.2737"/>
+      <circle class="cls-1" cx="28.3315" cy="151.2737" r="16.2737"/>
+      <circle class="cls-1" cx="61.2737" cy="184.216" r="16.2737"/>
+      <circle class="cls-1" cx="106.2737" cy="196.2737" r="16.2737"/>
+      <circle class="cls-1" cx="151.2737" cy="184.216" r="16.2737"/>
+      <circle class="cls-1" cx="184.216" cy="151.2737" r="16.2737"/>
+      <circle class="cls-1" cx="196.2737" cy="106.2737" r="16.2737"/>
+      <circle class="cls-1" cx="184.216" cy="61.2737" r="16.2737"/>
+      <circle class="cls-1" cx="151.2737" cy="28.3314" r="16.2737"/>
+    </g>
+  </g>
+</svg>

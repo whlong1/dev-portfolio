@@ -105,7 +105,7 @@ const ContactForm = () => {
 
         <button type="submit">
           <p id="btn-inner-text">SEND</p>
-          <img id="pending-icon" src="assets/tech/loading.svg" alt="" />
+          <img id="pending-icon" src="assets/tech/spinner.svg" alt="" />
         </button>
 
         <div id="status-sent">
