@@ -3,14 +3,15 @@ import { EmailFormData } from "@/types/forms"
 import { handleErrorMsg } from '@/types/validators'
 import { sendEmailService } from '@/services/emailService'
 
-import FormRow from './FormRow'
-import FormColumn from './FormColumn'
+import FormRow from "./FormRow"
+import FormColumn from "./FormColumn"
+import AnimatedButton from "./AnimatedButton"
 
 const initialState = {
-  email: '',
-  message: '',
-  lastName: '',
-  firstName: '',
+  email: "",
+  message: "",
+  lastName: "",
+  firstName: "",
 }
 
 const ContactForm = () => {
@@ -73,34 +74,14 @@ const ContactForm = () => {
       </FormRow>
       <FormRow>
         <FormColumn
-          type="textarea"
+          type=""
           name="message"
           label="MESSAGE"
           value={formData.message}
           handleChange={handleChange}
         />
       </FormRow>
-
-
-      <section className="status-container">
-        <button type="submit">
-          <p id="btn-inner-text">
-            SEND
-          </p>
-          <img
-            id="pending-icon"
-            src="assets/tech/spinner.svg"
-            alt={pending ? "Loading" : ""}
-          />
-        </button>
-
-        <div id="status-sent">
-          <img src="assets/tech/check.svg" alt="Success" />
-          <h3>SUCCESS</h3>
-          <p>A confirmation email has been sent to whunterlong@gmail.com</p>
-        </div>
-      </section>
-
+      <AnimatedButton pending={pending} />
     </form>
   )
 }
