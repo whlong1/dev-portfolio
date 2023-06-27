@@ -84,11 +84,10 @@
   #contact form {
     padding: 0;
     width: 100%;
-    border: 1px solid #e8e8e8;
   }
 
   form {
-    padding: 0 !important;
+    padding: 16px !important;
   }
 
   #contact>* {

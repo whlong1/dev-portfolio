@@ -3,18 +3,21 @@ import { EmailFormData } from "@/types/forms"
 import { handleErrorMsg } from '@/types/validators'
 import { sendEmailService } from '@/services/emailService'
 
+import FormRow from './FormRow'
+import FormColumn from './FormColumn'
+
 const initialState = {
-  firstName: '',
-  lastName: '',
   email: '',
   message: '',
+  lastName: '',
+  firstName: '',
 }
 
 const ContactForm = () => {
   const [message, setMessage] = useState('')
   const [pending, setPending] = useState(false)
   const [formData, setFormData] = useState<EmailFormData>(initialState)
-  const formClassNames = `${pending ? "pending" : ""} ${message ? "show-message" : ""}`
+  const formClassNames = `${pending ? "pending-state" : ""} ${message ? "message-state" : ""}`
 
   const handleChange = (
     { target }: React.ChangeEvent<HTMLInputElement> | React.ChangeEvent<HTMLTextAreaElement>
@@ -41,66 +44,43 @@ const ContactForm = () => {
     }
   }
 
-
   return (
     <form onSubmit={handleSubmit} className={formClassNames}>
-      <div className="form-row">
-        <div className="form-column">
-          <label htmlFor="firstName">
-            FIRST NAME
-          </label>
-          <input
-            // required
-            type="text"
-            id="firstName"
-            name="firstName"
-            onChange={handleChange}
-            value={formData.firstName}
-          />
-        </div>
-        <div className="form-column">
-          <label htmlFor="lastName">
-            LAST NAME
-          </label>
-          <input
-            // required
-            type="text"
-            id="lastName"
-            name="lastName"
-            onChange={handleChange}
-            value={formData.lastName}
-          />
-        </div>
-      </div>
-      <div className="form-row">
-        <div className="form-column">
-          <label htmlFor="email">
-            EMAIL
-          </label>
-          <input
-            // required
-            type="email"
-            id="email"
-            name="email"
-            onChange={handleChange}
-            value={formData.email}
-          />
-        </div>
-      </div>
-      <div className="form-row">
-        <div className="form-column">
-          <label htmlFor="message">
-            MESSAGE
-          </label>
-          <textarea
-            // required
-            id="message"
-            name="message"
-            onChange={handleChange}
-            value={formData.message}
-          />
-        </div>
-      </div>
+      <FormRow>
+        <FormColumn
+          type="text"
+          name="firstName"
+          label="FIRST NAME"
+          value={formData.firstName}
+          handleChange={handleChange}
+        />
+        <FormColumn
+          type="text"
+          name="lastName"
+          label="LAST NAME"
+          value={formData.lastName}
+          handleChange={handleChange}
+        />
+      </FormRow>
+      <FormRow>
+        <FormColumn
+          type="email"
+          name="email"
+          label="EMAIL"
+          value={formData.email}
+          handleChange={handleChange}
+        />
+      </FormRow>
+      <FormRow>
+        <FormColumn
+          type="textarea"
+          name="message"
+          label="MESSAGE"
+          value={formData.message}
+          handleChange={handleChange}
+        />
+      </FormRow>
+
 
       <section className="status-container">
         <button type="submit">

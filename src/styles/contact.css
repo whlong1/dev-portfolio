@@ -1,8 +1,4 @@
 form {
-  /* height 100% causes form container to have extra space at bottom
-  however, animation container does not scale without a height to inherit */
-  /* height: 100%; */
-
   display: flex;
   flex-direction: column;
 }
@@ -68,7 +64,7 @@ input:-webkit-autofill:focus {
 }
 
 #contact form,
-#contact .pending {
+#contact .pending-state {
   padding-left: 64px;
 }
 
@@ -115,7 +111,7 @@ label {
   transition: opacity .5s, height 10s, margin 1s;
 }
 
-.pending label {
+.pending-state label {
   margin: 0;
   height: 0;
   opacity: 0;
@@ -127,8 +123,8 @@ textarea {
   transition: height .25s, padding 1s, margin 1s, opacity 1s;
 }
 
-.pending input,
-.pending textarea {
+.pending-state input,
+.pending-state textarea {
   height: 0;
   margin: 0;
   padding: 0;
@@ -145,13 +141,13 @@ textarea {
   justify-content: center;
 }
 
-.pending .status-container {
+.pending-state .status-container {
   height: 100%;
   padding-bottom: 8px;
 }
 
 
-.show-message #status-pending {
+.message-state #status-pending {
   opacity: 0;
   transition: opacity .35s;
 }
@@ -174,7 +170,7 @@ button[type="submit"] {
     background-color 1s;
 }
 
-.pending button[type="submit"] {
+.pending-state button[type="submit"] {
   width: 48px;
   border-radius: 24px;
   animation: pulse 2s ease-in-out infinite;
@@ -195,7 +191,7 @@ button[type="submit"] {
   background-color: none;
 }
 
-.pending #pending-icon {
+.pending-state #pending-icon {
   opacity: 1;
   width: 72px;
   height: 72px;
@@ -225,7 +221,7 @@ button[type="submit"] {
   margin-bottom: unset !important;
 }
 
-.pending #btn-inner-text {
+.pending-state #btn-inner-text {
   width: 0;
   opacity: 0;
   font-size: 0;
@@ -237,7 +233,7 @@ button[type="submit"] {
 }
 
 
-.show-message button[type="submit"] {
+.message-state button[type="submit"] {
   width: 0;
   height: 0;
   opacity: 0;
@@ -245,7 +241,7 @@ button[type="submit"] {
 }
 
 
-.show-message #status-sent {
+.message-state #status-sent {
   opacity: 1;
   width: 100%;
   height: 100%;
@@ -277,7 +273,7 @@ button[type="submit"] {
 }
 
 
-.show-message #status-sent h3 {
+.message-state #status-sent h3 {
   opacity: 1;
   margin-top: 36px;
   margin-bottom: 24px;
@@ -298,14 +294,13 @@ button[type="submit"] {
   text-align-last: center;
 }
 
-
-.show-message #status-sent p {
+.message-state #status-sent p {
   opacity: 1;
   margin-bottom: 0;
   transition: opacity 1s 1s;
 }
 
-.show-message #status-sent img {
+.message-state #status-sent img {
   opacity: 1;
   width: 96px;
   height: 96px;
