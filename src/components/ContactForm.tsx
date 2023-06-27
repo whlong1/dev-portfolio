@@ -28,7 +28,6 @@ const ContactForm = () => {
       const emailData = await sendEmailService(formData)
       setTimeout(() => {
         setMessage(emailData.message)
-        // setPending(false)
       }, 3000)
       setFormData(initialState)
     } catch (error) {
@@ -104,11 +103,18 @@ const ContactForm = () => {
       <section className={`status-container ${message ? "show-message" : ""}`}>
 
         <button type="submit">
-          <p id="btn-inner-text">SEND</p>
-          <img id="pending-icon" src="assets/tech/spinner.svg" alt="" />
+          <p id="btn-inner-text" aria-hidden={pending ? "true" : "false"}>
+            SEND
+          </p>
+          <img
+            id="pending-icon"
+            src="assets/tech/spinner.svg"
+            alt={pending ? "Loading..." : ""}
+            aria-hidden={pending ? "false" : "true"}
+          />
         </button>
 
-        <div id="status-sent">
+        <div id="status-sent" aria-live="polite">
           <img src="assets/tech/github.svg" alt="" />
           <h3>SUCCESS</h3>
           <p>A confirmation email has been sent to whunterlong@gmail.com</p>
