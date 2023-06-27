@@ -115,7 +115,7 @@ const ContactForm = () => {
         </button>
 
         <div id="status-sent" aria-live="polite">
-          <img src="assets/tech/github.svg" alt="" />
+          <img src="assets/tech/check.svg" alt="" />
           <h3>SUCCESS</h3>
           <p>A confirmation email has been sent to whunterlong@gmail.com</p>
         </div>
