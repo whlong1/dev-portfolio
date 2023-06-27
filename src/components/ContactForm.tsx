@@ -14,6 +14,7 @@ const ContactForm = () => {
   const [message, setMessage] = useState('')
   const [pending, setPending] = useState(false)
   const [formData, setFormData] = useState<EmailFormData>(initialState)
+  const formClassNames = `${pending ? "pending" : ""} ${message ? "show-message" : ""}`
 
   const handleChange = (
     { target }: React.ChangeEvent<HTMLInputElement> | React.ChangeEvent<HTMLTextAreaElement>
@@ -40,8 +41,9 @@ const ContactForm = () => {
     }
   }
 
+
   return (
-    <form onSubmit={handleSubmit} className={pending ? "pending" : ""}>
+    <form onSubmit={handleSubmit} className={formClassNames}>
       <div className="form-row">
         <div className="form-column">
           <label htmlFor="firstName">
@@ -100,26 +102,23 @@ const ContactForm = () => {
         </div>
       </div>
 
-      <section className={`status-container ${message ? "show-message" : ""}`}>
-
+      <section className="status-container">
         <button type="submit">
-          <p id="btn-inner-text" aria-hidden={pending ? "true" : "false"}>
+          <p id="btn-inner-text">
             SEND
           </p>
           <img
             id="pending-icon"
             src="assets/tech/spinner.svg"
-            alt={pending ? "Loading..." : ""}
-            aria-hidden={pending ? "false" : "true"}
+            alt={pending ? "Loading" : ""}
           />
         </button>
 
-        <div id="status-sent" aria-live="polite">
-          <img src="assets/tech/check.svg" alt="" />
+        <div id="status-sent">
+          <img src="assets/tech/check.svg" alt="Success" />
           <h3>SUCCESS</h3>
           <p>A confirmation email has been sent to whunterlong@gmail.com</p>
         </div>
-
       </section>
 
     </form>

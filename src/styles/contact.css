@@ -150,15 +150,15 @@ textarea {
   padding-bottom: 8px;
 }
 
+
 .show-message #status-pending {
   opacity: 0;
   transition: opacity .35s;
 }
 
-
-
 button[type="submit"]:focus {
   outline: none;
+  outline: green;
 }
 
 button[type="submit"] {
@@ -173,7 +173,6 @@ button[type="submit"] {
     border-radius 1s,
     background-color 1s;
 }
-
 
 .pending button[type="submit"] {
   width: 48px;
@@ -237,12 +236,14 @@ button[type="submit"] {
   position: relative;
 }
 
+
 .show-message button[type="submit"] {
   width: 0;
   height: 0;
   opacity: 0;
   transition: opacity 1s, animation 1s, width 1s, height 1s;
 }
+
 
 .show-message #status-sent {
   opacity: 1;
@@ -275,6 +276,7 @@ button[type="submit"] {
   text-align: center;
 }
 
+
 .show-message #status-sent h3 {
   opacity: 1;
   margin-top: 36px;
@@ -295,6 +297,7 @@ button[type="submit"] {
   text-align: center;
   text-align-last: center;
 }
+
 
 .show-message #status-sent p {
   opacity: 1;
