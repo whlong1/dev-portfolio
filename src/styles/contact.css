@@ -115,7 +115,7 @@ label {
   margin: 0;
   height: 0;
   opacity: 0;
-  transition: opacity .35s, height 10s, margin 1s;
+  transition: opacity .25s, height 10s, margin 1s;
 }
 
 input,
