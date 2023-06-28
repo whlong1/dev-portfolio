@@ -27,6 +27,7 @@ const ContactForm = () => {
   }
 
   const handleSubmit = async (evt: React.FormEvent): Promise<void> => {
+    console.log("CLICK")
     evt.preventDefault()
     try {
       setPending(true)

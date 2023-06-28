@@ -1,7 +1,7 @@
 const AnimatedButton = ({ pending }: { pending: boolean }) => {
   return (
     <section className="status-container">
-      <button type="submit">
+      <button type="submit" disabled={pending}>
         <p id="btn-inner-text">SEND</p>
         <img
           id="pending-icon"
