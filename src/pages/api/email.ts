@@ -62,13 +62,13 @@ const sendEmail = async (
   if (req.method !== "POST") res.status(405).json({ type: "error", message: "Invalid Method" })
 
   try {
-    // await transporter.sendMail(mail)
+    await transporter.sendMail(mail)
     res.status(200).json({
       type: "success",
       message: `Success! A confirmation email has been sent to ${req.body.email}`,
     })
   } catch (error) {
-    console.error('err',error)
+    console.error('err', error)
     res.status(500).json({
       type: "error",
       message: "An error occurred while sending your message"
