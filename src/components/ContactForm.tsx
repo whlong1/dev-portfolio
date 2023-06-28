@@ -1,4 +1,5 @@
 import { useState } from "react"
+import { Status } from "@/types/status"
 import { EmailFormData } from "@/types/forms"
 import { handleErrorMsg } from '@/types/validators'
 import { sendEmailService } from '@/services/emailService'
@@ -16,8 +17,8 @@ const initialState = {
 
 const ContactForm = () => {
   const [message, setMessage] = useState("")
+  const [status, setStatus] = useState<Status>("")
   const [formData, setFormData] = useState<EmailFormData>(initialState)
-  const [status, setStatus] = useState<"" | "pending" | "success" | "error">("")
   const formClassNames = `${status ? "pending-state" : ""} ${message ? "message-state" : ""}`
 
   const handleChange = (
