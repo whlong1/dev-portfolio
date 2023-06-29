@@ -1,4 +1,5 @@
-import { useState } from 'react'
+import { useState } from "react"
+import { Status } from "@/types/status"
 import { EmailFormData } from "@/types/forms"
 import { handleErrorMsg } from '@/types/validators'
 import { sendEmailService } from '@/services/emailService'
@@ -15,10 +16,10 @@ const initialState = {
 }
 
 const ContactForm = () => {
-  const [message, setMessage] = useState('')
-  const [pending, setPending] = useState(false)
+  const [message, setMessage] = useState("")
+  const [status, setStatus] = useState<Status>("")
   const [formData, setFormData] = useState<EmailFormData>(initialState)
-  const formClassNames = `${pending ? "pending-state" : ""} ${message ? "message-state" : ""}`
+  const formClassNames = `${status ? "pending-state" : ""} ${message ? "message-state" : ""}`
 
   const handleChange = (
     { target }: React.ChangeEvent<HTMLInputElement> | React.ChangeEvent<HTMLTextAreaElement>
@@ -29,19 +30,16 @@ const ContactForm = () => {
   const handleSubmit = async (evt: React.FormEvent): Promise<void> => {
     evt.preventDefault()
     try {
-      setPending(true)
+      setStatus("pending")
       const emailData = await sendEmailService(formData)
-      setTimeout(() => {
-        setMessage(emailData.message)
-      }, 3000)
+      setStatus("success")
       setFormData(initialState)
+      setMessage(emailData.message)
     } catch (error) {
+      setStatus("error")
       handleErrorMsg(error, setMessage)
     } finally {
-      setTimeout(() => {
-        setMessage("")
-        setPending(false)
-      }, 8000)
+      setTimeout(() => { setStatus(""); setMessage("") }, 6000)
     }
   }
 
@@ -81,7 +79,7 @@ const ContactForm = () => {
           handleChange={handleChange}
         />
       </FormRow>
-      <AnimatedButton pending={pending} />
+      <AnimatedButton message={message} status={status} />
     </form>
   )
 }
