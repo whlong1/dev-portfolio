@@ -1,7 +1,7 @@
 export interface Image {
   src: string,
   alt: string,
-  id: string | undefined,
+  id?: string,
 }
 
 export interface Project {
@@ -15,7 +15,7 @@ export interface Project {
 }
 
 export interface Skill {
-  id: number,
+  id: string,
   name: string,
   image: Image
 }
