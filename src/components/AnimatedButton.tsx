@@ -8,9 +8,9 @@ interface AnimatedButtonProps {
 const AnimatedButton = ({ message, status }: AnimatedButtonProps) => {
   const statusIcons = {
     "": "",
-    error: "assets/tech/error.svg",
-    success: "assets/tech/check.svg",
-    pending: "assets/tech/spinner.svg",
+    error: "assets/icons/error.svg",
+    success: "assets/icons/check.svg",
+    pending: "assets/icons/spinner.svg",
   }
 
   return (

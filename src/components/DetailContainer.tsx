@@ -13,7 +13,7 @@ const DetailContainer = ({ project }: DetailContainerProps) => {
         <a href={project.github} target="_blank" rel="noopener noreferrer">
           <img
             className="card-header-icon"
-            src="/assets/tech/github.svg"
+            src="/assets/icons/github.svg"
             alt="GitHub Logo"
           />
         </a>

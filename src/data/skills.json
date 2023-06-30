@@ -3,7 +3,7 @@
     "id": 1,
     "name": "Auth0",
     "image": {
-      "src": "assets/tech/auth0.svg",
+      "src": "assets/icons/auth0.svg",
       "alt": "Description of the image content"
     }
   },
@@ -11,7 +11,7 @@
     "id": 2,
     "name": "Git",
     "image": {
-      "src": "assets/tech/git.svg",
+      "src": "assets/icons/git.svg",
       "alt": "Description of the image content"
     }
   },
@@ -19,7 +19,7 @@
     "id": 3,
     "name": "Github",
     "image": {
-      "src": "assets/tech/github.svg",
+      "src": "assets/icons/github.svg",
       "alt": "Description of the image content"
     }
   },
@@ -27,7 +27,7 @@
     "id": 4,
     "name": "HTML5",
     "image": {
-      "src": "assets/tech/html.svg",
+      "src": "assets/icons/html.svg",
       "alt": "Description of the image content"
     }
   },
@@ -35,7 +35,7 @@
     "id": 5,
     "name": "CSS3",
     "image": {
-      "src": "assets/tech/css.svg",
+      "src": "assets/icons/css.svg",
       "alt": "Description of the image content"
     }
   },
@@ -43,7 +43,7 @@
     "id": 6,
     "name": "Photoshop",
     "image": {
-      "src": "assets/tech/photoshop.svg",
+      "src": "assets/icons/photoshop.svg",
       "alt": "Description of the image content"
     }
   },
@@ -51,7 +51,7 @@
     "id": 7,
     "name": "Illustrator",
     "image": {
-      "src": "assets/tech/illustrator.svg",
+      "src": "assets/icons/illustrator.svg",
       "alt": "Description of the image content"
     }
   },
@@ -59,7 +59,7 @@
     "id": 8,
     "name": "After Effects",
     "image": {
-      "src": "assets/tech/after-effects.svg",
+      "src": "assets/icons/after-effects.svg",
       "alt": "Description of the image content"
     }
   },
@@ -67,7 +67,7 @@
     "id": 9,
     "name": "JavaScript",
     "image": {
-      "src": "assets/tech/javascript.svg",
+      "src": "assets/icons/javascript.svg",
       "alt": "Description of the image content"
     }
   },
@@ -75,7 +75,7 @@
     "id": 10,
     "name": "TypeScript",
     "image": {
-      "src": "assets/tech/typescript.svg",
+      "src": "assets/icons/typescript.svg",
       "alt": "Description of the image content"
     }
   },
@@ -83,7 +83,7 @@
     "id": 11,
     "name": "Python",
     "image": {
-      "src": "assets/tech/python.svg",
+      "src": "assets/icons/python.svg",
       "alt": "Description of the image content"
     }
   },
@@ -91,7 +91,7 @@
     "id": 12,
     "name": "MongoDB",
     "image": {
-      "src": "assets/tech/mongodb.svg",
+      "src": "assets/icons/mongodb.svg",
       "alt": "Description of the image content"
     }
   },
@@ -99,7 +99,7 @@
     "id": 13,
     "name": "Mongoose",
     "image": {
-      "src": "assets/tech/mongoose.svg",
+      "src": "assets/icons/mongoose.svg",
       "alt": "Description of the image content"
     }
   },
@@ -107,7 +107,7 @@
     "id": 14,
     "name": "PostgreSQL",
     "image": {
-      "src": "assets/tech/postgresql.svg",
+      "src": "assets/icons/postgresql.svg",
       "alt": "Description of the image content"
     }
   },
@@ -115,7 +115,7 @@
     "id": 15,
     "name": "Sequelize",
     "image": {
-      "src": "assets/tech/sequelize.svg",
+      "src": "assets/icons/sequelize.svg",
       "alt": "Description of the image content"
     }
   },
@@ -123,7 +123,7 @@
     "id": 16,
     "name": "Node.js",
     "image": {
-      "src": "assets/tech/node.svg",
+      "src": "assets/icons/node.svg",
       "alt": "Description of the image content"
     }
   },
@@ -131,7 +131,7 @@
     "id": 17,
     "name": "Express",
     "image": {
-      "src": "assets/tech/express.svg",
+      "src": "assets/icons/express.svg",
       "alt": "Description of the image content"
     }
   },
@@ -139,7 +139,7 @@
     "id": 18,
     "name": "React",
     "image": {
-      "src": "assets/tech/react.svg",
+      "src": "assets/icons/react.svg",
       "alt": "Description of the image content"
     }
   },
@@ -147,7 +147,7 @@
     "id": 19,
     "name": "Next",
     "image": {
-      "src": "assets/tech/next.svg",
+      "src": "assets/icons/next.svg",
       "alt": "Description of the image content"
     }
   },
@@ -155,7 +155,7 @@
     "id": 20,
     "name": "React Query",
     "image": {
-      "src": "assets/tech/react-query.svg",
+      "src": "assets/icons/react-query.svg",
       "alt": "Description of the image content"
     }
   },
@@ -163,7 +163,7 @@
     "id": 21,
     "name": "Redux",
     "image": {
-      "src": "assets/tech/redux.svg",
+      "src": "assets/icons/redux.svg",
       "alt": "Description of the image content"
     }
   },
@@ -171,7 +171,7 @@
     "id": 22,
     "name": "Flask",
     "image": {
-      "src": "assets/tech/flask.svg",
+      "src": "assets/icons/flask.svg",
       "alt": "Description of the image content"
     }
   }

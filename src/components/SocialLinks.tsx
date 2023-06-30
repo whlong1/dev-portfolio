@@ -3,19 +3,19 @@ const SocialLinks = () => {
     <ul>
       <li>
         <a href="">
-          <img src="/assets/tech/linkedin.svg" alt="LinkedIn" />
+          <img src="/assets/icons/linkedin.svg" alt="LinkedIn" />
           LinkedIn
         </a>
       </li>
       <li>
         <a href="">
-          <img src="/assets/tech/github.svg" alt="GitHub" />
+          <img src="/assets/icons/github.svg" alt="GitHub" />
           GitHub
         </a>
       </li>
       <li>
         <a href="">
-          <img src="/assets/tech/email.svg" alt="Email" />
+          <img src="/assets/icons/email.svg" alt="Email" />
           Email
         </a>
       </li>
