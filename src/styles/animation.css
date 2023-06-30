@@ -11,7 +11,7 @@ label {
 
 input,
 textarea {
-  transition: height .25s, padding 1s, margin 1s, opacity 1s;
+  transition: height .25s, padding 1s, margin 1s, opacity 1s, color 1s;
 }
 
 .pending-state input,
@@ -20,9 +20,12 @@ textarea {
   margin: 0;
   padding: 0;
   opacity: 0;
-  min-height: 0;
-  transition: height .25s, padding 1s, margin 1s, opacity 1.5s, min-height 1.5s ease-in-out;
+  color: transparent;
+  transition: height .25s, padding 1s, margin 1s, opacity 1.5s, color .5s;
+   /* Override Chrome Autocomplete: */
+  -webkit-text-fill-color: transparent;
 }
+
 
 .status-container {
   height: auto;
