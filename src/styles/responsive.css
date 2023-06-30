@@ -59,8 +59,6 @@
     display: block;
   }
 
-
-
   h2 {
     text-align: center;
   }
@@ -102,3 +100,13 @@
 @1300 .preview-container === 442.31 */
 /* break project cards at 1290 for ipad */
 /* base anims off layered-image */
+
+
+
+/* Add breakpoint before 930 on contact */
+/* Accounting for 4 line blurb: */
+@media only screen and (max-width: 1137px) {
+  #contact li {
+    margin-bottom: var(--spacing-6);
+  }
+}

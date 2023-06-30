@@ -40,7 +40,6 @@ textarea {
   padding-bottom: 8px;
 }
 
-
 .message-state #status-pending {
   opacity: 0;
   transition: opacity .35s;

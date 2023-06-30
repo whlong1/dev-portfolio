@@ -7,7 +7,7 @@ const ContactSection = () => {
       <div>
         <h2>CONTACT</h2>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Quis ipsum suspendisse ultrices gravida.
+          Want to connect? Feel free to contact me through LinkedIn, GitHub, or email. For your convenience, you can also use this form to send a message. I can't wait to hear from you.
         </p>
         <SocialLinks />
       </div>

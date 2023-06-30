@@ -77,6 +77,11 @@ label {
   margin-bottom: var(--spacing-7);
 }
 
+#contact .form-column+.form-column {
+  margin-left: 16px;
+}
+
+/* SOCIAL LINKS */
 #contact li {
   margin-bottom: var(--spacing-8);
 }
@@ -95,9 +100,5 @@ label {
   cursor: pointer;
   width: var(--spacing-7);
   height: var(--spacing-7);
-  margin-right: var(--spacing-4)
-}
-
-#contact .form-column+.form-column {
-  margin-left: 16px;
+  margin-right: var(--spacing-4);
 }
