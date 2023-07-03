@@ -102,3 +102,12 @@ label {
   height: var(--spacing-7);
   margin-right: var(--spacing-4);
 }
+
+#contact header {
+  align-items: flex-start;
+}
+
+#contact header p {
+  text-align: justify;
+  text-align-last: left;
+}
