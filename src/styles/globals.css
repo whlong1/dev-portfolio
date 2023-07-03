@@ -282,15 +282,17 @@ nav ul li:first-child {
   
   margin-left: auto;
   margin-right: auto;
-}
-
-
-
-/* 112 padding at top of section */
-.content {
+  
   display: flex;
   flex-direction: column;
-  padding: var(--layout-padding);
+
+  /* aim for 1184px combined active area */
+  max-width: 1244px;
+  padding: 60px;
+
+  /* padding: var(--layout-padding); */
+
+  /* 112 padding at top of section */
   padding-top: var(--spacing-10);
 }
 
