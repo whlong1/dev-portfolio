@@ -124,10 +124,9 @@ h2 {
 }
 
 p {
+  line-height: 1.5;
   text-align: justify;
   text-align-last: left;
-  line-height: 1.5;
-  /* Approximately 30px */
   margin-top: calc(var(--font-size-reg) / 2 * -1);
 }
 
@@ -216,17 +215,9 @@ img {
   padding: var(--spacing-1) var(--spacing-6);
 }
 
-/* .detail-container,
-.preview-container {
-  min-height: 320px;
-} */
-
 .detail-container {
   min-height: 320px;
 }
-
-
-
 
 .card p {
   line-height: 1.68;
@@ -236,7 +227,6 @@ img {
 
 .card .detail-container {
   width: 60%;
-  /* width: 50%; */
 }
 
 .preview-container {
@@ -246,18 +236,8 @@ img {
 }
 
 .card section>img {
-
   width: 328px;
   height: 246px;
-
-  /* 1440 */
-  /* width: 61%; */
-
-  /* width: 75.2%; */
-  /* height: ; */
-  /* height: 60%; */
-
-
   background: white;
   box-shadow: var(--box-shadow);
   border-top: .5px solid white;
@@ -338,12 +318,8 @@ h6 {
 }
 
 #skills ul {
-  /* gap: 8px; */
-  /* row-gap: 8px; */
-
   width: 100%;
   display: grid;
-
 
   gap: 48px;
   row-gap: 24px;
@@ -381,8 +357,6 @@ h6 {
 
 
 
-
-
 .preview-container .layered-image {
   transition: transform 1s, box-shadow 1s;
 }
@@ -392,6 +366,7 @@ h6 {
   box-shadow: 0px 25px 40px 0px rgba(0, 0, 0, 0.15);
   transition: transform 1s, box-shadow 1s;
 }
+
 
 
 
@@ -407,14 +382,8 @@ nav ul {
   border: 1px solid green;
 }
 
-/* main {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-} */
-
-main>section {
-  border: 1px solid red;
+.content {
+  /* border: 1px solid red; */
   max-width: 1440px;
 
   margin-left: auto;
@@ -423,30 +392,22 @@ main>section {
 
 
 
-
 /* 112 padding at top of section */
-main>section {
+.content {
   display: flex;
   flex-direction: column;
   padding: var(--layout-padding);
   padding-top: var(--spacing-10);
-
 }
 
-/* section {
-  display: flex;
-  flex-direction: column;
-} */
-
-main>section>header {
-  width: 100%;
+.content>header {
   display: flex;
   align-items: center;
   flex-direction: column;
   margin-bottom: var(--spacing-10);
 }
 
-main>section>header p {
+.content>header p {
   max-width: 608px;
   text-align: center;
   text-align-last: center;

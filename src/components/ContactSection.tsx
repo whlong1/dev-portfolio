@@ -3,10 +3,12 @@ import ContactForm from "./ContactForm"
 
 const ContactSection = () => {
   return (
-    <section className="split-layout" id="contact">
-      <ContactHeader />
-      <ContactForm />
-    </section>
+    <div className="background-wrapper">
+      <section className="content split-layout" id="contact">
+        <ContactHeader />
+        <ContactForm />
+      </section>
+    </div>
   )
 }
 

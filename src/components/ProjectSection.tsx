@@ -6,7 +6,7 @@ const ProjectSection = () => {
   const projects: Project[] = projectData
 
   return (
-    <section id="projects">
+    <section className="content" id="projects">
       <header>
         <h2>RECENT PROJECTS</h2>
         <p>

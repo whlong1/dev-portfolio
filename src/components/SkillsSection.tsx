@@ -5,7 +5,7 @@ const SkillsSection = () => {
   const skills: Skill[] = skillsData
 
   return (
-    <section id="skills">
+    <section className="content" id="skills">
       <header>
         <h2>TECHNICAL SKILLS</h2>
         <p>

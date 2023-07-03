@@ -1,7 +1,7 @@
 const AboutSection = () => {
 
   return (
-    <section className="split-layout" id="about">
+    <section className="content split-layout" id="about">
       <div>
         <h6>FULL-STACK DEVELOPER</h6>
         <h1>HUNTER LONG</h1>
