@@ -116,3 +116,8 @@ label {
   text-align: justify;
   text-align-last: left;
 }
+
+#contact a p {
+  margin: 0;
+  min-height: initial;
+}
