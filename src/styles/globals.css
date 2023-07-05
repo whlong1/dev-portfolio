@@ -3,8 +3,8 @@
   --font-size-med: 36px;
   /* section title: */
   --font-size-large: 48px;
-  /* splash title: */
-  --font-size-xlarge: 56px;
+  /* splash title: 5.6rem */
+  --font-size-xlarge: 56px; 
   /* body, links, buttons, overline: */
   --font-size-reg: 18px;
   /* copyright: */
@@ -67,6 +67,7 @@ body {
 
 html {
   overflow: hidden;
+  font-size: 62.5%; 
 }
 
 body {
