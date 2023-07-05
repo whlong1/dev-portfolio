@@ -1,4 +1,4 @@
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 900px) {
   .split-layout {
     flex-direction: column;
   }
@@ -35,11 +35,7 @@
 
   .preview-container {
     width: 100%;
-    border: 2px solid green;
     height: auto;
-    /* display: none; */
-    /* padding: 0 36px; */
-    /* min-height: 400px; */
   }
 
   .projects {
@@ -50,9 +46,6 @@
 
   .layered-image {
     display: none;
-    /* width: 90% !important;
-    height: 300px !important; */
-
   }
 
   .card .single-image {
@@ -70,12 +63,8 @@
     display: none;
   }
 
-  #about,
-  #projects,
-  #skills,
-  #contact {
-    width: 100%;
-    padding: 0;
+  .content {
+    padding: 16px;
   }
 
   #contact>div,
@@ -94,6 +83,7 @@
     /* fixes mobile height/footer issue, test on desktop */
     height: 100%;
   }
+
   #contact header {
     margin: 0;
     align-items: center;
