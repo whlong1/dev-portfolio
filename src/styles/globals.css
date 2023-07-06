@@ -48,6 +48,12 @@
   --layout-padding: 0 128px;
 
   --content-max-width: 1440px;
+
+
+  /* Mobile */
+  --mobile-section-margin: 144px;
+
+
 }
 
 *,

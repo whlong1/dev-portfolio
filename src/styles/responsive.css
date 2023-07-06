@@ -35,28 +35,28 @@
 @media only screen and (max-width: 1000px) {
   .card section>img {
     width: 296px;
-    height: 222px; 
+    height: 222px;
   }
 }
 
 @media only screen and (max-width: 980px) {
   .card section>img {
     width: 288px;
-    height: 216px; 
+    height: 216px;
   }
 }
 
 @media only screen and (max-width: 960px) {
   .card section>img {
     width: 280px;
-    height: 210px; 
+    height: 210px;
   }
 }
 
 @media only screen and (max-width: 940px) {
   .card section>img {
     width: 264px;
-    height: 198px; 
+    height: 198px;
   }
 }
 
@@ -77,16 +77,6 @@
     width: 100%;
   }
 
-  #about {
-    flex-direction: column-reverse;
-  }
-
-  #about>:nth-child(1),
-  #about>:nth-child(2) {
-    margin: 0;
-    width: 100%;
-  }
-
   .card {
     margin: 0;
     display: flex;
@@ -100,16 +90,9 @@
     margin-top: var(--spacing-8);
   }
 
-
   .preview-container {
     width: 100%;
     height: auto;
-  }
-
-  .projects {
-    width: 100% !important;
-    align-items: baseline !important;
-    align-items: initial;
   }
 
   .layered-image {
@@ -127,12 +110,8 @@
   #contact ul {
     display: flex;
     flex-direction: row;
-    border: 1px solid green;
-    display: none;
-  }
 
-  .content {
-    padding: 16px;
+    display: none;
   }
 
   #contact>div,
@@ -152,17 +131,70 @@
     align-items: center;
   }
 
+  #contact form {
+    padding: 0 !important;
+    height: 100%;
+  }
+
+  #contact a p {
+    display: none;
+  }
 
 
+
+
+  .content {
+    padding: 72px 16px !important;
+  }
 
   h1 {
     /* alt: 48 */
-    font-size: 50px; 
+    font-size: 50px;
   }
+
   h2 {
     /* alt: 40 */
     font-size: 42px;
   }
+
+
+  #about {
+    /* padding: 0 !important; */
+    /* border: 10px solid rgb(0, 42, 255); */
+    flex-direction: column-reverse;
+  }
+
+  #about>:nth-child(1),
+  #about>:nth-child(2) {
+    margin: 0;
+    width: 100%;
+  }
+
+  .logo {
+    height: 300px;
+    margin-bottom: 72px;
+  }
+
+  .cta-container {
+    width: 100%;
+    display: flex;
+    margin-top: 48px;
+    flex-direction: column;
+  }
+
+  .cta-container button:nth-child(2) {
+    display: none;
+  }
+
+  #about button {
+    width: 100%;
+  }
+
+  nav ul {
+    display: none;
+  }
+
+
 }
 
 
