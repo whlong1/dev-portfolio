@@ -147,14 +147,17 @@
     padding: 72px 16px !important;
   }
 
+  .section-blurb {
+    display: none;
+  }
+
   h1 {
-    /* alt: 48 */
     font-size: 50px;
+    letter-spacing: -.5px;
   }
 
   h2 {
-    /* alt: 40 */
-    font-size: 42px;
+    font-size: 40px;
   }
 
 

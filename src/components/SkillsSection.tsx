@@ -8,7 +8,7 @@ const SkillsSection = () => {
     <section className="content" id="skills">
       <header>
         <h2>TECHNICAL SKILLS</h2>
-        <p>
+        <p className="section-blurb">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.
         </p>
       </header>

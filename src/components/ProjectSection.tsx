@@ -9,7 +9,7 @@ const ProjectSection = () => {
     <section className="content" id="projects">
       <header>
         <h2>RECENT PROJECTS</h2>
-        <p>
+        <p className="section-blurb">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.
         </p>
       </header>
