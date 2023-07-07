@@ -127,7 +127,7 @@
   }
 
   #contact header {
-    margin: 0;
+    height: auto;
     align-items: center;
   }
 
@@ -147,17 +147,23 @@
     padding: 72px 16px !important;
   }
 
+  .content>header {
+    margin-bottom: 72px;
+  }
+
   .section-blurb {
     display: none;
   }
 
   h1 {
     font-size: 50px;
+    margin-top: 12px;
     letter-spacing: -.5px;
   }
 
   h2 {
     font-size: 40px;
+    margin-bottom: 0;
   }
 
 
