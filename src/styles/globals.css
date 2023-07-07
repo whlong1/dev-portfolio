@@ -44,9 +44,6 @@
   /* --secondary-color: ''; */
   --tertiary-color: #dcdcdc;
   --quaternary-color: #f7f9fb;
-
-  --layout-padding: 0 128px;
-  --content-max-width: 1440px;
 }
 
 *,
@@ -246,9 +243,9 @@ nav ul {
   width: 100%;
   display: flex;
   list-style: none;
+  max-width: 1440px;
   align-items: center;
-  padding: var(--layout-padding);
-  max-width: var(--content-max-width);
+  padding: 0 128px;
 }
 
 nav ul li {
@@ -262,13 +259,12 @@ nav ul li:first-child {
 .content {
   display: flex;
   padding: 60px;
-  max-width: 1244px;
   flex-direction: column;
   padding-top: var(--spacing-10);
-
+  
+  max-width: 1244px;
   margin-left: auto;
   margin-right: auto;
-  max-width: var(--content-max-width);
 }
 
 .content>header {

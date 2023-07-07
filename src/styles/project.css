@@ -36,6 +36,8 @@
 .card ul {
   width: 100%;
   display: flex;
+  /* margin-top: auto; */
+  
 }
 
 .card ul li {
