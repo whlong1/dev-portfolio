@@ -1,8 +1,6 @@
 .card {
   display: inherit;
   margin-bottom: var(--spacing-12);
-  /* max-width: 1200px; */
-  /* border: 1px solid orange; */
 }
 
 .card header {
@@ -51,7 +49,7 @@
   font-weight: var(--font-weight-regular);
 
   font-size: 17px;
-  padding: 12px 24px;
+  padding: 12px 32px;
 }
 
 .detail-container {

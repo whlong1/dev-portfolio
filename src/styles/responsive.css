@@ -77,7 +77,6 @@
     width: 100%;
   }
 
-
   .card {
     margin: 0;
     display: flex;
@@ -95,8 +94,6 @@
     margin-top: var(--spacing-8);
   }
 
-
-
   .card ul {
     gap: 24px;
     row-gap: 24px;
@@ -106,7 +103,7 @@
 
   .card ul li {
     margin-right: 0;
-    padding: 6px 16px;
+    padding: 6px 24px;
   }
 
   .card ul li span {
@@ -117,7 +114,7 @@
     line-height: normal;
     text-overflow: ellipsis;
   }
-  
+
   .preview-container {
     width: 100%;
     height: auto;
@@ -150,7 +147,7 @@
   }
 
   #contact>* {
-    /* fixes mobile height/footer issue, test on desktop */
+    /* fixes mobile height/footer issue: */
     height: 100%;
   }
 
@@ -167,9 +164,6 @@
   #contact a p {
     display: none;
   }
-
-
-
 
   .content {
     padding: 72px 16px !important;
@@ -196,8 +190,6 @@
 
 
   #about {
-    /* padding: 0 !important; */
-    /* border: 10px solid rgb(0, 42, 255); */
     flex-direction: column-reverse;
   }
 
@@ -230,18 +222,7 @@
   nav ul {
     display: none;
   }
-
-
 }
-
-
-
-/* @1440 .preview-container === 537.27
-@1300 .preview-container === 442.31 */
-/* break project cards at 1290 for ipad */
-/* base anims off layered-image */
-
-
 
 /* Add breakpoint before 930 on contact */
 /* Accounting for 4 line blurb: */
@@ -250,13 +231,3 @@
     margin-bottom: var(--spacing-6);
   }
 }
-
-
-
-
-/* 
-details p tag max height of 180
-or min height of 180
-active content at full width is 1184
-contact section seems to have a set height- need to fix mobile
-*/
