@@ -21,7 +21,11 @@ const DetailContainer = ({ project }: DetailContainerProps) => {
       <p>{project.description}</p>
       <ul>
         {project.technologies.map((tech, idx) => (
-          <li key={idx}>{tech}</li>
+          <li key={idx}>
+            <span>
+              {tech}
+            </span>
+          </li>
         ))}
       </ul>
     </section>

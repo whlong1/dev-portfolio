@@ -38,19 +38,20 @@
 .card ul {
   width: 100%;
   display: flex;
-  margin-top: auto;
 }
 
 .card ul li {
   display: flex;
   overflow: hidden;
-  margin-right: 18px;
+  margin-right: 16px;
   border-radius: 20px;
   white-space: nowrap;
   justify-content: center;
   background-color: var(--tertiary-color);
   font-weight: var(--font-weight-regular);
-  padding: var(--spacing-1) var(--spacing-6);
+
+  font-size: 17px;
+  padding: 12px 24px;
 }
 
 .detail-container {
