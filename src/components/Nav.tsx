@@ -1,5 +1,6 @@
 import Link from 'next/link'
 
+
 const Nav = () => {
   return (
     <nav>
@@ -10,6 +11,9 @@ const Nav = () => {
         <li><Link href="#skills">SKILLS</Link></li>
         <li><Link href="#contact">CONTACT</Link></li>
       </ul>
+      <button>
+        <img src="assets/icons/hamburger.svg" alt="Open Menu" />
+      </button>
     </nav>
   )
 }
