@@ -1,0 +1,98 @@
+.card {
+  display: inherit;
+  margin-bottom: var(--spacing-12);
+}
+
+.card header {
+  width: 100%;
+  display: flex;
+  min-height: 40px;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--spacing-7);
+}
+
+.card header>a {
+  cursor: default;
+}
+
+.card header>a * {
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+
+.card-header-icon {
+  border-radius: 50%;
+  width: var(--spacing-6);
+  height: var(--spacing-6);
+}
+
+.card-header-icon:hover {
+  opacity: .75;
+  cursor: pointer;
+}
+
+.card ul {
+  width: 100%;
+  display: flex;  
+}
+
+.card ul li {
+  display: flex;
+  overflow: hidden;
+  margin-right: 16px;
+  border-radius: 20px;
+  white-space: nowrap;
+  justify-content: center;
+  background-color: var(--tertiary-color);
+  font-weight: var(--font-weight-regular);
+
+  font-size: 17px;
+  padding: 12px 32px;
+}
+
+.detail-container {
+  min-height: 320px;
+}
+
+.card p {
+  line-height: 1.68;
+  letter-spacing: -.5px;
+  margin-bottom: var(--spacing-5);
+}
+
+.card .detail-container {
+  width: 60%;
+}
+
+.preview-container {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+}
+
+.card section>img {
+  width: 328px;
+  height: 246px;
+  background: white;
+  box-shadow: var(--box-shadow);
+  border-top: .5px solid white;
+  border-radius: var(--border-radius);
+}
+
+.card .single-image {
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+.preview-container .layered-image {
+  transition: transform 1s, box-shadow 1s;
+}
+
+.preview-container .layered-image:hover {
+  transform: scale(1.05);
+  transition: transform 1s, box-shadow 1s;
+  box-shadow: 0px 25px 40px 0px rgba(0, 0, 0, 0.15);
+}

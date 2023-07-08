@@ -1,4 +1,69 @@
-@media only screen and (max-width: 700px) {
+/* PROJECT SECTION BREAKPOINTS */
+
+@media only screen and (max-width: 1170px) {
+  .card .detail-container {
+    width: 56%;
+  }
+}
+
+@media only screen and (max-width: 1140px) {
+  .card .detail-container {
+    width: 54%;
+  }
+}
+
+@media only screen and (max-width: 1110px) {
+  .card .detail-container {
+    width: 52%;
+  }
+}
+
+@media only screen and (max-width: 1080px) {
+  .card section>img {
+    width: 312px;
+    height: 234px;
+  }
+}
+
+@media only screen and (max-width: 1020px) {
+  .card section>img {
+    width: 304px;
+    height: 228px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .card section>img {
+    width: 296px;
+    height: 222px;
+  }
+}
+
+@media only screen and (max-width: 980px) {
+  .card section>img {
+    width: 288px;
+    height: 216px;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  .card section>img {
+    width: 280px;
+    height: 210px;
+  }
+}
+
+@media only screen and (max-width: 940px) {
+  .card section>img {
+    width: 264px;
+    height: 198px;
+  }
+}
+
+
+/*! MOBILE LAYOUT !*/
+
+@media only screen and (max-width: 900px) {
   .split-layout {
     flex-direction: column;
   }
@@ -8,51 +73,55 @@
   }
 
   nav {
-    padding: 0;
     width: 100%;
-  }
-
-  #about {
-    flex-direction: column-reverse;
-  }
-
-  #about>:nth-child(1),
-  #about>:nth-child(2) {
-    margin: 0;
-    width: 100%;
+    padding: 0 16px;
   }
 
   .card {
     margin: 0;
     display: flex;
     flex-direction: column-reverse !important;
+    /* vertical spacing between each project: */
+    margin-bottom: 72px;
+  }
+
+  .card:last-child {
+    margin-bottom: 0;
   }
 
   .card .detail-container {
     width: 100%;
-    border: 1px solid red;
+    margin-top: var(--spacing-8);
+  }
+
+  .card ul {
+    gap: 24px;
+    row-gap: 24px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(96px, 1fr));
+  }
+
+  .card ul li {
+    margin-right: 0;
+    padding: 6px 24px;
+  }
+
+  .card ul li span {
+    height: 100%;
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    line-height: normal;
+    text-overflow: ellipsis;
   }
 
   .preview-container {
     width: 100%;
-    border: 2px solid green;
     height: auto;
-    /* display: none; */
-    /* padding: 0 36px; */
-    /* min-height: 400px; */
-  }
-
-  .projects {
-    width: 100% !important;
-    align-items: baseline !important;
-    align-items: initial;
   }
 
   .layered-image {
     display: none;
-    /* width: 90% !important;
-    height: 300px !important; */
-
   }
 
   .card .single-image {
@@ -66,42 +135,105 @@
   #contact ul {
     display: flex;
     flex-direction: row;
-    border: 1px solid green;
+
     display: none;
   }
 
-  #about,
-  #projects,
-  #skills,
-  #contact {
-    width: 100%;
-    padding: 0;
-  }
-
   #contact>div,
+  #contact>header,
   #contact form {
     padding: 0;
     width: 100%;
   }
 
-  form {
-    padding: 16px !important;
-  }
-
   #contact>* {
-    /* fixes mobile height/footer issue, test on desktop */
+    /* fixes mobile height/footer issue: */
     height: 100%;
   }
+
+  #contact header {
+    height: auto;
+    align-items: center;
+  }
+
+  #contact form {
+    padding: 0 !important;
+    height: 100%;
+  }
+
+  #contact a p {
+    display: none;
+  }
+
+  .content {
+    padding: 72px 16px !important;
+  }
+
+  .content>header {
+    margin-bottom: 72px;
+  }
+
+  .section-blurb {
+    display: none;
+  }
+
+  h1 {
+    font-size: 50px;
+    margin-top: 12px;
+    letter-spacing: -.5px;
+  }
+
+  h2 {
+    font-size: 40px;
+    margin-bottom: 0;
+  }
+
+
+  #about {
+    flex-direction: column-reverse;
+  }
+
+  #about>:nth-child(1),
+  #about>:nth-child(2) {
+    margin: 0;
+    width: 100%;
+  }
+
+  .logo {
+    height: 300px;
+    margin-bottom: 72px;
+  }
+
+  .cta-container {
+    width: 100%;
+    display: flex;
+    margin-top: 48px;
+    flex-direction: column;
+  }
+
+  .cta-container button:nth-child(2) {
+    display: none;
+  }
+
+  #about button {
+    width: 100%;
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  nav button {
+    display: flex;
+    background: none;
+    margin-left: auto;
+    height: max-content;
+  }
+
+  nav button img {
+    width: 36px;
+  }
 }
-
-
-
-/* @1440 .preview-container === 537.27
-@1300 .preview-container === 442.31 */
-/* break project cards at 1290 for ipad */
-/* base anims off layered-image */
-
-
 
 /* Add breakpoint before 930 on contact */
 /* Accounting for 4 line blurb: */

@@ -53,6 +53,9 @@ input:-webkit-autofill:focus {
   align-items: stretch;
   align-items: flex-start;
   padding-bottom: var(--spacing-12);
+}
+
+.background-wrapper {
   background-color: var(--quaternary-color);
 }
 
@@ -101,4 +104,19 @@ label {
   width: var(--spacing-7);
   height: var(--spacing-7);
   margin-right: var(--spacing-4);
+}
+
+#contact header {
+  align-items: flex-start;
+}
+
+#contact>header p {
+  width: 100%;
+  text-align: justify;
+  text-align-last: left;
+}
+
+#contact a p {
+  margin: 0;
+  min-height: initial;
 }
