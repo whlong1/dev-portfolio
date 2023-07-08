@@ -3,7 +3,7 @@
     "id": "sk01",
     "name": "Auth0",
     "image": {
-      "src": "assets/icons/auth0.svg",
+      "src": "assets/tech-logos/auth0.svg",
       "alt": "Description of the image content"
     }
   },
@@ -11,7 +11,7 @@
     "id": "sk02",
     "name": "Git",
     "image": {
-      "src": "assets/icons/git.svg",
+      "src": "assets/tech-logos/git.svg",
       "alt": "Description of the image content"
     }
   },
@@ -19,7 +19,7 @@
     "id": "sk03",
     "name": "Github",
     "image": {
-      "src": "assets/icons/github.svg",
+      "src": "assets/tech-logos/github.svg",
       "alt": "Description of the image content"
     }
   },
@@ -27,7 +27,7 @@
     "id": "sk04",
     "name": "HTML5",
     "image": {
-      "src": "assets/icons/html.svg",
+      "src": "assets/tech-logos/html.svg",
       "alt": "Description of the image content"
     }
   },
@@ -35,7 +35,7 @@
     "id": "sk05",
     "name": "CSS3",
     "image": {
-      "src": "assets/icons/css.svg",
+      "src": "assets/tech-logos/css.svg",
       "alt": "Description of the image content"
     }
   },
@@ -43,7 +43,7 @@
     "id": "sk06",
     "name": "Photoshop",
     "image": {
-      "src": "assets/icons/photoshop.svg",
+      "src": "assets/tech-logos/photoshop.svg",
       "alt": "Description of the image content"
     }
   },
@@ -51,7 +51,7 @@
     "id": "sk07",
     "name": "Illustrator",
     "image": {
-      "src": "assets/icons/illustrator.svg",
+      "src": "assets/tech-logos/illustrator.svg",
       "alt": "Description of the image content"
     }
   },
@@ -59,7 +59,7 @@
     "id": "sk08",
     "name": "After Effects",
     "image": {
-      "src": "assets/icons/after-effects.svg",
+      "src": "assets/tech-logos/after-effects.svg",
       "alt": "Description of the image content"
     }
   },
@@ -67,7 +67,7 @@
     "id": "sk09",
     "name": "JavaScript",
     "image": {
-      "src": "assets/icons/javascript.svg",
+      "src": "assets/tech-logos/javascript.svg",
       "alt": "Description of the image content"
     }
   },
@@ -75,7 +75,7 @@
     "id": "sk10",
     "name": "TypeScript",
     "image": {
-      "src": "assets/icons/typescript.svg",
+      "src": "assets/tech-logos/typescript.svg",
       "alt": "Description of the image content"
     }
   },
@@ -83,7 +83,7 @@
     "id": "sk11",
     "name": "Python",
     "image": {
-      "src": "assets/icons/python.svg",
+      "src": "assets/tech-logos/python.svg",
       "alt": "Description of the image content"
     }
   },
@@ -91,7 +91,7 @@
     "id": "sk12",
     "name": "MongoDB",
     "image": {
-      "src": "assets/icons/mongodb.svg",
+      "src": "assets/tech-logos/mongodb.svg",
       "alt": "Description of the image content"
     }
   },
@@ -99,7 +99,7 @@
     "id": "sk13",
     "name": "Mongoose",
     "image": {
-      "src": "assets/icons/mongoose.svg",
+      "src": "assets/tech-logos/mongoose.svg",
       "alt": "Description of the image content"
     }
   },
@@ -107,7 +107,7 @@
     "id": "sk14",
     "name": "PostgreSQL",
     "image": {
-      "src": "assets/icons/postgresql.svg",
+      "src": "assets/tech-logos/postgres.svg",
       "alt": "Description of the image content"
     }
   },
@@ -115,7 +115,7 @@
     "id": "sk15",
     "name": "Sequelize",
     "image": {
-      "src": "assets/icons/sequelize.svg",
+      "src": "assets/tech-logos/sequelize.svg",
       "alt": "Description of the image content"
     }
   },
@@ -123,7 +123,7 @@
     "id": "sk16",
     "name": "Node.js",
     "image": {
-      "src": "assets/icons/node.svg",
+      "src": "assets/tech-logos/node.svg",
       "alt": "Description of the image content"
     }
   },
@@ -131,7 +131,7 @@
     "id": "sk17",
     "name": "Express",
     "image": {
-      "src": "assets/icons/express.svg",
+      "src": "assets/tech-logos/express.svg",
       "alt": "Description of the image content"
     }
   },
@@ -139,7 +139,7 @@
     "id": "sk18",
     "name": "React",
     "image": {
-      "src": "assets/icons/react.svg",
+      "src": "assets/tech-logos/react.svg",
       "alt": "Description of the image content"
     }
   },
@@ -147,7 +147,7 @@
     "id": "sk19",
     "name": "Next",
     "image": {
-      "src": "assets/icons/next.svg",
+      "src": "assets/tech-logos/next.svg",
       "alt": "Description of the image content"
     }
   },
@@ -155,7 +155,7 @@
     "id": "sk20",
     "name": "React Query",
     "image": {
-      "src": "assets/icons/react-query.svg",
+      "src": "assets/tech-logos/react-query.svg",
       "alt": "Description of the image content"
     }
   },
@@ -163,7 +163,7 @@
     "id": "sk21",
     "name": "Redux",
     "image": {
-      "src": "assets/icons/redux.svg",
+      "src": "assets/tech-logos/redux.svg",
       "alt": "Description of the image content"
     }
   },
@@ -171,7 +171,7 @@
     "id": "sk22",
     "name": "Flask",
     "image": {
-      "src": "assets/icons/flask.svg",
+      "src": "assets/tech-logos/flask.svg",
       "alt": "Description of the image content"
     }
   }
