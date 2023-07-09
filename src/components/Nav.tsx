@@ -1,5 +1,5 @@
 import Link from 'next/link'
-
+import MobileNav from './MobileNav'
 
 const Nav = () => {
   return (
@@ -14,6 +14,7 @@ const Nav = () => {
       <button>
         <img src="assets/icons/hamburger.svg" alt="Open Menu" />
       </button>
+      <MobileNav />
     </nav>
   )
 }
