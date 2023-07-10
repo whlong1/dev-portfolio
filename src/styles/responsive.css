@@ -222,16 +222,46 @@
     display: none;
   }
 
+
+  /* MOBILE NAV */
+
   nav button {
     display: flex;
     background: none;
     margin-left: auto;
     height: max-content;
+    z-index: 2;
   }
 
   nav button img {
     width: 36px;
   }
+
+  .menu-wrapper {
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    padding-left: 64px;
+    background-color: rgba(0, 0, 0, .25);
+  }
+
+  .menu-wrapper ul {
+    height: 100%;
+    padding: 96px 48px;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: white;
+    border-radius: 5px 0px 0px 5px;
+    box-shadow: 0px 25px 40px 0px rgba(0, 0, 0, 0.15);
+  }
+
+  .menu-wrapper li {
+    margin: 24px 0;
+    font-size: 24px;
+  }
+
 }
 
 /* Add breakpoint before 930 on contact */

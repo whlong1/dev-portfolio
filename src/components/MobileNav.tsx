@@ -2,7 +2,7 @@ import NavLinks from "./NavLinks"
 
 const MobileNav = () => {
   return (
-    <div>
+    <div className="menu-wrapper">
       <NavLinks />
     </div>
   )

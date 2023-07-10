@@ -13,6 +13,7 @@ const Nav = () => {
       <button onClick={() => setOpen((prev) => !prev)}>
         <img src="assets/icons/hamburger.svg" alt="Open Menu" />
       </button>
+
       {open && <MobileNav />}
 
     </nav>
