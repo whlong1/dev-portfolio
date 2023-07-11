@@ -1,21 +1,11 @@
-import { useState } from 'react'
-// import Link from 'next/link'
-
 import NavLinks from './NavLinks'
-import MobileNav from './MobileNav'
+import HamburgerMenu from './HamburgerMenu'
 
 const Nav = () => {
-  const [open, setOpen] = useState(true)
-
   return (
     <nav>
       <NavLinks />
-      <button onClick={() => setOpen((prev) => !prev)}>
-        <img src="assets/icons/hamburger.svg" alt="Open Menu" />
-      </button>
-
-      {open && <MobileNav />}
-
+      <HamburgerMenu />
     </nav>
   )
 }
