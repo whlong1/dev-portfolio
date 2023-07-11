@@ -1,5 +1,7 @@
 import { useState } from 'react'
+
 import NavLinks from "./NavLinks"
+import SocialLinks from './SocialLinks'
 
 const HamburgerMenu = () => {
   const [open, setOpen] = useState(true)
@@ -8,7 +10,9 @@ const HamburgerMenu = () => {
     <>
       <div className={`menu-wrapper ${toggleStyle}`}>
         <div className={`menu ${toggleStyle}`}>
+          <hr />
           <NavLinks />
+          <SocialLinks/>
         </div>
       </div>
       <button onClick={() => setOpen((prev) => !prev)}>

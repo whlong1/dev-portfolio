@@ -1,6 +1,6 @@
 const SocialLinks = () => {
   return (
-    <ul>
+    <ul className="social-links">
       <li>
         <a href="">
           <img src="/assets/icons/linkedin.svg" alt="LinkedIn" />
