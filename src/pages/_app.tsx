@@ -1,4 +1,5 @@
 import "@/styles/nav.css"
+import "@/styles/footer.css"
 import "@/styles/globals.css"
 import "@/styles/contact.css"
 import "@/styles/project.css"
