@@ -4,7 +4,7 @@ import NavLinks from "./NavLinks"
 import SocialLinks from './SocialLinks'
 
 const HamburgerMenu = () => {
-  const [open, setOpen] = useState(true)
+  const [open, setOpen] = useState(false)
   const toggleStyle = `${open ? 'open' : ''}`
   return (
     <>
