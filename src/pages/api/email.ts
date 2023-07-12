@@ -58,7 +58,6 @@ const sendEmail = async (
     subject: `Your Message to Hunter Long Has Been Received, ${firstName} ${lastName}`,
   }
 
-  // Add check for form body
   if (req.method !== "POST") res.status(405).json({ type: "error", message: "Invalid Method" })
 
   try {
