@@ -214,6 +214,13 @@
     width: 100%;
   }
 
+  .two-column {
+    flex-direction: column;
+  }
+  .two-column .form-column {
+    margin: 0 !important;
+  }
+
 }
 
 /* Add breakpoint before 930 on contact */
