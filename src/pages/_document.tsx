@@ -1,5 +1,4 @@
 import { Html, Head, Main, NextScript } from 'next/document'
-import Layout from '@/components/Layout'
 
 const Document = () => {
   return (
@@ -10,9 +9,7 @@ const Document = () => {
         <link rel="icon" href="/assets/branding/logo.svg" />
       </Head>
       <body>
-        <Layout>
-          <Main />
-        </Layout>
+        <Main />
         <NextScript />
       </body>
     </Html>
