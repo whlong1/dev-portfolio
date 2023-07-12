@@ -10,9 +10,8 @@ const HamburgerMenu = () => {
     <>
       <div className={`menu-wrapper ${toggleStyle}`}>
         <div className={`menu ${toggleStyle}`}>
-          <hr />
           <NavLinks />
-          <SocialLinks/>
+          <SocialLinks />
         </div>
       </div>
       <button onClick={() => setOpen((prev) => !prev)}>

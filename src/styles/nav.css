@@ -47,11 +47,11 @@ nav ul li:first-child {
   }
 
   nav button {
+    z-index: 2;
     display: flex;
     background: none;
     margin-left: auto;
     height: max-content;
-    z-index: 2;
   }
 
   nav button img {
@@ -73,6 +73,7 @@ nav ul li:first-child {
 
   .menu-wrapper.open {
     pointer-events: fill;
+    transition: background-color 0.3s;
     background-color: rgba(0, 0, 0, .25);
   }
 
@@ -91,15 +92,10 @@ nav ul li:first-child {
     transform: translateX(0);
   }
 
-  .menu.open hr {
-    border: none;
-    padding-top: 95px;
-    border-bottom: 1px solid var(--tertiary-color);
-  }
-
   .menu .nav-links {
     display: flex;
     padding: 24px 48px;
+    padding: 96px 48px;
     flex-direction: column;
     align-items: flex-start;
   }
@@ -113,21 +109,36 @@ nav ul li:first-child {
   .menu .social-links {
     padding: 48px;
     margin-top: auto;
+    justify-content: space-between;
   }
 
   .menu .social-links li {
+    margin: 0;
     width: 48px;
     height: 48px;
     border-radius: 50%;
     background-color: black;
   }
+  
+  .menu .social-links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+  }
 
   .menu .social-links img {
-    display: none;
+    height: 24px;
+    filter: invert(1);
   }
 
   .menu .social-links p {
     display: none;
+  }
+
+  .menu .social-links img[alt="LinkedIn"] {
+    height: 23px;
   }
 
 }
