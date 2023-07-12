@@ -4,7 +4,6 @@ import { EmailFormData } from "@/types/forms"
 import { handleErrorMsg } from '@/types/validators'
 import { sendEmailService } from '@/services/emailService'
 
-import FormRow from "./FormRow"
 import FormColumn from "./FormColumn"
 import AnimatedButton from "./AnimatedButton"
 
