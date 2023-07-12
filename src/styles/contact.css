@@ -22,9 +22,9 @@ label {
 
 input,
 textarea {
+  resize: none;
   max-width: 100%;
   font-size: 16px;
-  resize: vertical;
   color: #a0a0a0;
   margin-bottom: 24px;
   height: var(--spacing-8);
