@@ -183,7 +183,6 @@
     margin-bottom: 0;
   }
 
-
   #about {
     flex-direction: column-reverse;
   }
@@ -212,6 +211,19 @@
 
   #about button {
     width: 100%;
+  }
+
+
+
+  #contact {
+    height: 780px;
+  }
+
+  .two-column {
+    flex-direction: column;
+  }
+  .two-column .form-column {
+    margin: 0 !important;
   }
 
 }

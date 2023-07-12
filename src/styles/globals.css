@@ -44,6 +44,8 @@
   /* --secondary-color: ''; */
   --tertiary-color: #dcdcdc;
   --quaternary-color: #f7f9fb;
+
+  --max-width: 1244px;
 }
 
 *,
@@ -141,18 +143,6 @@ img {
   width: 50px;
 }
 
-footer {
-  display: flex;
-  height: 240px;
-  color: white;
-  text-align: center;
-  align-items: center;
-  flex-direction: column;
-  justify-content: flex-end;
-  font-size: var(--font-size-small);
-  background-color: var(--primary-color);
-}
-
 #about {
   padding-top: 160px;
   padding-bottom: 96px;
@@ -196,7 +186,6 @@ h1 {
 h6 {
   margin-left: -1px;
 }
-
 
 #skills {
   padding-bottom: 160px;

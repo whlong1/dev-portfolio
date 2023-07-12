@@ -4,7 +4,6 @@ import { EmailFormData } from "@/types/forms"
 import { handleErrorMsg } from '@/types/validators'
 import { sendEmailService } from '@/services/emailService'
 
-import FormRow from "./FormRow"
 import FormColumn from "./FormColumn"
 import AnimatedButton from "./AnimatedButton"
 
@@ -45,7 +44,7 @@ const ContactForm = () => {
 
   return (
     <form onSubmit={handleSubmit} className={formClassNames}>
-      <FormRow>
+      <div className="form-row two-column">
         <FormColumn
           type="text"
           name="firstName"
@@ -60,8 +59,8 @@ const ContactForm = () => {
           value={formData.lastName}
           handleChange={handleChange}
         />
-      </FormRow>
-      <FormRow>
+      </div>
+      <div className="form-row">
         <FormColumn
           type="email"
           name="email"
@@ -69,8 +68,8 @@ const ContactForm = () => {
           value={formData.email}
           handleChange={handleChange}
         />
-      </FormRow>
-      <FormRow>
+      </div>
+      <div className="form-row">
         <FormColumn
           type=""
           name="message"
@@ -78,7 +77,7 @@ const ContactForm = () => {
           value={formData.message}
           handleChange={handleChange}
         />
-      </FormRow>
+      </div>
       <AnimatedButton message={message} status={status} />
     </form>
   )
