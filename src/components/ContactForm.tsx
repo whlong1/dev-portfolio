@@ -31,12 +31,16 @@ const ContactForm = () => {
     try {
       setStatus("pending")
       const emailData = await sendEmailService(formData)
-      setStatus("success")
-      setFormData(initialState)
-      setMessage(emailData.message)
+      setTimeout(() => {
+        setStatus("success")
+        setFormData(initialState)
+        setMessage(emailData.message)
+      }, 3000)
     } catch (error) {
-      setStatus("error")
-      handleErrorMsg(error, setMessage)
+      setTimeout(() => {
+        setStatus("error")
+        handleErrorMsg(error, setMessage)
+      }, 3000)
     } finally {
       setTimeout(() => { setStatus(""); setMessage("") }, 6000)
     }
