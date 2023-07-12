@@ -42,9 +42,10 @@ footer .social-links p {
 }
 
 footer h6 {
+  margin: 0;
   width: 100%;
   color: white;
-  font-size: 24px;
+  font-size: 18px;
   text-align: left;
 }
 
