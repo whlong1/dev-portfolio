@@ -143,41 +143,6 @@ img {
   width: 50px;
 }
 
-#about {
-  padding-top: 160px;
-  padding-bottom: 96px;
-}
-
-#about button {
-  width: 40%;
-}
-
-#about>* {
-  margin-bottom: 160px;
-}
-
-.cta-container {
-  margin-top: var(--spacing-6);
-}
-
-.cta-container> :first-child {
-  margin-right: var(--spacing-2);
-}
-
-#about>:first-child {
-  width: 60%;
-}
-
-#about>:nth-child(2) {
-  display: flex;
-  justify-content: center;
-}
-
-.logo {
-  width: auto;
-  height: 360px;
-}
-
 h1 {
   margin-left: -4px;
   margin-top: var(--spacing-2);
