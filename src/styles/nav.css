@@ -47,6 +47,12 @@ nav ul li {
   display: none;
 }
 
+@media only screen and (max-width: 1200px) { 
+  nav ul li {
+    margin-left: 48px;
+  }
+}
+
 @media only screen and (max-width: 900px) {
   nav {
     top: 0;
