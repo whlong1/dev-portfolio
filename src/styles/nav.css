@@ -61,7 +61,7 @@ nav ul li {
     padding: 0 16px;
     position: fixed;
     background-color: white;
-    border-bottom: 1px solid var(--tertiary-color);
+    border-bottom: 1px solid var(--grey-tone);
   }
 
   #nav-logo {

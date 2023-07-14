@@ -45,7 +45,7 @@
   border-radius: 20px;
   white-space: nowrap;
   justify-content: center;
-  background-color: var(--tertiary-color);
+  background-color: var(--grey-tone);
   font-weight: var(--font-weight-regular);
 
   font-size: 17px;

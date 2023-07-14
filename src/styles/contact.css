@@ -30,7 +30,7 @@ textarea {
   height: var(--spacing-8);
   padding: var(--spacing-1);
   border-radius: var(--border-radius);
-  border: 1px solid var(--tertiary-color);
+  border: 1px solid var(--grey-tone);
   font-family: "canada-type-gibson", sans-serif;
 }
 
