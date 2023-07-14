@@ -17,7 +17,7 @@ const AboutSection = () => {
         <img
           className="logo"
           src="assets/branding/logo.svg"
-          alt="A logo depiction of Hunter Long"
+          alt="An illustration of Hunter Long"
         />
       </div>
     </section>
