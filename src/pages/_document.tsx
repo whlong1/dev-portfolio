@@ -6,7 +6,7 @@ const Document = () => {
       <Head>
         <meta name="description" content="Hunter Long - Full-Stack Developer. A showcase of my work and skills." />
         <link rel="stylesheet" href="https://use.typekit.net/swr6cbv.css"></link>
-        <link rel="icon" href="/assets/branding/logo.svg" />
+        <link rel="icon" href="/assets/branding/logo-solid-fill.svg" />
       </Head>
       <body>
         <Main />
