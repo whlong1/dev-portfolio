@@ -183,35 +183,6 @@
     margin-bottom: 0;
   }
 
-  #about {
-    flex-direction: column-reverse;
-  }
-
-  #about>:nth-child(1),
-  #about>:nth-child(2) {
-    margin: 0;
-    width: 100%;
-  }
-
-  .logo {
-    height: 300px;
-    margin-bottom: 72px;
-  }
-
-  .cta-container {
-    width: 100%;
-    display: flex;
-    margin-top: 48px;
-    flex-direction: column;
-  }
-
-  .cta-container button:nth-child(2) {
-    display: none;
-  }
-
-  #about button {
-    width: 100%;
-  }
 
 
 

@@ -22,15 +22,15 @@ label {
 
 input,
 textarea {
+  resize: none;
   max-width: 100%;
   font-size: 16px;
-  resize: vertical;
   color: #a0a0a0;
   margin-bottom: 24px;
   height: var(--spacing-8);
   padding: var(--spacing-1);
   border-radius: var(--border-radius);
-  border: 1px solid var(--tertiary-color);
+  border: 1px solid var(--grey-tone);
   font-family: "canada-type-gibson", sans-serif;
 }
 
