@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "title": "PROJECT TITLE",
+    "title": "Clippy",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisi risus commod.",
     "technologies": [
       "React",
@@ -9,23 +9,23 @@
       "Express",
       "Node"
     ],
-    "deployment": "https://github.com/whlong1/reactville",
-    "github": "https://github.com/whlong1/reactville",
+    "deployment": "https://clippy.sei-remote.com/",
+    "github": "https://github.com/whlong1/clippy-front-end",
     "images": [
       {
-        "id": "c5c7",
-        "src": "assets/screenshots/sample.png",
-        "alt": "Description of the image content"
-      },
-      {
         "id": "da00",
-        "src": "assets/screenshots/sample.png",
-        "alt": "Description of the image content"
+        "src": "assets/screenshots/clippy/b.png",
+        "alt": "Deliverables list view"
       },
       {
         "id": "de8b",
-        "src": "assets/screenshots/sample.png",
-        "alt": "Description of the image content"
+        "src": "assets/screenshots/clippy/c.png",
+        "alt": "Deliverable detail view"
+      },
+      {
+        "id": "c5c7",
+        "src": "assets/screenshots/clippy/a.png",
+        "alt": "Landing page"
       }
     ]
   },
