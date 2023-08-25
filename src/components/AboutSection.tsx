@@ -1,5 +1,5 @@
+import AnimatedLogo from "./AnimatedLogo"
 const AboutSection = () => {
-
   return (
     <section className="content split-layout" id="about">
       <div>
@@ -14,11 +14,7 @@ const AboutSection = () => {
         </div>
       </div>
       <div>
-        <img
-          className="logo"
-          src="assets/branding/logo.svg"
-          alt="An illustration of Hunter Long"
-        />
+        <AnimatedLogo />
       </div>
     </section>
   )
