@@ -4,7 +4,7 @@
     "name": "Auth0",
     "image": {
       "src": "assets/tech-logos/auth0.svg",
-      "alt": "Description of the image content"
+      "alt": "Auth0 Logo"
     }
   },
   {
@@ -12,7 +12,7 @@
     "name": "Git",
     "image": {
       "src": "assets/tech-logos/git.svg",
-      "alt": "Description of the image content"
+      "alt": "Git Logo"
     }
   },
   {
@@ -20,7 +20,7 @@
     "name": "Github",
     "image": {
       "src": "assets/tech-logos/github.svg",
-      "alt": "Description of the image content"
+      "alt": "Github Logo"
     }
   },
   {
@@ -28,7 +28,7 @@
     "name": "HTML5",
     "image": {
       "src": "assets/tech-logos/html.svg",
-      "alt": "Description of the image content"
+      "alt": "HTML5 Logo"
     }
   },
   {
@@ -36,7 +36,7 @@
     "name": "CSS3",
     "image": {
       "src": "assets/tech-logos/css.svg",
-      "alt": "Description of the image content"
+      "alt": "CSS3 Logo"
     }
   },
   {
@@ -44,7 +44,7 @@
     "name": "Photoshop",
     "image": {
       "src": "assets/tech-logos/photoshop.svg",
-      "alt": "Description of the image content"
+      "alt": "Photoshop Logo"
     }
   },
   {
@@ -52,7 +52,7 @@
     "name": "Illustrator",
     "image": {
       "src": "assets/tech-logos/illustrator.svg",
-      "alt": "Description of the image content"
+      "alt": "Illustrator Logo"
     }
   },
   {
@@ -60,7 +60,7 @@
     "name": "After Effects",
     "image": {
       "src": "assets/tech-logos/after-effects.svg",
-      "alt": "Description of the image content"
+      "alt": "After Effects Logo"
     }
   },
   {
@@ -68,7 +68,7 @@
     "name": "JavaScript",
     "image": {
       "src": "assets/tech-logos/javascript.svg",
-      "alt": "Description of the image content"
+      "alt": "Javascript Logo"
     }
   },
   {
@@ -76,7 +76,7 @@
     "name": "TypeScript",
     "image": {
       "src": "assets/tech-logos/typescript.svg",
-      "alt": "Description of the image content"
+      "alt": "TypeScript Logo"
     }
   },
   {
@@ -84,7 +84,7 @@
     "name": "Python",
     "image": {
       "src": "assets/tech-logos/python.svg",
-      "alt": "Description of the image content"
+      "alt": "Python Logo"
     }
   },
   {
@@ -92,7 +92,7 @@
     "name": "MongoDB",
     "image": {
       "src": "assets/tech-logos/mongodb.svg",
-      "alt": "Description of the image content"
+      "alt": "MongoDB Logo"
     }
   },
   {
@@ -100,7 +100,7 @@
     "name": "Mongoose",
     "image": {
       "src": "assets/tech-logos/mongoose.svg",
-      "alt": "Description of the image content"
+      "alt": "Mongoose"
     }
   },
   {
@@ -108,7 +108,7 @@
     "name": "PostgreSQL",
     "image": {
       "src": "assets/tech-logos/postgres.svg",
-      "alt": "Description of the image content"
+      "alt": "PostgreSQL Logo"
     }
   },
   {
@@ -116,7 +116,7 @@
     "name": "Sequelize",
     "image": {
       "src": "assets/tech-logos/sequelize.svg",
-      "alt": "Description of the image content"
+      "alt": "Sequelize Logo"
     }
   },
   {
@@ -124,7 +124,7 @@
     "name": "Node.js",
     "image": {
       "src": "assets/tech-logos/node.svg",
-      "alt": "Description of the image content"
+      "alt": "Node.js Logo"
     }
   },
   {
@@ -132,7 +132,7 @@
     "name": "Express",
     "image": {
       "src": "assets/tech-logos/express.svg",
-      "alt": "Description of the image content"
+      "alt": "Express Logo"
     }
   },
   {
@@ -140,7 +140,7 @@
     "name": "React",
     "image": {
       "src": "assets/tech-logos/react.svg",
-      "alt": "Description of the image content"
+      "alt": "React Logo"
     }
   },
   {
@@ -148,7 +148,7 @@
     "name": "Next",
     "image": {
       "src": "assets/tech-logos/next.svg",
-      "alt": "Description of the image content"
+      "alt": "Next Logo"
     }
   },
   {
@@ -156,7 +156,7 @@
     "name": "React Query",
     "image": {
       "src": "assets/tech-logos/react-query.svg",
-      "alt": "Description of the image content"
+      "alt": "React Query Logo"
     }
   },
   {
@@ -164,7 +164,7 @@
     "name": "Redux",
     "image": {
       "src": "assets/tech-logos/redux.svg",
-      "alt": "Description of the image content"
+      "alt": "Redux Logo"
     }
   },
   {
@@ -172,7 +172,7 @@
     "name": "Flask",
     "image": {
       "src": "assets/tech-logos/flask.svg",
-      "alt": "Description of the image content"
+      "alt": "Flask Logo"
     }
   },
   {
@@ -180,7 +180,7 @@
     "name": "Tailwind",
     "image": {
       "src": "assets/tech-logos/tailwind.svg",
-      "alt": "Description of the image content"
+      "alt": "Tailwind Logo"
     }
   },
   {
@@ -188,7 +188,7 @@
     "name": "Prisma",
     "image": {
       "src": "assets/tech-logos/prisma.svg",
-      "alt": "Description of the image content"
+      "alt": "Prisma Logo"
     }
   }
 ]
