@@ -174,5 +174,21 @@
       "src": "assets/tech-logos/flask.svg",
       "alt": "Description of the image content"
     }
+  },
+  {
+    "id": "sk23",
+    "name": "Tailwind",
+    "image": {
+      "src": "assets/tech-logos/tailwind.svg",
+      "alt": "Description of the image content"
+    }
+  },
+  {
+    "id": "sk24",
+    "name": "Prisma",
+    "image": {
+      "src": "assets/tech-logos/prisma.svg",
+      "alt": "Description of the image content"
+    }
   }
 ]
