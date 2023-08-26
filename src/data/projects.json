@@ -61,7 +61,7 @@
   },
   {
     "id": 3,
-    "title": "PROJECT TITLE",
+    "title": "Reactville",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisi risus commod.",
     "technologies": [
       "React",
@@ -69,23 +69,23 @@
       "Express",
       "Node"
     ],
-    "deployment": "https://github.com/whlong1/reactville",
+    "deployment": "https://reactville-app.netlify.app/",
     "github": "https://github.com/whlong1/reactville",
     "images": [
       {
         "id": "a8ec",
-        "src": "assets/screenshots/sample.png",
-        "alt": "Description of the image content"
+        "src": "assets/screenshots/reactville/3.png",
+        "alt": "New letter page"
       },
       {
         "id": "f146",
-        "src": "assets/screenshots/sample.png",
-        "alt": "Description of the image content"
+        "src": "assets/screenshots/reactville/2.png",
+        "alt": "Shopping cart page"
       },
       {
         "id": "c5c7",
-        "src": "assets/screenshots/sample.png",
-        "alt": "Description of the image content"
+        "src": "assets/screenshots/reactville/1.png",
+        "alt": "Landing page"
       }
     ]
   }
