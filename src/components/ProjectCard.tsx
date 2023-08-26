@@ -18,7 +18,6 @@ const ProjectCard = ({ project, cardIdx }: ProjectCardProps) => {
 
   const previewContainerStyle: CSSProperties = isCardEven
     ? { alignItems: "flex-start", justifyContent: "flex-start" }
-    // : { alignItems: "flex-end", justifyContent: "flex-end" }
     : { alignItems: "flex-end", justifyContent: "flex-start" }
 
   return (
