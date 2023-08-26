@@ -14,24 +14,24 @@
     "images": [
       {
         "id": "da00",
-        "src": "assets/screenshots/clippy/b.png",
+        "src": "assets/screenshots/clippy/3.png",
         "alt": "Deliverables list view"
       },
       {
         "id": "de8b",
-        "src": "assets/screenshots/clippy/c.png",
+        "src": "assets/screenshots/clippy/2.png",
         "alt": "Deliverable detail view"
       },
       {
         "id": "c5c7",
-        "src": "assets/screenshots/clippy/a.png",
+        "src": "assets/screenshots/clippy/1.png",
         "alt": "Landing page"
       }
     ]
   },
   {
     "id": 2,
-    "title": "PROJECT TITLE",
+    "title": "Hoot",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisi risus commod.",
     "technologies": [
       "React",
@@ -39,23 +39,23 @@
       "Express",
       "Node"
     ],
-    "deployment": "https://github.com/whlong1/reactville",
-    "github": "https://github.com/whlong1/reactville",
+    "deployment": "https://hoot-react.netlify.app/",
+    "github": "https://github.com/whlong1/hoot-client",
     "images": [
       {
         "id": "e2ff",
-        "src": "assets/screenshots/sample.png",
-        "alt": "Description of the image content"
+        "src": "assets/screenshots/hoot/3.png",
+        "alt": "Sign up page"
       },
       {
         "id": "e742",
-        "src": "assets/screenshots/sample.png",
-        "alt": "Description of the image content"
+        "src": "assets/screenshots/hoot/2.png",
+        "alt": "Blog post page"
       },
       {
         "id": "eaf1",
-        "src": "assets/screenshots/sample.png",
-        "alt": "Description of the image content"
+        "src": "assets/screenshots/hoot/1.png",
+        "alt": "Landing page"
       }
     ]
   },
