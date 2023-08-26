@@ -90,7 +90,7 @@
   {
     "id": 4,
     "title": "React Puppies",
-    "description": "React Puppies was developed as an engaging introduction to the MERN stack (MongoDB, Express.js, React.js, and Nodejs) for software engineering students at General Assembly. While its central allure revolves around delightful canine-centric features, the application takes a leap ahead with integrated Rive animations and customizable SVG icons for each puppy. These enhancements not only offer interactivity but also infuse the platform with a visually captivating user experience.",
+    "description": "React Puppies was developed as an engaging introduction to the MERN stack (MongoDB, Express.js, React.js, and Nodejs) for software engineering students at General Assembly. While its allure revolves around delightful canine-centric features, the application takes a leap ahead with integrated Rive animations and customizable SVG icons for each puppy. These enhancements infuse the platform with a visually captivating user experience.",
     "technologies": [
       "React",
       "React Router",
