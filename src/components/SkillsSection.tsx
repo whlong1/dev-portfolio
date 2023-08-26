@@ -9,7 +9,7 @@ const SkillsSection = () => {
       <header>
         <h2>TECHNICAL SKILLS</h2>
         <p className="section-blurb">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.
+          An overview of the tools, languages, and frameworks I specialize in.
         </p>
       </header>
       <ul>

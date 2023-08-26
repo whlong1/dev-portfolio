@@ -32,7 +32,6 @@ const PreviewContainer = (props: PreviewContainerProps) => {
     return isCardEven
       ? { marginTop: `${offset}px`, marginLeft: `${offset}px`, zIndex: imgIdx }
       : { marginRight: `${offset}px`, marginTop: `${offset}px`, zIndex: Math.abs(imgIdx - 2) }
-    // : { marginRight: `${offset}px`, marginBottom: `${offset}px`, zIndex: Math.abs(imgIdx - 2) }
   }
 
   // Calc zIndex of cards on selection
@@ -63,7 +62,7 @@ const PreviewContainer = (props: PreviewContainerProps) => {
           style={{ ...getPreviewStyle(imgIdx), ...calcZIndex(imgIdx), position: "absolute" }}
         />
       ))}
-      <img className="single-image" src={images[0].src} alt={images[0].alt} />
+      <img className="single-image" src={images[2].src} alt={images[2].alt} />
     </section>
   )
 }

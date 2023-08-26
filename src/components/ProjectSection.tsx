@@ -3,14 +3,14 @@ import { Project } from "@/types/models"
 import ProjectCard from "./ProjectCard"
 
 const ProjectSection = () => {
-  const projects: Project[] = projectData
+  const projects: Project[] = projectData.slice(0)
 
   return (
     <section className="content" id="projects">
       <header>
         <h2>RECENT PROJECTS</h2>
         <p className="section-blurb">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.
+          A collection of my recent work in software development.
         </p>
       </header>
       {projects.map((project: Project, cardIdx: number) => (
