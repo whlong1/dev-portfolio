@@ -6,7 +6,7 @@ const AboutSection = () => {
         <h6>FULL-STACK DEVELOPER</h6>
         <h1>HUNTER LONG</h1>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          As a full-stack software engineer with an extensive background in design, I bring a unique blend of creativity and technical expertise to the table. In my role as a Senior Instructional Associate at General Assembly, I teach and mentor aspiring developers. My focus is on creating digital products that balance aesthetic appeal with user-centric functionality.
         </p>
         <div className="cta-container">
           <button>GET IN TOUCH</button>
