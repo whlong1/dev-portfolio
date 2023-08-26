@@ -116,5 +116,35 @@
         "alt": "Landing page"
       }
     ]
+  },
+  {
+    "id": 5,
+    "title": "Rubber Duck",
+    "description": "Created over the course of a two-day hackathon, Rubber Duck is a web application designed to help users practice The Feynman Technique. Users explore topics and endeavor to convey a clear and succinct explanation of the subject matter. Users can then refine their synopsis through multiple iterations, allowing others to observe the evolution of the explanation over time. Rubber Duck also provides real-time writing feedback and keyword suggestions derived from related posts.",
+    "technologies": [
+      "React",
+      "MUI",
+      "Express",
+      "MongoDB"
+    ],
+    "deployment": "https://rubber-duck-react.netlify.app/",
+    "github": "https://github.com/whlong1/rubber-duck-client",
+    "images": [
+      {
+        "id": "r7tc",
+        "src": "assets/screenshots/rubber-duck/3.png",
+        "alt": "New puppy page"
+      },
+      {
+        "id": "r9b6",
+        "src": "assets/screenshots/rubber-duck/2.png",
+        "alt": "Index page"
+      },
+      {
+        "id": "r8m7",
+        "src": "assets/screenshots/rubber-duck/1.png",
+        "alt": "Landing page"
+      }
+    ]
   }
 ]
