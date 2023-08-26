@@ -3,7 +3,7 @@ import { Project } from "@/types/models"
 import ProjectCard from "./ProjectCard"
 
 const ProjectSection = () => {
-  const projects: Project[] = projectData
+  const projects: Project[] = projectData.slice(0, 3)
 
   return (
     <section className="content" id="projects">

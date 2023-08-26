@@ -88,5 +88,35 @@
         "alt": "Landing page"
       }
     ]
+  },
+  {
+    "id": 4,
+    "title": "React Puppies",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisi risus commod.",
+    "technologies": [
+      "React",
+      "React Query",
+      "Express",
+      "Node"
+    ],
+    "deployment": "https://react-puppies.netlify.app/",
+    "github": "https://github.com/whlong1/puppies-front",
+    "images": [
+      {
+        "id": "p2fc",
+        "src": "assets/screenshots/puppies/3.png",
+        "alt": "New puppy page"
+      },
+      {
+        "id": "p3g6",
+        "src": "assets/screenshots/puppies/2.png",
+        "alt": "Index page"
+      },
+      {
+        "id": "p4h7",
+        "src": "assets/screenshots/puppies/1.png",
+        "alt": "Landing page"
+      }
+    ]
   }
 ]
