@@ -2,12 +2,12 @@
   {
     "id": 1,
     "title": "Clippy",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisi risus commod.",
+    "description": "Clippy is a web application for online course management, currently in use by multiple classes at General Assembly. Instructors can oversee coursework, grade assignments, and monitor student growth. Students, in turn, can enroll, submit assignments, and view feedback. Clippy also allows instructors to share code blocks directly within the app. The app utilizes Auth0 for user security, React Query for caching, and Chart.js for visualizing course progress.",
     "technologies": [
-      "React",
+      "Auth0",
       "React Query",
       "Express",
-      "Node"
+      "MongoDB"
     ],
     "deployment": "https://clippy.sei-remote.com/",
     "github": "https://github.com/whlong1/clippy-front-end",
@@ -32,12 +32,12 @@
   {
     "id": 2,
     "title": "Hoot",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisi risus commod.",
+    "description": "Hoot is a whimsical blogging application designed for \"night owls\". Hoot was originally developed as a code-along lesson I taught students learning the MERN stack at General Assembly. The application integrates essential features for modern web apps and boasts a unique theme complete with original graphics. Hoot's features include JSON Web Token Authentication, image uploads via Cloudinary, animated UI elements with React Lottie Player, and CRUD operations for both blogs and comments.",
     "technologies": [
       "React",
-      "React Query",
-      "Express",
-      "Node"
+      "React Router",
+      "React Lottie",
+      "Cloudinary"
     ],
     "deployment": "https://hoot-react.netlify.app/",
     "github": "https://github.com/whlong1/hoot-client",
@@ -62,12 +62,10 @@
   {
     "id": 3,
     "title": "Reactville",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisi risus commod.",
+    "description": "Reactville is a collection of user interfaces demonstrating the variety of applications that can be built with React and React Router. Each interface represents a fictional business in the town of Reactville, including a bank, supermarket, and post office, while also showcasing practical real-world functionalities used in modern web applications. Using the Open-Meteo weather API, Reactville also dynamically renders certain graphics based on a user's local weather.",
     "technologies": [
       "React",
-      "React Query",
-      "Express",
-      "Node"
+      "React Router"
     ],
     "deployment": "https://reactville-app.netlify.app/",
     "github": "https://github.com/whlong1/reactville",
@@ -92,12 +90,12 @@
   {
     "id": 4,
     "title": "React Puppies",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisi risus commod.",
+    "description": "React Puppies was developed as an engaging introduction to the MERN stack (MongoDB, Express.js, React.js, and Nodejs) for software engineering students at General Assembly. While its central allure revolves around delightful canine-centric features, the application takes a leap ahead with integrated Rive animations and customizable SVG icons for each puppy. These enhancements not only offer interactivity but also infuse the platform with a visually captivating user experience.",
     "technologies": [
       "React",
-      "React Query",
+      "React Router",
       "Express",
-      "Node"
+      "Rive"
     ],
     "deployment": "https://react-puppies.netlify.app/",
     "github": "https://github.com/whlong1/puppies-front",
