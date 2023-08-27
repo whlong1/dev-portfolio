@@ -3,8 +3,25 @@
   padding-bottom: 96px;
 }
 
-#about button {
+#about .button {
   width: 40%;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: var(--spacing-8) !important;
+  font-size: var(--font-size-reg);
+  border-radius: var(--border-radius);
+  background-color: var(--primary-color);
+  border: 1px solid var(--grey-tone);
+  font-weight: var(--font-weight-semibold);
+  font-family: "canada-type-gibson", sans-serif;
+  transition: background-color 0.2s ease;
+}
+
+#about .button:hover {
+  background-color: rgba(0, 0, 0, .6);
 }
 
 #about>* {
@@ -12,6 +29,7 @@
 }
 
 .cta-container {
+  display: flex;
   margin-top: var(--spacing-6);
 }
 
@@ -64,11 +82,11 @@ div:has(canvas)>div {
     flex-direction: column;
   }
 
-  .cta-container button:nth-child(2) {
-    display: none;
+  .cta-container .button:nth-child(2) {
+    margin-top: var(--spacing-3);
   }
 
-  #about button {
+  #about .button {
     width: 100%;
   }
 
@@ -76,6 +94,7 @@ div:has(canvas)>div {
   div:has(canvas)>div {
     display: none;
   }
+
   .logo-static {
     display: block;
   }
