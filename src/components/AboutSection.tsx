@@ -1,6 +1,8 @@
+// Components
 import AnimatedLogo from "./AnimatedLogo"
 
 const AboutSection = () => {
+  const resumePath = "/assets/documents/Hunter-Long-Resume-v2.pdf"
   return (
     <section className="content split-layout" id="about">
       <div>
@@ -10,8 +12,12 @@ const AboutSection = () => {
           As a full-stack software engineer with an extensive background in design, I bring a unique blend of creativity and technical expertise to the table. In my role as a Senior Instructional Associate at General Assembly, I teach and mentor aspiring developers. My focus is on creating digital products that balance aesthetic appeal with user-centric functionality.
         </p>
         <div className="cta-container">
-          <button>GET IN TOUCH</button>
-          <button>RESUME</button>
+          <a className="button" href="#contact">
+            GET IN TOUCH
+          </a>
+          <a className="button" href={resumePath} target="_blank" rel="noopener noreferrer">
+            RESUME
+          </a>
         </div>
       </div>
       <div>
