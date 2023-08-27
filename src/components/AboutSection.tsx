@@ -1,4 +1,5 @@
 import AnimatedLogo from "./AnimatedLogo"
+
 const AboutSection = () => {
   return (
     <section className="content split-layout" id="about">
