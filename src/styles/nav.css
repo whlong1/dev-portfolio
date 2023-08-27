@@ -24,23 +24,35 @@ nav ul li {
   margin-left: 56px;
 }
 
-#nav-logo {
-  margin-left: 0;
-  margin-right: auto;
+nav ul li a:hover {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  text-decoration-thickness: 2px;
 }
 
-#nav-logo  a {
+#nav-logo-li {
+  margin-left: 0;
+  margin-right: auto;
+  transition: transform 0.2s ease;
+}
+
+nav #nav-logo-li:hover {
+  transform: scale(0.9);
+}
+
+#nav-logo-li a {
   display: flex;
   align-items: center;
 }
 
-#nav-logo  p {
+#nav-logo-li  p {
   margin-top: 0;
   border: 1px solid green;
 }
 
-#nav-logo  img {
+#nav-logo-li  img {
   width: 32px;
+  cursor: pointer;
 }
 
 .menu-wrapper {
@@ -64,7 +76,7 @@ nav ul li {
     border-bottom: 1px solid var(--grey-tone);
   }
 
-  #nav-logo {
+  #nav-logo-li {
     display: none;
   }
 

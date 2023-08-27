@@ -3,7 +3,7 @@ import Link from 'next/link'
 const NavLinks = () => {
   return (
     <ul className="nav-links">
-      <li id="nav-logo">
+      <li id="nav-logo-li">
         <Link href="/">
           <img
             src="/assets/branding/logo.svg"
