@@ -30,10 +30,21 @@
   justify-content: center;
 }
 
-.logo {
+/* RIVE CONTAINER */
+div:has(canvas)>div {
+  display: block;
+  cursor: pointer;
+  margin-top: -64px;
+  height: 480px !important;
+}
+
+.logo-static {
   width: auto;
   height: 360px;
+  display: none;
+  margin-bottom: 72px;
 }
+
 
 @media only screen and (max-width: 900px) {
   #about {
@@ -44,11 +55,6 @@
   #about>:nth-child(2) {
     margin: 0;
     width: 100%;
-  }
-
-  .logo {
-    height: 300px;
-    margin-bottom: 72px;
   }
 
   .cta-container {
@@ -64,5 +70,13 @@
 
   #about button {
     width: 100%;
+  }
+
+  /* RIVE CONTAINER */
+  div:has(canvas)>div {
+    display: none;
+  }
+  .logo-static {
+    display: block;
   }
 }

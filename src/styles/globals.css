@@ -208,13 +208,3 @@ img {
 .split-layout>* {
   width: 50%;
 }
-
-/* RIVE */
-section#about > div:has(canvas){
-  margin-top: -64px;
-  height: 480px !important;
-}
-
-section#about canvas {
-  cursor: pointer;
-}

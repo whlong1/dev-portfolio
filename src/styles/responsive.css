@@ -193,6 +193,7 @@
   .two-column {
     flex-direction: column;
   }
+
   .two-column .form-column {
     margin: 0 !important;
   }

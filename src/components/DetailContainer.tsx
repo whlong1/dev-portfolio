@@ -1,22 +1,16 @@
+// Types
 import { Project } from "@/types/models"
 
-interface DetailContainerProps {
-  project: Project
-}
+// Components
+import ProjectLinks from "./ProjectLinks"
 
-const DetailContainer = ({ project }: DetailContainerProps) => {
+const DetailContainer = ({ project }: { project: Project }) => {
 
   return (
     <section className="detail-container">
       <header>
         <h3>{project.title}</h3>
-        <a href={project.github} target="_blank" rel="noopener noreferrer">
-          <img
-            className="card-header-icon"
-            src="/assets/social/github.svg"
-            alt="GitHub Logo"
-          />
-        </a>
+        <ProjectLinks project={project} />
       </header>
       <p>{project.description}</p>
       <ul>

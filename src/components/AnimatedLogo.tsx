@@ -11,16 +11,19 @@ const AnimatedLogo = () => {
     }),
   })
 
-  const logoImg = (
+  const staticLogo = (
     <img
-      className="logo"
+      className="logo-static"
       src="assets/branding/logo.svg"
       alt="An illustration of Hunter Long"
     />
   )
 
   return (
+    <>
+    {staticLogo}
     <RiveComponent />
+    </>
   )
 }
 

@@ -3,6 +3,7 @@
     "id": 1,
     "title": "Clippy",
     "description": "Clippy is a web application for online course management, currently in use by multiple classes at General Assembly. Instructors can oversee coursework, grade assignments, and monitor student growth. Students, in turn, can enroll, submit assignments, and view feedback. Clippy also allows instructors to share code blocks directly within the app. The app utilizes Auth0 for user security, React Query for caching, and Chart.js for visualizing course progress.",
+    "theme": "dark",
     "technologies": [
       "Auth0",
       "React Query",
@@ -33,6 +34,7 @@
     "id": 2,
     "title": "Hoot",
     "description": "Hoot is a whimsical blogging application designed for \"night owls\". Hoot was originally developed as a code-along lesson I taught students learning the MERN stack at General Assembly. The application integrates essential features for modern web apps and boasts a unique theme complete with original graphics. Hoot's features include JSON Web Token Authentication, image uploads via Cloudinary, animated UI elements with React Lottie Player, and CRUD operations for both blogs and comments.",
+    "theme": "light",
     "technologies": [
       "React",
       "React Router",
@@ -63,6 +65,7 @@
     "id": 3,
     "title": "Reactville",
     "description": "Reactville is a collection of user interfaces demonstrating the variety of applications that can be built with React and React Router. Each interface represents a fictional business in the town of Reactville, including a bank, supermarket, and post office, while also showcasing practical real-world functionalities used in modern web applications. Using the Open-Meteo weather API, Reactville also dynamically renders certain graphics based on a user's local weather.",
+    "theme": "light",
     "technologies": [
       "React",
       "React Router"
@@ -91,6 +94,7 @@
     "id": 4,
     "title": "React Puppies",
     "description": "React Puppies was developed as an engaging introduction to the MERN stack (MongoDB, Express.js, React.js, and Nodejs) for software engineering students at General Assembly. While its allure revolves around delightful canine-centric features, the application takes a leap ahead with integrated Rive animations and customizable SVG icons for each puppy. These enhancements infuse the platform with a visually captivating user experience.",
+    "theme": "light",
     "technologies": [
       "React",
       "React Router",
@@ -121,13 +125,14 @@
     "id": 5,
     "title": "Rubber Duck",
     "description": "Created over the course of a two-day hackathon, Rubber Duck is a web application designed to help users practice The Feynman Technique. Users explore topics and endeavor to convey a clear and succinct explanation of the subject matter. Users can then refine their synopsis through multiple iterations, allowing others to observe the evolution of the explanation over time. Rubber Duck also provides real-time writing feedback and keyword suggestions derived from related posts.",
+    "theme": "dark",
     "technologies": [
       "React",
       "MUI",
       "Express",
       "MongoDB"
     ],
-    "deployment": "https://rubber-duck-react.netlify.app/",
+    "video": "https://www.youtube.com/watch?v=GX3xfVcAU9Q&list=PL2Kp3FX7ViJhG0pEPC-ysHuQEV_KdQItr&index=109&t=4300s",
     "github": "https://github.com/whlong1/rubber-duck-client",
     "images": [
       {
