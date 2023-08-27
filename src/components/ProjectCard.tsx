@@ -12,6 +12,7 @@ interface ProjectCardProps {
 
 const ProjectCard = ({ project, cardIdx }: ProjectCardProps) => {
   const isCardEven: boolean = cardIdx % 2 === 0
+  const isThemeDark: boolean = project.theme === "dark"
 
   const projectStyle: CSSProperties = isCardEven
     ? { flexDirection: "row-reverse" } : {}
@@ -26,6 +27,7 @@ const ProjectCard = ({ project, cardIdx }: ProjectCardProps) => {
       <PreviewContainer
         images={project.images}
         isCardEven={isCardEven}
+        isThemeDark={isThemeDark}
         previewContainerStyle={previewContainerStyle}
       />
     </article>

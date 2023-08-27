@@ -2,29 +2,33 @@ import { CSSProperties, useState } from "react"
 import { Image } from "@/types/models"
 
 interface PreviewStyle {
-  zIndex?: number,
-  marginTop?: string,
-  marginRight?: string,
-  marginBottom?: string,
-  marginLeft?: string,
-  position?: "absolute",
+  zIndex?: number;
+  marginTop?: string;
+  marginRight?: string;
+  marginBottom?: string;
+  marginLeft?: string;
+  position?: "absolute";
 }
 
 interface PreviewContainerProps {
-  images: Image[],
-  isCardEven: boolean,
-  previewContainerStyle: CSSProperties,
+  images: Image[];
+  isCardEven: boolean;
+  isThemeDark: boolean;
+  previewContainerStyle: CSSProperties;
 }
 
 const PreviewContainer = (props: PreviewContainerProps) => {
   const {
     images,
     isCardEven,
-    previewContainerStyle
+    isThemeDark,
+    previewContainerStyle,
   } = props
 
   const [selectedId, setSelectedId] = useState<string>("")
   const [timeoutId, setTimeoutId] = useState<number | undefined>(undefined)
+
+  const theme = isThemeDark ? "dark" : "light"
 
   // Initial Style
   const getPreviewStyle = (imgIdx: number): PreviewStyle => {
@@ -56,7 +60,7 @@ const PreviewContainer = (props: PreviewContainerProps) => {
           key={image.id}
           src={image.src}
           alt={image.alt}
-          className="layered-image"
+          className={`layered-image ${theme}`}
           onMouseLeave={() => clearTimeout(timeoutId)}
           onMouseOver={() => { if (image.id) handleMouseOver(image.id) }}
           style={{ ...getPreviewStyle(imgIdx), ...calcZIndex(imgIdx), position: "absolute" }}
