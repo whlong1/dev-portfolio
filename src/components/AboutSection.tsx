@@ -2,7 +2,6 @@
 import AnimatedLogo from "./AnimatedLogo"
 
 const AboutSection = () => {
-  const resumePath = "/assets/documents/Hunter-Long-Resume-v2.pdf"
   return (
     <section className="content split-layout" id="about">
       <div>
@@ -15,7 +14,7 @@ const AboutSection = () => {
           <a className="button" href="#contact">
             GET IN TOUCH
           </a>
-          <a className="button" href={resumePath} target="_blank" rel="noopener noreferrer">
+          <a className="button" href="/assets/documents/Hunter-Long-Resume-v6.pdf" target="_blank" rel="noopener noreferrer">
             RESUME
           </a>
         </div>
