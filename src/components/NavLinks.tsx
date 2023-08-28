@@ -1,8 +1,10 @@
 import Link from 'next/link'
 
-const NavLinks = () => {
+interface NavLinksProps { handleResize?: () => void; }
+const NavLinks = ({ handleResize }: NavLinksProps) => {
   return (
     <ul className="nav-links">
+
       <li id="nav-logo-li">
         <Link href="/">
           <img
@@ -11,10 +13,11 @@ const NavLinks = () => {
           />
         </Link>
       </li>
-      <li><Link href="#about">ABOUT</Link></li>
-      <li><Link href="#projects">PROJECTS</Link></li>
-      <li><Link href="#skills">SKILLS</Link></li>
-      <li><Link href="#contact">CONTACT</Link></li>
+
+      <li><Link onClick={() => handleResize && handleResize()} href="#about">ABOUT</Link></li>
+      <li><Link onClick={() => handleResize && handleResize()} href="#projects">PROJECTS</Link></li>
+      <li><Link onClick={() => handleResize && handleResize()} href="#skills">SKILLS</Link></li>
+      <li><Link onClick={() => handleResize && handleResize()} href="#contact">CONTACT</Link></li>
     </ul>
   )
 }
