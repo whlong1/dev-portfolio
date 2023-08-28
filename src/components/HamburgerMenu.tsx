@@ -19,11 +19,12 @@ const HamburgerMenu = () => {
     setTimeout(() => setTransitionComplete(true), 1000)
   }
 
+  const handleResize = () => {
+    setOpen(false)
+    setKey(Math.random()) // Temporary fix for animation reset
+  }
+
   useEffect(() => {
-    const handleResize = () => {
-      setOpen(false)
-      setKey(Math.random())
-    }
     window.addEventListener('resize', handleResize)
     return () => window.removeEventListener('resize', handleResize)
   }, [])
@@ -32,7 +33,7 @@ const HamburgerMenu = () => {
     <>
       <div className={`menu-wrapper ${toggleStyle}`}>
         <div className={`menu ${toggleStyle}`}>
-          <NavLinks />
+          <NavLinks handleResize={handleResize} />
           <SocialLinks />
         </div>
       </div>
