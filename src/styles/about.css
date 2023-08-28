@@ -49,7 +49,7 @@
 }
 
 /* RIVE CONTAINER */
-div:has(canvas)>div {
+#about div:has(canvas)>div {
   display: block;
   cursor: pointer;
   margin-top: -64px;
@@ -91,7 +91,7 @@ div:has(canvas)>div {
   }
 
   /* RIVE CONTAINER */
-  div:has(canvas)>div {
+  #about div:has(canvas)>div {
     display: none;
   }
 

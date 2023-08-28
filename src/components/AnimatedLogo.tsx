@@ -4,7 +4,7 @@ const AnimatedLogo = () => {
   const { RiveComponent } = useRive({
     autoplay: true,
     stateMachines: "State Machine 1",
-    src: "assets/branding/bounce.riv",
+    src: "assets/animations/bounce.riv",
     layout: new Layout({
       fit: Fit.Contain,
       alignment: Alignment.Center,
