@@ -49,12 +49,19 @@ const sendEmail = async (
     <p style="margin-top: 4px">Hunter Long</p>
   `
 
+  if (!process.env.EMAIL_ADDRESS) {
+    return res.status(500).json({
+      type: "error",
+      message: "Email address not configured on server."
+    })
+  }
+
   const mail: Mail = {
     cc: req.body.email,
     html: confirmationMsg,
     text: req.body.message,
-    to: process.env.EMAIL_ADDRESS!,
-    from: process.env.EMAIL_ADDRESS!,
+    to: process.env.EMAIL_ADDRESS,
+    from: process.env.EMAIL_ADDRESS,
     subject: `Your Message to Hunter Long Has Been Received, ${firstName} ${lastName}`,
   }
 
