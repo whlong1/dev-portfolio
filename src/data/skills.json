@@ -1,29 +1,5 @@
 [
   {
-    "id": "sk01",
-    "name": "Auth0",
-    "image": {
-      "src": "assets/tech-logos/auth0.svg",
-      "alt": "Auth0 Logo"
-    }
-  },
-  {
-    "id": "sk02",
-    "name": "Git",
-    "image": {
-      "src": "assets/tech-logos/git.svg",
-      "alt": "Git Logo"
-    }
-  },
-  {
-    "id": "sk03",
-    "name": "Github",
-    "image": {
-      "src": "assets/tech-logos/github.svg",
-      "alt": "Github Logo"
-    }
-  },
-  {
     "id": "sk04",
     "name": "HTML5",
     "image": {
@@ -37,30 +13,6 @@
     "image": {
       "src": "assets/tech-logos/css.svg",
       "alt": "CSS3 Logo"
-    }
-  },
-  {
-    "id": "sk06",
-    "name": "Photoshop",
-    "image": {
-      "src": "assets/tech-logos/photoshop.svg",
-      "alt": "Photoshop Logo"
-    }
-  },
-  {
-    "id": "sk07",
-    "name": "Illustrator",
-    "image": {
-      "src": "assets/tech-logos/illustrator.svg",
-      "alt": "Illustrator Logo"
-    }
-  },
-  {
-    "id": "sk08",
-    "name": "After Effects",
-    "image": {
-      "src": "assets/tech-logos/after-effects.svg",
-      "alt": "After Effects Logo"
     }
   },
   {
@@ -189,6 +141,62 @@
     "image": {
       "src": "assets/tech-logos/prisma.svg",
       "alt": "Prisma Logo"
+    }
+  },
+  {
+    "id": "sk25",
+    "name": "AWS",
+    "image": {
+      "src": "assets/tech-logos/aws.svg",
+      "alt": "AWS Logo"
+    }
+  },
+  {
+    "id": "sk01",
+    "name": "Auth0",
+    "image": {
+      "src": "assets/tech-logos/auth0.svg",
+      "alt": "Auth0 Logo"
+    }
+  },
+  {
+    "id": "sk02",
+    "name": "Git",
+    "image": {
+      "src": "assets/tech-logos/git.svg",
+      "alt": "Git Logo"
+    }
+  },
+  {
+    "id": "sk03",
+    "name": "Github",
+    "image": {
+      "src": "assets/tech-logos/github.svg",
+      "alt": "Github Logo"
+    }
+  },
+  {
+    "id": "sk06",
+    "name": "Photoshop",
+    "image": {
+      "src": "assets/tech-logos/photoshop.svg",
+      "alt": "Photoshop Logo"
+    }
+  },
+  {
+    "id": "sk07",
+    "name": "Illustrator",
+    "image": {
+      "src": "assets/tech-logos/illustrator.svg",
+      "alt": "Illustrator Logo"
+    }
+  },
+  {
+    "id": "sk08",
+    "name": "After Effects",
+    "image": {
+      "src": "assets/tech-logos/after-effects.svg",
+      "alt": "After Effects Logo"
     }
   }
 ]
