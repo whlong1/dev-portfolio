@@ -20,7 +20,7 @@ const NavLinks = ({ handleResize }: NavLinksProps) => {
       <li><Link onClick={() => handleResize && handleResize()} href="#contact">CONTACT</Link></li>
 
       <li id="resume-link-li">
-        <Link href="/assets/documents/Hunter-Long-Resume-v6.pdf" target="_blank" rel="noopener noreferrer">
+        <Link href="/assets/documents/Hunter_Long_Resume_v7.pdf" target="_blank" rel="noopener noreferrer">
           RESUME
         </Link>
       </li>

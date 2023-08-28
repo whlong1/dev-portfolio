@@ -14,7 +14,7 @@ const AboutSection = () => {
           <a className="button" href="#contact">
             GET IN TOUCH
           </a>
-          <a className="button" href="/assets/documents/Hunter-Long-Resume-v6.pdf" target="_blank" rel="noopener noreferrer">
+          <a className="button" href="/assets/documents/Hunter_Long_Resume_v7.pdf" target="_blank" rel="noopener noreferrer">
             RESUME
           </a>
         </div>
