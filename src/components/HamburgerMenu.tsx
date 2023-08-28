@@ -1,5 +1,5 @@
 // React
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
 // Components
 import NavLinks from "./NavLinks"
@@ -8,6 +8,7 @@ import AnimatedHamburger from './AnimatedHamburger'
 
 const HamburgerMenu = () => {
   const [open, setOpen] = useState(false)
+  const [key, setKey] = useState(Math.random())
   const [transitionComplete, setTransitionComplete] = useState(true)
   const toggleStyle = `${open ? 'open' : ''}`
 
@@ -17,6 +18,15 @@ const HamburgerMenu = () => {
     setOpen((prev) => !prev)
     setTimeout(() => setTransitionComplete(true), 1000)
   }
+
+  useEffect(() => {
+    const handleResize = () => {
+      setOpen(false)
+      setKey(Math.random())
+    }
+    window.addEventListener('resize', handleResize)
+    return () => window.removeEventListener('resize', handleResize)
+  }, [])
 
   return (
     <>
@@ -31,7 +41,7 @@ const HamburgerMenu = () => {
         className="hamburger-container"
         style={!transitionComplete ? { pointerEvents: "none" } : {}}
       >
-        <AnimatedHamburger />
+        <AnimatedHamburger key={key} />
       </div>
     </>
   )
