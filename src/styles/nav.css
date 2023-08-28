@@ -63,6 +63,10 @@ nav #nav-logo-li:hover {
   display: none;
 }
 
+#resume-link-li {
+  display: none;
+}
+
 @media only screen and (max-width: 1200px) { 
   nav ul li {
     margin-left: 48px;
@@ -193,6 +197,10 @@ nav #nav-logo-li:hover {
 
   .menu .social-links img[alt="LinkedIn"] {
     height: 23px;
+  }
+
+  #resume-link-li {
+    display: block;
   }
 
 }
