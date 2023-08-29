@@ -102,10 +102,22 @@ nav #nav-logo-li:hover {
 
   .hamburger-container {
     z-index: 2;
+    display: flex;
+    margin-left: auto;
+  }
+
+  .hamburger-container img {
+    transition: transform .2s ease, opacity 0.2s ease;
+  }
+
+  .hamburger-container img:active {
+    opacity: .6;
+    transform: scale(0.9);
+  }
+
+  .hamburger-container.animated {
     width: 36px;
     height: 32px;
-    display: block;
-    margin-left: auto;
   }
   
   .hamburger-container * {

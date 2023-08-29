@@ -48,12 +48,16 @@
   justify-content: center;
 }
 
-/* RIVE CONTAINER */
-#about div:has(canvas)>div {
+/* RIVE  */
+.rive-container {
+  width: 100%;
+  display: block;
+  margin-top: -60px;
+}
+#about canvas {
+  height: 490px !important;
   display: block;
   cursor: pointer;
-  margin-top: -64px;
-  height: 480px !important;
 }
 
 .logo-static {
@@ -62,7 +66,6 @@
   display: none;
   margin-bottom: 72px;
 }
-
 
 @media only screen and (max-width: 900px) {
   #about {
@@ -90,9 +93,15 @@
     width: 100%;
   }
 
-  /* RIVE CONTAINER */
-  #about div:has(canvas)>div {
+  .rive-container {
+    width: 0;
+    height: 0;
     display: none;
+    visibility: hidden;
+  }
+
+  #about canvas {
+    height: 0 !important;
   }
 
   .logo-static {
