@@ -21,8 +21,11 @@ const AnimatedLogo = () => {
 
   return (
     <>
-    {staticLogo}
-    <RiveComponent />
+      {staticLogo}
+      <div className="rive-container">
+        <RiveComponent />
+      </div>
+
     </>
   )
 }
