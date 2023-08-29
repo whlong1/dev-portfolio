@@ -1,31 +1,19 @@
-import { useRive, Layout, Fit, Alignment } from "@rive-app/react-canvas"
+import Rive from "@rive-app/react-canvas"
 
+//TODO Try out solution on optimizing Rive:
+// https://pixelpoint.io/blog/rive-react-optimizations/
 const AnimatedLogo = () => {
-  const { RiveComponent } = useRive({
-    autoplay: true,
-    stateMachines: "State Machine 1",
-    src: "assets/animations/bounce.riv",
-    layout: new Layout({
-      fit: Fit.Contain,
-      alignment: Alignment.Center,
-    }),
-  })
-
-  const staticLogo = (
-    <img
-      className="logo-static"
-      src="assets/branding/logo.svg"
-      alt="An illustration of Hunter Long"
-    />
-  )
-
   return (
     <>
       <div className="static-logo-container">
-        {staticLogo}
+        <img
+          className="logo-static"
+          src="assets/branding/logo.svg"
+          alt="An illustration of Hunter Long"
+        />
       </div>
       <div className="rive-container">
-        <RiveComponent />
+        <Rive src="assets/animations/bounce.riv" stateMachines={"State Machine 1"} />
       </div>
     </>
   )
