@@ -1,4 +1,4 @@
-import { useRive, Layout, Fit, Alignment } from '@rive-app/react-canvas'
+import { useRive, Layout, Fit, Alignment } from "@rive-app/react-canvas"
 
 const AnimatedLogo = () => {
   const { RiveComponent } = useRive({
@@ -21,11 +21,12 @@ const AnimatedLogo = () => {
 
   return (
     <>
-      {staticLogo}
+      <div className="static-logo-container">
+        {staticLogo}
+      </div>
       <div className="rive-container">
         <RiveComponent />
       </div>
-
     </>
   )
 }

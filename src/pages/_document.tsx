@@ -21,8 +21,7 @@ const Document = () => {
         <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png" />
         <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png" />
 
-        <link rel="preload" as="fetch" href="/assets/animations/bounce.riv" type="application/octet-stream" />
-
+        <link rel="preload" as="image" href="/assets/branding/logo.svg" type="image/svg+xml" />
       </Head>
       <body>
         <Main />

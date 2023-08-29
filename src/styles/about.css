@@ -60,11 +60,17 @@
   cursor: pointer;
 }
 
-.logo-static {
-  width: auto;
-  height: 360px;
+.static-logo-container {
+  width: 0;
+  height: 0;
   display: none;
-  margin-bottom: 72px;
+}
+
+.rive-container .logo-static {
+  width: 430px;
+  height: 490px;
+  padding: 70px;
+  display: block;
 }
 
 @media only screen and (max-width: 900px) {
@@ -104,7 +110,14 @@
     height: 0 !important;
   }
 
-  .logo-static {
+  .static-logo-container {
     display: block;
+    width: auto;
+    height: 360px;
+    margin-bottom: 72px;
+  }
+  .logo-static { 
+    width: 100%;
+    height: 100%;
   }
 }
