@@ -3,26 +3,15 @@ import { useState, useEffect } from 'react'
 
 // Components
 import NavLinks from "./NavLinks"
-import SocialLinks from './SocialLinks'
-import AnimatedHamburger from './AnimatedHamburger'
+import SocialLinks from "./SocialLinks"
+import StaticHamburger from "./StaticHamburger"
 
 const HamburgerMenu = () => {
   const [open, setOpen] = useState(false)
-  const [key, setKey] = useState(Math.random())
-  const [transitionComplete, setTransitionComplete] = useState(true)
-  const toggleStyle = `${open ? 'open' : ''}`
+  const toggleStyle = `${open ? "open" : ''}`
 
-  const handleMenu = () => {
-    if (!transitionComplete) return
-    setTransitionComplete(false)
-    setOpen((prev) => !prev)
-    setTimeout(() => setTransitionComplete(true), 1000)
-  }
-
-  const handleResize = () => {
-    setOpen(false)
-    setKey(Math.random()) // Temporary fix for animation reset
-  }
+  const handleResize = () => setOpen(false)
+  const handleMenu = () => setOpen((prev) => !prev)
 
   useEffect(() => {
     window.addEventListener('resize', handleResize)
@@ -37,13 +26,7 @@ const HamburgerMenu = () => {
           <SocialLinks />
         </div>
       </div>
-      <div
-        onClick={handleMenu}
-        className="hamburger-container"
-        style={!transitionComplete ? { pointerEvents: "none" } : {}}
-      >
-        <AnimatedHamburger key={key} />
-      </div>
+      <StaticHamburger handleMenu={handleMenu} />
     </>
   )
 }
