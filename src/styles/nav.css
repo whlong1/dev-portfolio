@@ -201,6 +201,7 @@ nav #nav-logo-li:hover {
   .menu .social-links img {
     height: 24px;
     filter: invert(1);
+    cursor: pointer;
   }
 
   .menu .social-links p {
