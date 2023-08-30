@@ -22,7 +22,7 @@ const ProjectCard = ({ project, cardIdx }: ProjectCardProps) => {
     : { alignItems: "flex-end", justifyContent: "flex-start" }
 
   return (
-    <article className={"card split-layout"} style={projectStyle}>
+    <article className={"card split-layout"} style={{ ...projectStyle, position: "relative" }}>
       <DetailContainer project={project} />
       <PreviewContainer
         images={project.images}

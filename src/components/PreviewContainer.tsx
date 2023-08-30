@@ -26,6 +26,7 @@ const PreviewContainer = (props: PreviewContainerProps) => {
   } = props
 
   const [selectedId, setSelectedId] = useState<string>("")
+  const [modalImgPath, setModalImgPath] = useState<string>("")
   const [timeoutId, setTimeoutId] = useState<number | undefined>(undefined)
 
   const theme = isThemeDark ? "dark" : "light"
@@ -53,20 +54,38 @@ const PreviewContainer = (props: PreviewContainerProps) => {
     setTimeoutId(newTimeoutId)
   }
 
+  const handleModal = (srcPath: string) => {
+    setModalImgPath(srcPath)
+  }
+
   return (
     <section className="preview-container" style={previewContainerStyle}>
+      
+      {modalImgPath &&
+        <div className="modal-container" onClick={() => handleModal("")}>
+          <div className="image-wrapper">
+            <button onClick={() => handleModal("")}>
+              X
+            </button>
+            <img onClick={(e) => e.stopPropagation()} src={modalImgPath} alt="Preview" />
+          </div>
+        </div>
+      }
+
       {images.map((image, imgIdx) => (
         <img
           key={image.id}
           src={image.src}
           alt={image.alt}
           className={`layered-image ${theme}`}
+          onClick={() => handleModal(image.src)}
           onMouseLeave={() => clearTimeout(timeoutId)}
           onMouseOver={() => { if (image.id) handleMouseOver(image.id) }}
           style={{ ...getPreviewStyle(imgIdx), ...calcZIndex(imgIdx), position: "absolute" }}
         />
       ))}
       <img className="single-image" src={images[2].src} alt={images[2].alt} />
+
     </section>
   )
 }
