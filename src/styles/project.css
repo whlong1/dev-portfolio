@@ -92,6 +92,7 @@
   height: 100%;
   display: none;
   box-shadow: none;
+  cursor: default;
   border: 1px solid rgb(230, 230, 230);
 }
 
@@ -113,4 +114,50 @@
 .layered-image.light {
   border: 1px solid rgb(220, 220, 220);
   border-top: .5px solid white;
+}
+
+.modal-container {
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, .45);
+}
+
+.modal-container .image-wrapper {
+  max-width: 650px;
+  position: relative;
+  display: inline-block;
+}
+
+.modal-container img {
+  width: 100%;
+  border-radius: var(--border-radius);
+  border: 1px solid rgb(220, 220, 220);
+  box-shadow: 0px 8px 24px 0px rgba(0, 0, 0, 0.5);
+}
+
+.modal-container button {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  height: 28px;
+  width: 28px;
+  z-index: 20;
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, .55);
+  box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, .75);
+}
+
+.modal-container button:hover {
+  background-color: rgba(0, 0, 0, .75);
+}
+.modal-container button:active {
+  transform: scale(.9);
 }

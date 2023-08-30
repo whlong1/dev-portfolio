@@ -1,4 +1,10 @@
+// React/Hooks
 import { CSSProperties, useState } from "react"
+
+// Components
+import ModalContainer from "./ModalContainer"
+
+// Types
 import { Image } from "@/types/models"
 
 interface PreviewStyle {
@@ -26,6 +32,7 @@ const PreviewContainer = (props: PreviewContainerProps) => {
   } = props
 
   const [selectedId, setSelectedId] = useState<string>("")
+  const [modalImgPath, setModalImgPath] = useState<string>("")
   const [timeoutId, setTimeoutId] = useState<number | undefined>(undefined)
 
   const theme = isThemeDark ? "dark" : "light"
@@ -53,20 +60,29 @@ const PreviewContainer = (props: PreviewContainerProps) => {
     setTimeoutId(newTimeoutId)
   }
 
+  const handleModal = (srcPath: string) => {
+    setModalImgPath(srcPath)
+  }
+
   return (
     <section className="preview-container" style={previewContainerStyle}>
+
+      {modalImgPath && <ModalContainer modalImgPath={modalImgPath} handleModal={handleModal} />}
+
       {images.map((image, imgIdx) => (
         <img
           key={image.id}
           src={image.src}
           alt={image.alt}
           className={`layered-image ${theme}`}
+          onClick={() => handleModal(image.src)}
           onMouseLeave={() => clearTimeout(timeoutId)}
           onMouseOver={() => { if (image.id) handleMouseOver(image.id) }}
           style={{ ...getPreviewStyle(imgIdx), ...calcZIndex(imgIdx), position: "absolute" }}
         />
       ))}
       <img className="single-image" src={images[2].src} alt={images[2].alt} />
+
     </section>
   )
 }
