@@ -1,4 +1,10 @@
+// React/Hooks
 import { CSSProperties, useState } from "react"
+
+// Components
+import ModalContainer from "./ModalContainer"
+
+// Types
 import { Image } from "@/types/models"
 
 interface PreviewStyle {
@@ -60,17 +66,8 @@ const PreviewContainer = (props: PreviewContainerProps) => {
 
   return (
     <section className="preview-container" style={previewContainerStyle}>
-      
-      {modalImgPath &&
-        <div className="modal-container" onClick={() => handleModal("")}>
-          <div className="image-wrapper">
-            <button onClick={() => handleModal("")}>
-              X
-            </button>
-            <img onClick={(e) => e.stopPropagation()} src={modalImgPath} alt="Preview" />
-          </div>
-        </div>
-      }
+
+      {modalImgPath && <ModalContainer modalImgPath={modalImgPath} handleModal={handleModal} />}
 
       {images.map((image, imgIdx) => (
         <img

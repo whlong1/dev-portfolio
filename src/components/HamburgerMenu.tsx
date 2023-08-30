@@ -1,5 +1,5 @@
 // React
-import { useState, useEffect } from 'react'
+import { useState, useEffect } from "react"
 
 // Components
 import NavLinks from "./NavLinks"
@@ -8,14 +8,14 @@ import StaticHamburger from "./StaticHamburger"
 
 const HamburgerMenu = () => {
   const [open, setOpen] = useState(false)
-  const toggleStyle = `${open ? "open" : ''}`
+  const toggleStyle = `${open ? "open" : ""}`
 
   const handleResize = () => setOpen(false)
   const handleMenu = () => setOpen((prev) => !prev)
 
   useEffect(() => {
-    window.addEventListener('resize', handleResize)
-    return () => window.removeEventListener('resize', handleResize)
+    window.addEventListener("resize", handleResize)
+    return () => window.removeEventListener("resize", handleResize)
   }, [])
 
   return (

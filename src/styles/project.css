@@ -92,6 +92,7 @@
   height: 100%;
   display: none;
   box-shadow: none;
+  cursor: default;
   border: 1px solid rgb(230, 230, 230);
 }
 
@@ -114,9 +115,6 @@
   border: 1px solid rgb(220, 220, 220);
   border-top: .5px solid white;
 }
-
-
-
 
 .modal-container {
   top: 0;
