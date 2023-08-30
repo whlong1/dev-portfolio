@@ -62,6 +62,37 @@
     ]
   },
   {
+    "id": 5,
+    "title": "Rubber Duck",
+    "description": "Created over the course of a two-day hackathon, Rubber Duck is a web application designed to help users practice The Feynman Technique. Users explore topics and endeavor to convey a clear and succinct explanation of the subject matter. Users can then refine their synopsis through multiple iterations, allowing others to observe the evolution of the explanation over time. Rubber Duck also provides real-time writing feedback and keyword suggestions derived from related posts.",
+    "theme": "dark",
+    "technologies": [
+      "React",
+      "MUI",
+      "Express",
+      "MongoDB"
+    ],
+    "video": "https://www.youtube.com/watch?v=GX3xfVcAU9Q&list=PL2Kp3FX7ViJhG0pEPC-ysHuQEV_KdQItr&index=109&t=4300s",
+    "github": "https://github.com/whlong1/rubber-duck-client",
+    "images": [
+      {
+        "id": "r7tc",
+        "src": "assets/screenshots/rubber-duck/3.png",
+        "alt": "New puppy page"
+      },
+      {
+        "id": "r9b6",
+        "src": "assets/screenshots/rubber-duck/2.png",
+        "alt": "Index page"
+      },
+      {
+        "id": "r8m7",
+        "src": "assets/screenshots/rubber-duck/1.png",
+        "alt": "Landing page"
+      }
+    ]
+  },
+  {
     "id": 3,
     "title": "Reactville",
     "description": "Reactville is a collection of user interfaces demonstrating the variety of applications that can be built with React and React Router. Each interface represents a fictional business in the town of Reactville, including a bank, supermarket, and post office, while also showcasing practical real-world functionalities used in modern web applications. Using the Open-Meteo weather API, Reactville also dynamically renders certain graphics based on a user's local weather.",
@@ -117,37 +148,6 @@
       {
         "id": "p4h7",
         "src": "assets/screenshots/puppies/1.png",
-        "alt": "Landing page"
-      }
-    ]
-  },
-  {
-    "id": 5,
-    "title": "Rubber Duck",
-    "description": "Created over the course of a two-day hackathon, Rubber Duck is a web application designed to help users practice The Feynman Technique. Users explore topics and endeavor to convey a clear and succinct explanation of the subject matter. Users can then refine their synopsis through multiple iterations, allowing others to observe the evolution of the explanation over time. Rubber Duck also provides real-time writing feedback and keyword suggestions derived from related posts.",
-    "theme": "dark",
-    "technologies": [
-      "React",
-      "MUI",
-      "Express",
-      "MongoDB"
-    ],
-    "video": "https://www.youtube.com/watch?v=GX3xfVcAU9Q&list=PL2Kp3FX7ViJhG0pEPC-ysHuQEV_KdQItr&index=109&t=4300s",
-    "github": "https://github.com/whlong1/rubber-duck-client",
-    "images": [
-      {
-        "id": "r7tc",
-        "src": "assets/screenshots/rubber-duck/3.png",
-        "alt": "New puppy page"
-      },
-      {
-        "id": "r9b6",
-        "src": "assets/screenshots/rubber-duck/2.png",
-        "alt": "Index page"
-      },
-      {
-        "id": "r8m7",
-        "src": "assets/screenshots/rubber-duck/1.png",
         "alt": "Landing page"
       }
     ]
