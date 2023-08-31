@@ -7,12 +7,14 @@ import "@/styles/project.css"
 import "@/styles/animation.css"
 import "@/styles/responsive.css"
 import Layout from "@/components/Layout"
-import type { AppProps } from 'next/app'
+import type { AppProps } from "next/app"
+import { Analytics } from "@vercel/analytics/react"
 
 const App = ({ Component, pageProps }: AppProps) => {
   return (
     <Layout>
       <Component {...pageProps} />
+      <Analytics />
     </Layout>
   )
 }
